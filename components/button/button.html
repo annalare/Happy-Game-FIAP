@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Button Component - Happy Game</title>
+    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="stylesheet" href="button.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Button Component</h1>
+        
+        <div style="display: flex; flex-direction: column; gap: 20px; align-items: center; margin-top: 40px;">
+            <!-- Botão Verde Sólido -->
+            <button class="btn btn-green-solid">Acessar</button>
+            
+            <!-- Botão Verde Outline -->
+            <button class="btn btn-green-outline">Acessar</button>
+            
+            <!-- Botão Rosa Sólido -->
+            <button class="btn btn-pink-solid">Acessar</button>
+            
+            <!-- Botão Rosa Outline -->
+            <button class="btn btn-pink-outline">Acessar</button>
+        </div>
+
+        <div style="margin-top: 60px;">
+            <h2>Tamanhos</h2>
+            <div style="display: flex; gap: 20px; align-items: center; justify-content: center; margin-top: 20px;">
+                <button class="btn btn-green-solid btn-sm">Pequeno</button>
+                <button class="btn btn-green-solid">Normal</button>
+                <button class="btn btn-green-solid btn-lg">Grande</button>
+            </div>
+        </div>
+
+        <div style="margin-top: 60px;">
+            <h2>Estados</h2>
+            <div style="display: flex; gap: 20px; align-items: center; justify-content: center; margin-top: 20px;">
+                <button class="btn btn-green-solid">Normal</button>
+                <button class="btn btn-green-solid" disabled>Desabilitado</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
