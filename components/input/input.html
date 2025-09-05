@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Input Component - Happy Game</title>
+    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="stylesheet" href="input.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Input Component</h1>
+        
+        <div style="max-width: 400px; margin: 40px auto;">
+            <!-- Input Filled -->
+            <div class="input-group">
+                <label class="input-label">Email</label>
+                <input type="email" class="input" value="example@mail.com">
+            </div>
+            
+            <!-- Input Placeholder -->
+            <div class="input-group">
+                <label class="input-label">Email</label>
+                <input type="email" class="input" placeholder="Digite seu email">
+            </div>
+        </div>
+
+        <div style="max-width: 400px; margin: 60px auto;">
+            <h2>Tamanhos</h2>
+            <div style="margin-top: 20px;">
+                <div class="input-group">
+                    <label class="input-label">Pequeno</label>
+                    <input type="text" class="input input-sm" placeholder="Input pequeno">
+                </div>
+                
+                <div class="input-group">
+                    <label class="input-label">Normal</label>
+                    <input type="text" class="input" placeholder="Input normal">
+                </div>
+                
+                <div class="input-group">
+                    <label class="input-label">Grande</label>
+                    <input type="text" class="input input-lg" placeholder="Input grande">
+                </div>
+            </div>
+        </div>
+
+        <div style="max-width: 400px; margin: 60px auto;">
+            <h2>Estados</h2>
+            <div style="margin-top: 20px;">
+                <div class="input-group">
+                    <label class="input-label">Normal</label>
+                    <input type="text" class="input" placeholder="Estado normal">
+                </div>
+                
+                <div class="input-group">
+                    <label class="input-label">Com Erro</label>
+                    <input type="text" class="input input-error" placeholder="Campo com erro">
+                </div>
+                
+                <div class="input-group">
+                    <label class="input-label">Sucesso</label>
+                    <input type="text" class="input input-success" placeholder="Campo válido">
+                </div>
+                
+                <div class="input-group">
+                    <label class="input-label">Desabilitado</label>
+                    <input type="text" class="input" placeholder="Campo desabilitado" disabled>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>

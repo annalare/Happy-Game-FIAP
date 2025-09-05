@@ -1,0 +1,75 @@
+/* ===== INPUT COMPONENT ===== */
+
+.input-group {
+    margin-bottom: 20px;
+    text-align: left;
+    max-width: 500px;
+}
+
+.input-label {
+    display: block;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    color: var(--text-primary);
+    margin-bottom: 8px;
+    font-size: 0.9rem;
+}
+
+.input {
+    width: 100%;
+    padding: 12px 16px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    border: none;
+    border-radius: 8px;
+    background: var(--bg-input);
+    color: var(--text-secondary);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: all 0.2s ease;
+    outline: none;
+}
+
+.input:focus {
+    box-shadow: 0 0 0 3px rgba(0, 255, 136, 0.2);
+    transform: translateY(-1px);
+}
+
+.input::placeholder {
+    color: var(--text-muted);
+    font-weight: 400;
+}
+
+.input:disabled {
+    background: var(--bg-disabled);
+    color: var(--text-disabled);
+    cursor: not-allowed;
+    opacity: 0.6;
+}
+
+.input:disabled::placeholder {
+    color: var(--text-subtle);
+}
+
+/* Estados de erro e sucesso */
+.input-error {
+    box-shadow: 0 0 0 3px rgba(255, 46, 99, 0.2);
+    border: 1px solid var(--pink-base);
+}
+
+.input-success {
+    box-shadow: 0 0 0 3px rgba(0, 255, 136, 0.2);
+    border: 1px solid var(--green-base);
+}
+
+/* Tamanhos */
+.input-sm {
+    padding: 8px 12px;
+    font-size: 0.875rem;
+}
+
+.input-lg {
+    padding: 16px 20px;
+    font-size: 1.125rem;
+}
+
