@@ -1,0 +1,81 @@
+/* ========= NAVEGAÇÃO ========= */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 72px;
+  padding: 0 64px;
+  background-color: var(--green-base);
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 32px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: var(--text-secondary);
+  font-size: 16px;
+}
+
+.logo {
+  width: 84px;
+  height: 36px;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+.menu-dropdown {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 4px;
+}
+
+.menu-dropdown span {
+  width: 24px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.actions {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+}
+
+.actions button {
+  font-size: 16px;
+  padding: 8px 20px;
+  border: 1px solid var(--black);
+}
+
+.subscribe-cta {
+  background: none;
+}
+
+.subscribe-cta:hover {
+  background: var(--black);
+  color: var(--text-primary);
+  cursor: pointer;
+}
+
+.learn-more-cta {
+  color: var(--text-primary);
+  background: var(--black);
+}
+
+.learn-more-cta:hover {
+  color: var(--text-primary);
+  background: var(--bg-pink);
+  border: 1px solid var(--bg-pink);
+    cursor: pointer;
+}

@@ -1,0 +1,35 @@
+/* ========= HEADER ========= */
+header {
+  display: flex;
+  box-sizing: border-box;
+  width: 100%;
+  padding: 112px 64px;
+  flex-direction: column;
+  align-items: center;
+  gap: 80px;
+}
+
+header div {
+  margin: 0 auto;
+  display: flex;
+  max-width: 1280px;
+  flex-direction: column;
+  align-items: center;
+  gap: 80px;
+  align-self: stretch;
+}
+
+.header-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+  align-self: stretch;
+}
+
+.header-img {
+  max-width: 100%;
+  height: auto;
+  align-self: stretch;
+  aspect-ratio: 16/9;
+}
