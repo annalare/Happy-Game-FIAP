@@ -21,6 +21,7 @@
     background: var(--green-base);
     color: var(--black);
     border: 2px solid transparent;
+    font-weight: 600;
 }
 
 .btn-green-solid:hover {
