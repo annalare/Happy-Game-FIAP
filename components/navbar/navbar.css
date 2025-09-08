@@ -30,21 +30,6 @@ nav ul li a {
   flex-shrink: 0;
 }
 
-.menu-dropdown {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 4px;
-}
-
-.menu-dropdown span {
-  width: 24px;
-  height: 24px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
 .actions {
   display: flex;
   justify-content: center;
@@ -58,16 +43,6 @@ nav ul li a {
   border: 1px solid var(--black);
 }
 
-.subscribe-cta {
-  background: none;
-}
-
-.subscribe-cta:hover {
-  background: var(--black);
-  color: var(--text-primary);
-  cursor: pointer;
-}
-
 .learn-more-cta {
   color: var(--text-primary);
   background: var(--black);
@@ -77,5 +52,45 @@ nav ul li a {
   color: var(--text-primary);
   background: var(--bg-pink);
   border: 1px solid var(--bg-pink);
-    cursor: pointer;
+  cursor: pointer;
+}
+
+/* ========= RESPONSIVIDADE ========= */
+
+/* Mobile */
+@media (max-width: 768px) {
+  nav {
+    flex-direction: column;
+    height: auto;
+    padding: 16px 20px;
+    gap: 16px;
+  }
+  
+  .logo {
+    order: 1;
+    margin-bottom: 8px;
+  }
+  
+  nav ul {
+    order: 2;
+    flex-wrap: wrap;
+    gap: 16px;
+    justify-content: center;
+  }
+  
+  nav ul li a {
+    font-size: 13px;
+    padding: 4px 8px;
+  }
+  
+  .actions {
+    order: 3;
+    gap: 8px;
+    margin-top: 8px;
+  }
+  
+  .actions button {
+    font-size: 12px;
+    padding: 6px 12px;
+  }
 }
