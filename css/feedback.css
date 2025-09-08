@@ -1,0 +1,327 @@
+/* Feedback Page Styles */
+
+/* Hero Section */
+.feedback-hero {
+    position: relative;
+    height: 80vh;
+    min-height: 600px;
+    background-image: url('../assets/img/assassins.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(135deg, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.5) 100%);
+    z-index: 1;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    color: white;
+    max-width: 800px;
+    padding: 0 2rem;
+}
+
+.hero-content .success-icon {
+    margin-bottom: 2rem;
+}
+
+.hero-content .success-icon i {
+    font-size: 5rem;
+    color: var(--green-base);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.hero-content h1 {
+    font-size: 3.5rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+    line-height: 1.2;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    color: var(--text-primary);
+}
+
+.hero-content .hero-description {
+    font-size: 1.4rem;
+    line-height: 1.6;
+    opacity: 0.95;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+    max-width: 600px;
+    margin: 0 auto;
+    color: var(--text-primary);
+}
+
+/* FOMO Section */
+.fomo-section {
+    background: var(--grey-1);
+    padding: 4rem 0;
+    color: var(--text-primary);
+    position: relative;
+    overflow: hidden;
+}
+
+.fomo-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: transparent;
+}
+
+.fomo-content {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.fomo-section h2 {
+    font-family: 'Press Start 2P', cursive;
+    font-size: 2.5rem;
+    font-weight: 400;
+    margin-bottom: 1.5rem;
+    line-height: 1.3;
+    color: var(--text-primary);
+}
+
+.fomo-description {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    margin-bottom: 2.5rem;
+    color: var(--text-primary);
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.fomo-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+    margin-bottom: 2.5rem;
+    position: relative;
+    z-index: 1;
+}
+
+.fomo-item {
+    background: var(--green-base);
+    border-radius: 12px;
+    padding: 2rem;
+    backdrop-filter: blur(15px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: none;
+    transition: none;
+}
+
+.fomo-icon {
+    font-size: 3rem;
+    margin-bottom: 1.5rem;
+}
+
+.fomo-icon i {
+    color: var(--text-secondary);
+    filter: drop-shadow(1px 1px 2px rgba(0, 0, 0, 0.3));
+}
+
+.fomo-text h3 {
+    font-family: 'Press Start 2P', cursive;
+    font-size: 1rem;
+    font-weight: 400;
+    margin-bottom: 1rem;
+    color: var(--text-secondary);
+    line-height: 1.4;
+}
+
+.fomo-text p {
+    font-size: 1rem;
+    line-height: 1.5;
+    color: var(--text-secondary);
+    opacity: 0.9;
+}
+
+/* CTA Section */
+.cta-section {
+    padding: 4rem 0;
+    background: var(--pink-base);
+    color: var(--text-primary);
+}
+
+.cta-content {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.cta-section h3 {
+    font-family: 'Press Start 2P', cursive;
+    font-size: 2rem;
+    font-weight: 400;
+    color: var(--text-primary);
+    margin-bottom: 1.5rem;
+    line-height: 1.3;
+}
+
+.cta-section p {
+    font-size: 1.2rem;
+    color: var(--text-primary);
+    margin-bottom: 2.5rem;
+    line-height: 1.6;
+}
+
+.cta-buttons {
+    display: flex;
+    gap: 1.5rem;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.cta-buttons .btn {
+    min-width: 180px;
+    padding: 1rem 2rem;
+    font-size: 1.1rem;
+    font-weight: 600;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .feedback-hero {
+        height: 70vh;
+        min-height: 500px;
+    }
+    
+    .hero-content h1 {
+        font-size: 2.5rem;
+    }
+    
+    .hero-content .hero-description {
+        font-size: 1.2rem;
+    }
+    
+    .feedback-content {
+        padding: 0 1rem;
+    }
+    
+    .fomo-section {
+        padding: 3rem 0;
+    }
+    
+    .fomo-section h2 {
+        font-size: 2rem;
+    }
+    
+    .fomo-description {
+        font-size: 1.1rem;
+    }
+    
+    .fomo-cards {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+    
+    .fomo-item {
+        padding: 1.5rem;
+    }
+    
+    .fomo-icon {
+        font-size: 2.5rem;
+        margin-bottom: 1rem;
+    }
+    
+    .fomo-text h3 {
+        font-size: 0.9rem;
+    }
+    
+    .fomo-text p {
+        font-size: 0.9rem;
+    }
+    
+    .cta-section {
+        padding: 3rem 0;
+    }
+    
+    .cta-section h3 {
+        font-size: 1.6rem;
+    }
+    
+    .cta-section p {
+        font-size: 1.1rem;
+    }
+    
+    .cta-buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .cta-buttons .btn {
+        width: 100%;
+        max-width: 300px;
+    }
+}
+
+@media (max-width: 480px) {
+    .feedback-hero {
+        height: 60vh;
+        min-height: 450px;
+    }
+    
+    .hero-content h1 {
+        font-size: 2rem;
+    }
+    
+    .hero-content .hero-description {
+        font-size: 1.1rem;
+    }
+    
+    .fomo-section {
+        padding: 2rem 0;
+    }
+    
+    .fomo-section h2 {
+        font-size: 1.4rem;
+    }
+    
+    .fomo-item {
+        padding: 1.2rem;
+    }
+    
+    .fomo-icon {
+        font-size: 2rem;
+        margin-bottom: 0.8rem;
+    }
+    
+    .fomo-text h3 {
+        font-size: 0.8rem;
+    }
+    
+    .fomo-text p {
+        font-size: 0.85rem;
+    }
+    
+    .cta-section {
+        padding: 2rem 0;
+    }
+    
+    .cta-section h3 {
+        font-size: 1.4rem;
+    }
+    
+    .cta-section p {
+        font-size: 1rem;
+    }
+}
