@@ -1,0 +1,52 @@
+.team-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 80px;
+    width: 100%;
+    padding: 112px 64px;
+}
+.title-section {
+    align-self: stretch;
+}
+.title-section p{
+    color: var(--text-primary);
+}
+.list-items {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+}
+.item {
+    display: flex;
+    gap: 8px;
+}
+.item-content{
+ display: flex;
+ flex-direction: column;
+ justify-content: space-between;
+ text-align: left;
+}
+.item-content h3 {
+    font-size: 1rem;
+}
+
+.item-content p{
+    color: var(--text-primary);
+}
+
+.item-titles {
+    display: flex;
+    flex-direction: column;
+
+}
+.cover img {
+    height: 288px;
+    /* ocupa toda a altura da célula */
+    flex: 1 0 0;
+    object-fit: cover;
+    /* ajusta a imagem para preencher, sem distorcer */
+    display: block;
+    /* remove o "espaço fantasma" de imagens inline */
+    aspect-ratio: 1 / 1;
+}
