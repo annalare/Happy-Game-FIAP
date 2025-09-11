@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Forms - Happy Game</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/forms.css">
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../components/input/input.css">
+    <link rel="stylesheet" href="../components/navbar/navbar.css" />
+    <link rel="stylesheet" href="../components/footer/footer.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+
+</head>
+
+<body>
+    <nav>
+        <div class="logo">
+            <a href="../index.html"><img src="../assets/img/logo.svg" alt="logo do site" /></a>
+        </div>
+        <ul>
+            <li><a href="/">Inicio Rápido</a></li>
+            <li><a href="/pages/story-games.html">História dos Jogos</a></li>
+            <li><a href="/">Apresentação da Plataforma</a></li>
+            <li class="menu-dropdown">
+                <a href="/">Mais Opções</a>
+                <span aria-hidden="true"><svg width="14" height="8" viewBox="0 0 14 8" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M7.3977 7.66292C7.17802 7.88259 6.82192 7.88259 6.60225 7.66292L0.867387 1.92804C0.64772 1.70837 0.64772 1.35227 0.867387 1.13259L1.13256 0.867393C1.35222 0.647718 1.70838 0.647718 1.92805 0.867393L6.99997 5.93934L12.0719 0.867393C12.2916 0.647718 12.6477 0.647718 12.8674 0.867393L13.1326 1.13259C13.3522 1.35227 13.3522 1.70837 13.1326 1.92804L7.3977 7.66292Z"
+                            fill="black" />
+                    </svg></span>
+            </li>
+            <div class="actions">
+                <li><button class="subscribe-cta">Inscreva-se</button></li>
+                <li><button class="learn-more-cta">Saiba Mais</button></li>
+            </div>
+        </ul>
+    </nav>
+
+    <div class="pagina-formulario">
+        <header class="cabecalho-formulario">
+            <h1 class="titulo-form">Garanta seu lugar no Happy Game</h1>
+            <p class="texto-intro">Junte-se à lista de espera e seja um dos primeiros a explorar a nova comunidade
+                gamer.</p>
+        </header>
+
+        <form class="cadastro-happy" action="#" method="POST">
+
+            <div class="linha-campos">
+                <div class="grupo-campo">
+                    <label for="nome">Nome Completo</label>
+                    <input type="text" id="nome" name="nome" required>
+                </div>
+                <div class="grupo-campo">
+                    <label for="nickname">Nickname</label>
+                    <input type="text" id="nickname" name="nickname" placeholder="Como você será chamado..." required>
+                </div>
+            </div>
+
+            <div class="linha-campos">
+                <div class="grupo-campo">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="grupo-campo">
+                    <label for="telefone">Telefone (Opcional)</label>
+                    <input type="tel" id="telefone" name="telefone">
+                </div>
+            </div>
+
+            <div class="grupo-campo">
+                <label for="plataforma">Plataforma favorita</label>
+                <select id="plataforma" name="plataforma" required>
+                    <option disabled selected value="">Selecione...</option>
+                    <option value="pc">PC</option>
+                    <option value="console">Console</option>
+                    <option value="mobile">Mobile</option>
+                    <option value="retro">Retro</option>
+                </select>
+            </div>
+
+            <div class="grupo-campo">
+                <label>Gênero favorito</label>
+                <div class="opcoes-genero">
+                    <label><input type="checkbox" name="genero[]" value="rpg"> RPG</label>
+                    <label><input type="checkbox" name="genero[]" value="indie"> Indie</label>
+                    <label><input type="checkbox" name="genero[]" value="fps"> FPS</label>
+                    <label><input type="checkbox" name="genero[]" value="esportes"> Esportes</label>
+                    <label><input type="checkbox" name="genero[]" value="moba"> MOBA</label>
+                    <label><input type="checkbox" name="genero[]" value="outro"> Outro</label>
+                </div>
+            </div>
+
+            <div class="grupo-campo">
+                <label for="mensagem">Conte sua ideia, dúvida ou sugestão aqui</label>
+                <textarea id="mensagem" name="mensagem" placeholder="Digite sua mensagem..."></textarea>
+            </div>
+
+            <div class="aceite-termos">
+                <input type="checkbox" id="termos" name="termos" required>
+                <label for="termos">Li e aceito os Termos de uso do Happy Game</label>
+            </div>
+
+            <button type="submit" class="botao-enviar">Fazer parte da comunidade</button>
+        </form>
+    </div>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <img src="../assets/img/logo.svg" alt="Happy Game Logo" />
+                </div>
+
+                <nav class="footer-nav">
+                    <ul class="footer-links">
+                        <li><a href="/">Saiba mais</a></li>
+                        <li><a href="/">Saiba mais </a></li>
+                    </ul>
+                </nav>
+
+                <div class="footer-social">
+                    <a href="#" aria-label="Facebook">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="#" aria-label="Instagram">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="#" aria-label="LinkedIn">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    <a href="#" aria-label="YouTube">
+                        <i class="fab fa-youtube"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div class="footer-divider"></div>
+
+            <div class="footer-bottom">
+                <div class="footer-legal">
+                    <a href="#">Termos de privacidade</a>
+                    <a href="#">Cookies</a>
+                </div>
+                <div class="footer-copyright">
+                    <p>© 2025 Happy Game. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
