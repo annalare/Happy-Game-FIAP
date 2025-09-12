@@ -137,6 +137,12 @@
     min-width: 120px;
 }
 
+.features-table .category i {
+    margin-right: 8px;
+    color: var(--text-highlight-green);
+    font-size: 1.1rem;
+}
+
 .features-table td:nth-child(2) {
     font-weight: 500;
     color: var(--text-primary);
