@@ -33,6 +33,7 @@
     --bg-dark: var(--black);
     --bg-light: var(--white);
     --bg-grey: var(--grey-1);
+    --bg-grey-light: var(--grey-2);
     --bg-green: var(--green-base);
     --bg-pink: var(--pink-base);
 
