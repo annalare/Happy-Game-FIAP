@@ -2,7 +2,7 @@
    CSS para History Games
    by John Vitor Silverio Pereira
 
-	 Página usada para melhorar habilidades em frontend usando medidas rem, 1 rem equivale a 16px ou seja, pixels / 16 = valor em rem.
+   Pagina usada para melhorar habilidades em frontend usando medidas rem, 1 rem equivale a 16px ou seja, pixels / 16 = valor em rem.
    ============================================= */
 
 /* ========= Hero Section ========= */
@@ -22,7 +22,7 @@
   gap: 4rem; 
   width: 100%;
   max-width: 80rem;
-
+  /* animação de entrada */
   animation: fadeInUp 0.8s ease-out;
 }
 
@@ -36,23 +36,15 @@
 }
 
 .hero-title {
-  margin: 0;
-
-  color: var(--text-primary);
-  font-family: "Roboto", sans-serif;
-  font-size: 3rem;
-  font-weight: 700;
-  line-height: 1.2;
+  font-size: 3.4rem;
 }
 
 .hero-paragraph {
   margin: 0;
-
   color: var(--text-primary);
   font-size: 1.25rem;
   font-weight: 400;
   line-height: 1.5;
-
   opacity: 0.9;
 }
 
@@ -60,7 +52,6 @@
   width: 100%;
   height: auto;
   aspect-ratio: 16/9;
-
   object-fit: cover;
   border-radius: 1.125rem;
   box-shadow: 0 1.25rem 2.5rem rgba(0, 0, 0, 0.3);
@@ -105,7 +96,6 @@
 
 .timeline-title {
   margin: 0;
-
   color: var(--text-secondary);
   font-family: "Roboto", sans-serif;
   font-size: 3rem;
@@ -207,7 +197,6 @@
 
 .timeline-item-title {
   margin: 0;
-
   color: var(--text-secondary);
   font-family: "Roboto", sans-serif;
   font-size: 2rem;
@@ -217,12 +206,9 @@
 
 .timeline-description {
   margin: 0;
-
-  color: var(--text-secondary);
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5;
-
   opacity: 0.9;
 }
 
@@ -271,7 +257,6 @@
 .cta-title {
   margin: 0;
   max-width: 50rem;
-
   color: var(--text-primary);
   font-size: 3rem;
   font-weight: 700;
@@ -281,12 +266,10 @@
 .cta-description {
   margin: 0;
   max-width: 37.5rem; 
-
   color: var(--text-primary);
   font-size: 1.25rem;
   font-weight: 400;
   line-height: 1.5;
-
   opacity: 0.9;
 }
 
@@ -388,6 +371,6 @@
   }
 
   .cta-buttons .btn {
-    	width: 100%;
+      	width: 100%;
   }
 }
