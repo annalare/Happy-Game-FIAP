@@ -5,6 +5,7 @@
     max-width: 768px;
     margin: 0 auto;
     margin-top: 32px;
+    padding: 16px;
 }
 
 .cabecalho-formulario {
@@ -94,8 +95,8 @@ textarea {
 }
 
 .botao-enviar {
-    background: #000;
-    color: #fff;
+    background: var(--green-base);
+    color: var(--black);
     padding: 12px 24px;
     border: none;
     cursor: pointer;
@@ -103,8 +104,10 @@ textarea {
     border-radius: 4px;
     transition: 0.3s;
     align-self: flex-start;
+    margin-bottom: 40px;
+    text-decoration: none;
 }
 
 .botao-enviar:hover {
-    background: #333;
+    background: var(--green-lighter-1);
 }
