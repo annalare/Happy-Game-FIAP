@@ -23,11 +23,17 @@ nav ul li a {
 }
 
 .logo {
-  width: 84px;
-  height: 36px;
+  width: 120px;
+  height: 28px;
   justify-content: center;
   align-items: center;
   flex-shrink: 0;
+}
+
+.logo img {
+  width: 100%;
+  height: auto;
+  max-height: 28px;
 }
 
 .actions {
@@ -37,10 +43,13 @@ nav ul li a {
   gap: 16px;
 }
 
-.actions button {
+.actions button,
+.actions a {
   font-size: 16px;
   padding: 8px 20px;
   border: 1px solid var(--black);
+  text-decoration: none;
+  display: inline-block;
 }
 
 .learn-more-cta {
