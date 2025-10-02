@@ -5,6 +5,10 @@
     <meta charset="UTF-8">
     <title>Forms - Happy Game</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
     <link rel="icon" type="image/png" href="../assets/img/favicon.png">
     <link rel="stylesheet" href="../css/forms.css">
     <link rel="stylesheet" href="../css/style.css" />
@@ -12,7 +16,6 @@
     <link rel="stylesheet" href="../components/navbar/navbar.css" />
     <link rel="stylesheet" href="../components/footer/footer.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
-
 </head>
 
 <body>
@@ -31,75 +34,116 @@
         </ul>
     </nav>
 
-    <div class="pagina-formulario">
-        <header class="cabecalho-formulario">
-            <h1 class="titulo-form">Garanta seu lugar no Happy Game</h1>
-            <p class="texto-intro">Junte-se à lista de espera e seja um dos primeiros a explorar a nova comunidade
-                gamer.</p>
+    <!-- Formulário -->
+    <section class="form-section">
+        <header class="text-center mb-4">
+            <h1 class="fw-bold">Garanta seu lugar no Happy Game</h1>
+            <p>Junte-se à lista de espera e seja um dos primeiros a explorar a nova comunidade gamer.</p>
         </header>
 
-        <form class="cadastro-happy" action="#" method="POST">
-
-            <div class="linha-campos">
-                <div class="grupo-campo">
-                    <label for="nome">Nome Completo</label>
-                    <input type="text" id="nome" name="nome" required>
+        <form action="#" method="POST" class="needs-validation" novalidate>
+            <!-- Nome e Nickname -->
+            <div class="row g-3 mb-3">
+                <div class="col-md-6">
+                    <label for="nome" class="form-label">Nome Completo</label>
+                    <input type="text" id="nome" name="nome" class="form-control" required>
+                    <div class="invalid-feedback">Informe seu nome completo.</div>
                 </div>
-                <div class="grupo-campo">
-                    <label for="nickname">Nickname</label>
-                    <input type="text" id="nickname" name="nickname" placeholder="Como você será chamado..." required>
-                </div>
-            </div>
-
-            <div class="linha-campos">
-                <div class="grupo-campo">
-                    <label for="email">Email</label>
-                    <input type="email" id="email" name="email" required>
-                </div>
-                <div class="grupo-campo">
-                    <label for="telefone">Telefone (Opcional)</label>
-                    <input type="tel" id="telefone" name="telefone">
+                <div class="col-md-6">
+                    <label for="nickname" class="form-label">Nickname</label>
+                    <input type="text" id="nickname" name="nickname" placeholder="Como você será chamado..."
+                        class="form-control" required>
+                    <div class="invalid-feedback">Informe um nickname.</div>
                 </div>
             </div>
 
-            <div class="grupo-campo">
-                <label for="plataforma">Plataforma favorita</label>
-                <select id="plataforma" name="plataforma" required>
+            <!-- Email e Telefone -->
+            <div class="row g-3 mb-3">
+                <div class="col-md-6">
+                    <label for="email" class="form-label">Email</label>
+                    <input type="email" id="email" name="email" class="form-control" required>
+                    <div class="invalid-feedback">Digite um email válido.</div>
+                </div>
+                <div class="col-md-6">
+                    <label for="telefone" class="form-label">Telefone (Opcional)</label>
+                    <input type="tel" id="telefone" name="telefone" class="form-control">
+                </div>
+            </div>
+
+            <!-- Plataforma -->
+            <div class="mb-3">
+                <label for="plataforma" class="form-label">Plataforma favorita</label>
+                <select id="plataforma" name="plataforma" class="form-select" required>
                     <option disabled selected value="">Selecione...</option>
                     <option value="pc">PC</option>
                     <option value="console">Console</option>
                     <option value="mobile">Mobile</option>
                     <option value="retro">Retro</option>
                 </select>
+                <div class="invalid-feedback">Selecione sua plataforma favorita.</div>
             </div>
 
-            <div class="grupo-campo">
-                <label>Gênero favorito</label>
-                <div class="opcoes-genero">
-                    <label><input type="checkbox" name="genero[]" value="rpg"> RPG</label>
-                    <label><input type="checkbox" name="genero[]" value="indie"> Indie</label>
-                    <label><input type="checkbox" name="genero[]" value="fps"> FPS</label>
-                    <label><input type="checkbox" name="genero[]" value="esportes"> Esportes</label>
-                    <label><input type="checkbox" name="genero[]" value="moba"> MOBA</label>
-                    <label><input type="checkbox" name="genero[]" value="outro"> Outro</label>
+            <!-- Gênero favorito -->
+            <div class="mb-3">
+                <label class="form-label d-block">Gênero favorito</label>
+                <div class="row row-cols-2 row-cols-md-3 g-2">
+                    <div class="col">
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="rpg" id="rpg">
+                            <label class="form-check-label" for="rpg">RPG</label>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="indie" id="indie">
+                            <label class="form-check-label" for="indie">Indie</label>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="fps" id="fps">
+                            <label class="form-check-label" for="fps">FPS</label>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="esportes" id="esportes">
+                            <label class="form-check-label" for="esportes">Esportes</label>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="moba" id="moba">
+                            <label class="form-check-label" for="moba">MOBA</label>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="outro" id="outro">
+                            <label class="form-check-label" for="outro">Outro</label>
+                        </div>
+                    </div>
                 </div>
             </div>
 
-            <div class="grupo-campo">
-                <label for="mensagem">Conte sua ideia, dúvida ou sugestão aqui</label>
-                <textarea id="mensagem" name="mensagem" placeholder="Digite sua mensagem..."></textarea>
+            <!-- Mensagem -->
+            <div class="mb-3">
+                <label for="mensagem" class="form-label">Conte sua ideia, dúvida ou sugestão aqui</label>
+                <textarea id="mensagem" name="mensagem" class="form-control" placeholder="Digite sua mensagem..."
+                    rows="4"></textarea>
             </div>
 
-            <div class="aceite-termos">
-                <input type="checkbox" id="termos" name="termos" required>
-                <label for="termos">Li e aceito os Termos de uso do Happy Game</label>
+            <!-- Termos -->
+            <div class="form-check mb-3">
+                <input class="form-check-input" type="checkbox" id="termos" required>
+                <label class="form-check-label" for="termos">Li e aceito os Termos de uso do Happy Game</label>
+                <div class="invalid-feedback">Você deve aceitar os termos para continuar.</div>
             </div>
 
-            <!-- A fins de simulação, o botão de envio será substituído por um link para a página de feedback -->
-            <!-- <button type="submit" class="botao-enviar">Fazer parte da comunidade</button> -->
-            <a href="feedback.html" class="botao-enviar">Fazer parte da comunidade</a>
+            <!-- Botão -->
+            <button type="submit" class="btn botao-enviar w-100">Fazer parte da comunidade</button>
         </form>
-    </div>
+    </section>
 
     <!-- Footer -->
     <footer class="footer">
@@ -134,6 +178,7 @@
             </div>
         </div>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>

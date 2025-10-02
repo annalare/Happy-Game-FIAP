@@ -34,23 +34,17 @@
     gap: 24px;
 }
 
-.linha-campos {
-    display: flex;
-    gap: 24px;
+.form-section {
+    max-width: 768px;
+    margin: 0 auto;
+    padding: 16px;
+}
+
+.form-section .form-control,
+.form-section .form-select {
     width: 100%;
 }
 
-.grupo-campo {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    gap: 8px;
-}
-
-.grupo-campo label {
-    font-size: 16px;
-    font-weight: 500;
-}
 
 input,
 select,
@@ -67,6 +61,13 @@ input:focus,
 select:focus,
 textarea:focus {
     border-color: #555;
+}
+
+.form-control,
+.form-select,
+.form-check-input {
+    font-size: 16px;
+    font-family: inherit;
 }
 
 textarea {
