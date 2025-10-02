@@ -1,257 +1,236 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<link
-			href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
-			rel="stylesheet"
-			integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
-			crossorigin="anonymous"
-		/>
-		<link rel="icon" type="image/png" href="../assets/img/favicon.png" />
-		<title>Plataforma</title>
-		<link rel="stylesheet" href="../css/style.css" />
-		<link rel="stylesheet" href="../components/navbar/navbar.css" />
-		<link rel="stylesheet" href="../components/footer/footer.css" />
-		<link
-			rel="stylesheet"
-			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-		/>
-		<link rel="stylesheet" href="../css/platform.css" />
-	</head>
 
-	<body>
-		<!-- Navbar -->
-		<nav class="navbar-custom">
-			<div class="container">
-				<div
-					class="d-flex justify-content-between align-items-center w-100 py-3"
-				>
-					<div class="logo">
-						<a href="../index.html">
-							<img
-								src="../assets/img/logo/logo-all-black.svg"
-								alt="logo do site"
-							/>
-						</a>
-					</div>
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-					<ul class="nav align-items-center gap-4 mb-0">
-						<li class="nav-item">
-							<a class="nav-link px-0" href="../index.html">Inicio</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link px-0" href="story-games.html"
-								>História dos Jogos</a
-							>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link px-0" href="platform.html">Plataforma</a>
-						</li>
-						<li class="nav-item">
-							<a class="btn btn-navbar-cta" href="forms.html">Inscreva-se</a>
-						</li>
-					</ul>
-				</div>
-			</div>
-		</nav>
+	<!-- Bootstrap Style -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
 
+	<link rel="icon" type="image/png" href="../assets/img/favicon.png" />
+	<title>Plataforma</title>
+	<link rel="stylesheet" href="../css/style.css" />
+	<link rel="stylesheet" href="../components/navbar/navbar.css" />
+	<link rel="stylesheet" href="../components/footer/footer.css" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+	<link rel="stylesheet" href="../css/platform.css" />
+</head>
+
+<body>
+	<!-- Navbar -->
+	<nav class="navbar navbar-expand-md navbar-bg">
 		<div class="container">
-			<!-- Features Table Section -->
-			<section class="features-table-section">
-				<div class="table-title">
-					<h1>RECURSOS DA PLATAFORMA</h1>
-					<p>
-						Descubra tudo que nossa plataforma oferece para gamers e
-						desenvolvedores
-					</p>
-				</div>
+			<div class="logo">
+				<a href="../index.html">
+					<img src="../assets/img/logo/logo-all-black.svg" alt="logo do site" />
+				</a>
+			</div>
 
-				<div class="features-table-container">
-					<table class="features-table">
-						<thead>
-							<tr>
-								<th>Categoria</th>
-								<th>Recurso</th>
-								<th>Descrição</th>
-							</tr>
-						</thead>
-						<tbody>
-							<tr>
-								<td class="category"><i class="fas fa-gamepad"></i> Jogos</td>
-								<td>Catálogo de Jogos</td>
-								<td>
-									Biblioteca completa com jogos de diferentes gêneros e
-									plataformas
-								</td>
-							</tr>
-							<tr>
-								<td class="category">
-									<i class="fas fa-chart-line"></i> Análise
-								</td>
-								<td>Análise de Vendas</td>
-								<td>
-									Relatórios detalhados sobre performance de vendas e métricas
-								</td>
-							</tr>
-							<tr>
-								<td class="category">
-									<i class="fas fa-file-alt"></i> Conteúdo
-								</td>
-								<td>Sistema de Posts</td>
-								<td>Criação e compartilhamento de conteúdo sobre jogos</td>
-							</tr>
-							<tr>
-								<td class="category"><i class="fas fa-users"></i> Social</td>
-								<td>Interação entre Usuários</td>
-								<td>Chat, fóruns e sistema de amigos para conectar gamers</td>
-							</tr>
-							<tr>
-								<td class="category">
-									<i class="fas fa-trophy"></i> Gamificação
-								</td>
-								<td>Sistema de Conquistas</td>
-								<td>Badges, rankings e desafios para engajar os usuários</td>
-							</tr>
-						</tbody>
-					</table>
-				</div>
-			</section>
+			<!-- Burguer Btn -->
+			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+				aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
 
-			<!-- 1. Hero Section -->
-			<section class="team-section">
-				<div class="title-section">
-					<h2>CONHEÇA NOSSA EQUIPE</h2>
-					<p>
-						Conheça nossa equipe de desenvolvedores e designers que trabalham
-						para criar a melhor plataforma para gamers.
-					</p>
-				</div>
-
-				<div class="list-items">
-					<div class="item">
-						<div class="cover">
-							<img
-								src="../assets/img/profile/larissa-mendes-profile.jpeg"
-								alt="Perfil da Ana Larissa Mendes"
-							/>
-						</div>
-						<div class="item-content">
-							<div class="item-titles">
-								<h3>Ana Larissa Mendes</h3>
-								<h4>Frontend Developer</h4>
-							</div>
-							<p>Bailarina e mística, curte música e cozinhar.</p>
-						</div>
-					</div>
-					<div class="item">
-						<div class="cover">
-							<img
-								src="../assets/img/profile/joao-andrade-profile.jpeg"
-								alt="Perfil do João Pedro Thethê Andrade"
-							/>
-						</div>
-						<div class="item-content">
-							<div class="item-titles">
-								<h3>João Pedro Thethê Andrade</h3>
-								<h4>Frontend Developer</h4>
-							</div>
-							<p>
-								Gosta de esportes, luta jiu jitsu, também gosta de jogos e
-								música.
-							</p>
-						</div>
-					</div>
-					<div class="item">
-						<div class="cover">
-							<img
-								src="../assets/img/profile/john-silverio-profile.jpeg"
-								alt="Perfil do John Vitor Silverio Pereira"
-							/>
-						</div>
-						<div class="item-content">
-							<div class="item-titles">
-								<h3>John Vitor Silverio Pereira</h3>
-								<h4>Fullstack Developer</h4>
-							</div>
-							<p>Gosta de jogos de RPG e gatos.</p>
-						</div>
-					</div>
-					<div class="item">
-						<div class="cover">
-							<img
-								src="../assets/img/profile/lyniker-oliveira-profile.jpeg"
-								alt="Perfil do Lyniker Vinicius Santos de Oliveira"
-							/>
-						</div>
-						<div class="item-content">
-							<div class="item-titles">
-								<h3>Lyniker Vinicius Santos de Oliveira</h3>
-								<h4>Criador de conteúdo / Frontend Developer</h4>
-							</div>
-							<p>
-								Gosta de criar conteúdos sobre tecnologia, futuro JAVA champion.
-							</p>
-						</div>
-					</div>
-					<div class="item">
-						<div class="cover">
-							<img
-								src="../assets/img/profile/vinicius-cardoso-profile.jpeg"
-								alt="Perfil do Vinícius Cardoso Junqueira"
-							/>
-						</div>
-						<div class="item-content">
-							<div class="item-titles">
-								<h3>Vinícius Cardoso Junqueira</h3>
-								<h4>Frontend Developer</h4>
-							</div>
-							<p>Gosta muito de música, é baterista e ama gatos.</p>
-						</div>
-					</div>
-				</div>
-			</section>
+			<!-- Menu -->
+			<div class="collapse navbar-collapse" id="navbarNav">
+				<ul class="navbar-nav ms-auto align-items-center gap-3">
+					<li class="nav-item">
+						<a class="nav-link" href="../index.html">Inicio</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="story-games.html">História dos Jogos</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="platform.html">Plataforma</a>
+					</li>
+					<li class="nav-item">
+						<a class="btn btn-navbar-cta" href="forms.html">Inscreva-se</a>
+					</li>
+				</ul>
+			</div>
 		</div>
+	</nav>
 
-		<!-- Footer -->
-		<footer class="footer">
-			<div class="footer-container">
-				<div class="footer-content">
-					<div class="footer-logo">
-						<img
-							src="../assets/img/logo/logo-all-black.svg"
-							alt="Logo Happy Game"
-						/>
+	<div class="container">
+		<!-- Features Table Section -->
+		<section class="features-table-section">
+			<div class="table-title">
+				<h1>RECURSOS DA PLATAFORMA</h1>
+				<p>
+					Descubra tudo que nossa plataforma oferece para gamers e
+					desenvolvedores
+				</p>
+			</div>
+
+			<div class="features-table-container">
+				<table class="features-table">
+					<thead>
+						<tr>
+							<th>Categoria</th>
+							<th>Recurso</th>
+							<th>Descrição</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td class="category"><i class="fas fa-gamepad"></i> Jogos</td>
+							<td>Catálogo de Jogos</td>
+							<td>
+								Biblioteca completa com jogos de diferentes gêneros e
+								plataformas
+							</td>
+						</tr>
+						<tr>
+							<td class="category">
+								<i class="fas fa-chart-line"></i> Análise
+							</td>
+							<td>Análise de Vendas</td>
+							<td>
+								Relatórios detalhados sobre performance de vendas e métricas
+							</td>
+						</tr>
+						<tr>
+							<td class="category">
+								<i class="fas fa-file-alt"></i> Conteúdo
+							</td>
+							<td>Sistema de Posts</td>
+							<td>Criação e compartilhamento de conteúdo sobre jogos</td>
+						</tr>
+						<tr>
+							<td class="category"><i class="fas fa-users"></i> Social</td>
+							<td>Interação entre Usuários</td>
+							<td>Chat, fóruns e sistema de amigos para conectar gamers</td>
+						</tr>
+						<tr>
+							<td class="category">
+								<i class="fas fa-trophy"></i> Gamificação
+							</td>
+							<td>Sistema de Conquistas</td>
+							<td>Badges, rankings e desafios para engajar os usuários</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</section>
+
+		<!-- 1. Hero Section -->
+		<section class="team-section">
+			<div class="title-section">
+				<h2>CONHEÇA NOSSA EQUIPE</h2>
+				<p>
+					Conheça nossa equipe de desenvolvedores e designers que trabalham
+					para criar a melhor plataforma para gamers.
+				</p>
+			</div>
+
+			<div class="list-items">
+				<div class="item">
+					<div class="cover">
+						<img src="../assets/img/profile/larissa-mendes-profile.jpeg" alt="Perfil da Ana Larissa Mendes" />
 					</div>
-
-					<div class="footer-social">
-						<a href="#" aria-label="Instagram">
-							<i class="fab fa-instagram"></i>
-						</a>
-						<a href="#" aria-label="YouTube">
-							<i class="fab fa-youtube"></i>
-						</a>
+					<div class="item-content">
+						<div class="item-titles">
+							<h3>Ana Larissa Mendes</h3>
+							<h4>Frontend Developer</h4>
+						</div>
+						<p>Bailarina e mística, curte música e cozinhar.</p>
 					</div>
 				</div>
-
-				<div class="footer-divider"></div>
-
-				<div class="footer-bottom">
-					<div class="footer-legal">
-						<a href="#">Termos de privacidade</a>
-						<a href="#">Cookies</a>
+				<div class="item">
+					<div class="cover">
+						<img src="../assets/img/profile/joao-andrade-profile.jpeg" alt="Perfil do João Pedro Thethê Andrade" />
 					</div>
-					<div class="footer-copyright">
-						<p>© 2025 Happy Game. Todos os direitos reservados.</p>
+					<div class="item-content">
+						<div class="item-titles">
+							<h3>João Pedro Thethê Andrade</h3>
+							<h4>Frontend Developer</h4>
+						</div>
+						<p>
+							Gosta de esportes, luta jiu jitsu, também gosta de jogos e
+							música.
+						</p>
+					</div>
+				</div>
+				<div class="item">
+					<div class="cover">
+						<img src="../assets/img/profile/john-silverio-profile.jpeg" alt="Perfil do John Vitor Silverio Pereira" />
+					</div>
+					<div class="item-content">
+						<div class="item-titles">
+							<h3>John Vitor Silverio Pereira</h3>
+							<h4>Fullstack Developer</h4>
+						</div>
+						<p>Gosta de jogos de RPG e gatos.</p>
+					</div>
+				</div>
+				<div class="item">
+					<div class="cover">
+						<img src="../assets/img/profile/lyniker-oliveira-profile.jpeg"
+							alt="Perfil do Lyniker Vinicius Santos de Oliveira" />
+					</div>
+					<div class="item-content">
+						<div class="item-titles">
+							<h3>Lyniker Vinicius Santos de Oliveira</h3>
+							<h4>Criador de conteúdo / Frontend Developer</h4>
+						</div>
+						<p>
+							Gosta de criar conteúdos sobre tecnologia, futuro JAVA champion.
+						</p>
+					</div>
+				</div>
+				<div class="item">
+					<div class="cover">
+						<img src="../assets/img/profile/vinicius-cardoso-profile.jpeg" alt="Perfil do Vinícius Cardoso Junqueira" />
+					</div>
+					<div class="item-content">
+						<div class="item-titles">
+							<h3>Vinícius Cardoso Junqueira</h3>
+							<h4>Frontend Developer</h4>
+						</div>
+						<p>Gosta muito de música, é baterista e ama gatos.</p>
 					</div>
 				</div>
 			</div>
-		</footer>
-		<script
-			src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
-			integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
-			crossorigin="anonymous"
-		></script>
-	</body>
+		</section>
+	</div>
+
+	<!-- Footer -->
+	<footer class="footer">
+		<div class="footer-container">
+			<div class="footer-content">
+				<div class="footer-logo">
+					<img src="../assets/img/logo/logo-all-black.svg" alt="Logo Happy Game" />
+				</div>
+
+				<div class="footer-social">
+					<a href="#" aria-label="Instagram">
+						<i class="fab fa-instagram"></i>
+					</a>
+					<a href="#" aria-label="YouTube">
+						<i class="fab fa-youtube"></i>
+					</a>
+				</div>
+			</div>
+
+			<div class="footer-divider"></div>
+
+			<div class="footer-bottom">
+				<div class="footer-legal">
+					<a href="#">Termos de privacidade</a>
+					<a href="#">Cookies</a>
+				</div>
+				<div class="footer-copyright">
+					<p>© 2025 Happy Game. Todos os direitos reservados.</p>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+		crossorigin="anonymous"></script>
+</body>
+
 </html>

@@ -1,11 +1,9 @@
 /* ========= NAVEGAÇÃO ========= */
-
-/* Background da navbar */
-.navbar-custom {
+.navbar-bg {
   background-color: var(--green-base);
+  padding: 0;
 }
 
-/* Logo */
 .logo {
   width: 120px;
   height: 28px;
@@ -18,18 +16,17 @@
   max-height: 28px;
 }
 
-/* Links de navegação */
 .nav-link {
   color: var(--text-secondary);
   font-size: 16px;
   transition: color 0.2s ease;
+  padding: 8px 16px !important;
 }
 
 .nav-link:hover {
   color: var(--bg-pink);
 }
 
-/* Botão CTA */
 .btn-navbar-cta {
   color: var(--text-primary);
   background-color: var(--black);
@@ -47,27 +44,68 @@
   border-color: var(--bg-pink);
 }
 
+/* ========= MENU HAMBURGUER ========= */
+
+.navbar-toggler {
+  border: 2px solid var(--text-secondary);
+  border-radius: 6px;
+  padding: 6px 10px;
+  background: transparent;
+}
+
+.navbar-toggler:focus {
+  box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.1);
+  border-color: var(--text-secondary);
+}
+
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%280, 0, 0, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+  width: 24px;
+  height: 18px;
+}
+
 /* ========= RESPONSIVIDADE ========= */
 
-/* Mobile */
-@media (max-width: 768px) {
-  .navbar-custom .d-flex {
-    flex-direction: column;
-    gap: 1rem;
+/* Tablets e Mobile */
+@media (max-width: 767.98px) {
+
+  .navbar-bg {
+    padding: 1rem;
   }
 
-  .navbar-custom .nav {
-    flex-direction: column;
-    gap: 1rem !important;
+  .navbar-collapse {
+    background: var(--green-base);
+    border-radius: 8px;
+    margin-top: 10px;
+    padding: 15px;
+  }
+
+  .navbar-nav {
+    gap: 0 !important;
+  }
+
+  .nav-item {
+    width: 100%;
     text-align: center;
   }
 
   .nav-link {
     font-size: 14px;
+    padding: 12px 16px !important;
+    border-radius: 6px;
+    margin-bottom: 5px;
+  }
+
+  .nav-link:hover {
+    background: rgba(0, 0, 0, 0.1);
   }
 
   .btn-navbar-cta {
+    width: 100%;
+    margin-top: 10px;
+    text-align: center;
+    display: block;
     font-size: 14px;
-    padding: 6px 16px;
+    padding: 8px 16px;
   }
 }

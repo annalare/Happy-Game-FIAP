@@ -1,250 +1,223 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<link
-			href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
-			rel="stylesheet"
-			integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
-			crossorigin="anonymous"
-		/>
-		<link rel="icon" type="image/png" href="assets/img/favicon.png" />
-		<link rel="stylesheet" href="css/style.css" />
-		<link rel="stylesheet" href="css/home.css" />
-		<link rel="stylesheet" href="components/button/button.css" />
-		<link rel="stylesheet" href="components/input/input.css" />
-		<link rel="stylesheet" href="components/navbar/navbar.css" />
-		<link rel="stylesheet" href="components/footer/footer.css" />
-		<link
-			rel="stylesheet"
-			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-		/>
-		<title>Happy Game</title>
-	</head>
 
-	<body>
-		<!-- Navbar -->
-		<nav class="navbar-custom">
-			<div class="container">
-				<div
-					class="d-flex justify-content-between align-items-center w-100 py-1"
-				>
-					<div class="logo">
-						<a href="index.html">
-							<img
-								src="assets/img/logo/logo-all-black.svg"
-								alt="logo do site"
-							/>
-						</a>
-					</div>
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-					<ul class="nav align-items-center gap-4 mb-0">
-						<li class="nav-item">
-							<a class="nav-link px-0" href="index.html">Inicio</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link px-0" href="pages/story-games.html"
-								>História dos Jogos</a
-							>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link px-0" href="pages/platform.html">Plataforma</a>
-						</li>
-						<li class="nav-item">
-							<a class="btn btn-navbar-cta" href="pages/forms.html"
-								>Inscreva-se</a
-							>
-						</li>
-					</ul>
-				</div>
-			</div>
-		</nav>
+	<!-- Bootstrap Style -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
 
-		<!-- 1. Hero Section -->
+	<link rel="icon" type="image/png" href="assets/img/favicon.png" />
+	<link rel="stylesheet" href="css/style.css" />
+	<link rel="stylesheet" href="css/home.css" />
+	<link rel="stylesheet" href="components/button/button.css" />
+	<link rel="stylesheet" href="components/input/input.css" />
+	<link rel="stylesheet" href="components/navbar/navbar.css" />
+	<link rel="stylesheet" href="components/footer/footer.css" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+	<title>Happy Game</title>
+</head>
+
+<body>
+	<!-- Navbar -->
+	<nav class="navbar navbar-expand-md navbar-bg">
 		<div class="container">
-			<section class="home-hero">
-				<div class="hero-content">
-					<h1>
-						Descubra a primeira <span class="highlight">comunidade</span> feita
-						para gamers
-					</h1>
-					<p class="hero-description">
-						Junte-se a uma comunidade vibrante de gamers que compartilham
-						paixões e experiências. Conecte-se, jogue e cresça junto com outros
-						entusiastas do universo dos jogos.
-					</p>
-					<a href="pages/platform.html" class="btn btn-green-solid">Acessar</a>
-				</div>
-				<div>
-					<img
-						src="assets/img/mario-sonic.png"
-						alt="Mario,Minecraft, Sonic"
-						class="hero-image"
-					/>
-				</div>
-			</section>
+			<div class="logo">
+				<a href="index.html">
+					<img src="./assets/img/logo/logo-all-black.svg" alt="logo do site" />
+				</a>
+			</div>
+
+			<!-- Btn Burguer -->
+			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+				aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+
+			<!-- Menu -->
+			<div class="collapse navbar-collapse" id="navbarNav">
+				<ul class="navbar-nav ms-auto align-items-center gap-3">
+					<li class="nav-item">
+						<a class="nav-link" href="index.html">Inicio</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="pages/story-games.html">História dos Jogos</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="pages/platform.html">Plataforma</a>
+					</li>
+					<li class="nav-item">
+						<a class="btn btn-navbar-cta" href="pages/forms.html">Inscreva-se</a>
+					</li>
+				</ul>
+			</div>
 		</div>
+	</nav>
 
-		<!-- 2. Communities Section -->
-		<section class="communities-section">
-			<div class="container">
-				<div class="communities-header">
-					<h2 class="communities-title">Descubra sua comunidade gamer</h2>
-					<p>
-						Não importa se você é nostálgico, competitivo ou curioso: aqui você
-						encontra espaço para se expressar, aprender e se conectar.
-					</p>
-				</div>
-
-				<div class="communities-grid">
-					<div class="community-card">
-						<img
-							src="assets/img/game-together.png"
-							alt="Recursos para gamers"
-							class="card-image"
-						/>
-						<div class="community-content">
-							<div>Inovação</div>
-							<h3>Um espaço para todos os gamers</h3>
-							<p>
-								Compartilhe experiências, descubra novas histórias e faça parte
-								de algo maior.
-							</p>
-							<a href="pages/platform.html" class="community-link"
-								>Explorar comunidade</a
-							>
-						</div>
-					</div>
-					<div class="community-card">
-						<img
-							src="assets/img/fight.png"
-							alt="Recursos para gamers"
-							class="card-image"
-						/>
-						<div class="community-content">
-							<div>Comunidade</div>
-							<h3>Descubra e compartilhe</h3>
-							<p>
-								Participe de discussões, analise e deixe sua marca na história
-								gamer"
-							</p>
-							<a href="pages/platform.html" class="community-link">Explorar</a>
-						</div>
-					</div>
-					<div class="community-card">
-						<img
-							src="assets/img/setup.png"
-							alt="Recursos para gamers"
-							class="card-image"
-						/>
-						<div class="community-content">
-							<div>Diversão</div>
-							<h3>Entre para o jogo</h3>
-							<p>Receba novidades e atualizações sobre a plataforma.</p>
-							<a href="pages/forms.html" class="community-link">Inscreva-se</a>
-						</div>
-					</div>
-				</div>
+	<!-- 1. Hero Section -->
+	<div class="container">
+		<section class="home-hero">
+			<div class="hero-content">
+				<h1>
+					Descubra a primeira <span class="highlight">comunidade</span> feita
+					para gamers
+				</h1>
+				<p class="hero-description">
+					Junte-se a uma comunidade vibrante de gamers que compartilham
+					paixões e experiências. Conecte-se, jogue e cresça junto com outros
+					entusiastas do universo dos jogos.
+				</p>
+				<a href="pages/platform.html" class="btn btn-green-solid">Acessar</a>
+			</div>
+			<div>
+				<img src="assets/img/mario-sonic.png" alt="Mario,Minecraft, Sonic" class="hero-image" />
 			</div>
 		</section>
-		<!-- 3. Stats Section -->
-		<section class="stats-section">
-			<div class="container">
-				<div class="stats-content">
-					<div>
-						<h2 class="stats-title">
-							Estatísticas Impactantes da Indústria de Jogos para Gamers e
-							Entusiastas
-						</h2>
+	</div>
+
+	<!-- 2. Communities Section -->
+	<section class="communities-section">
+		<div class="container">
+			<div class="communities-header">
+				<h2 class="communities-title">Descubra sua comunidade gamer</h2>
+				<p>
+					Não importa se você é nostálgico, competitivo ou curioso: aqui você
+					encontra espaço para se expressar, aprender e se conectar.
+				</p>
+			</div>
+
+			<div class="communities-grid">
+				<div class="community-card">
+					<img src="assets/img/game-together.png" alt="Recursos para gamers" class="card-image" />
+					<div class="community-content">
+						<div>Inovação</div>
+						<h3>Um espaço para todos os gamers</h3>
+						<p>
+							Compartilhe experiências, descubra novas histórias e faça parte
+							de algo maior.
+						</p>
+						<a href="pages/platform.html" class="community-link">Explorar comunidade</a>
+					</div>
+				</div>
+				<div class="community-card">
+					<img src="assets/img/fight.png" alt="Recursos para gamers" class="card-image" />
+					<div class="community-content">
+						<div>Comunidade</div>
+						<h3>Descubra e compartilhe</h3>
+						<p>
+							Participe de discussões, analise e deixe sua marca na história
+							gamer"
+						</p>
+						<a href="pages/platform.html" class="community-link">Explorar</a>
+					</div>
+				</div>
+				<div class="community-card">
+					<img src="assets/img/setup.png" alt="Recursos para gamers" class="card-image" />
+					<div class="community-content">
+						<div>Diversão</div>
+						<h3>Entre para o jogo</h3>
+						<p>Receba novidades e atualizações sobre a plataforma.</p>
+						<a href="pages/forms.html" class="community-link">Inscreva-se</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- 3. Stats Section -->
+	<section class="stats-section">
+		<div class="container">
+			<div class="stats-content">
+				<div>
+					<h2 class="stats-title">
+						Estatísticas Impactantes da Indústria de Jogos para Gamers e
+						Entusiastas
+					</h2>
+					<p class="stats-description">
+						A indústria de jogos movimenta bilhões de reais anualmente,
+						atraindo milhões de jogadores. Com o crescimento das plataformas
+						sociais, a conexão entre gamers nunca foi tão forte.
+					</p>
+				</div>
+
+				<div class="stats-numbers">
+					<div class="stat-item">
+						<span class="stat-number">75%</span>
 						<p class="stats-description">
-							A indústria de jogos movimenta bilhões de reais anualmente,
-							atraindo milhões de jogadores. Com o crescimento das plataformas
-							sociais, a conexão entre gamers nunca foi tão forte.
+							dos jogadores buscam comunidades online para interagir
 						</p>
 					</div>
-
-					<div class="stats-numbers">
-						<div class="stat-item">
-							<span class="stat-number">75%</span>
-							<p class="stats-description">
-								dos jogadores buscam comunidades online para interagir
-							</p>
-						</div>
-						<div class="stat-item">
-							<span class="stat-number">80%</span>
-							<p class="stats-description">
-								dos jogos são adquiridos através de recomendações
-							</p>
-						</div>
+					<div class="stat-item">
+						<span class="stat-number">80%</span>
+						<p class="stats-description">
+							dos jogos são adquiridos através de recomendações
+						</p>
 					</div>
 				</div>
 			</div>
-			<div class="stats-image-container"></div>
-		</section>
+		</div>
+		<div class="stats-image-container"></div>
+	</section>
 
-		<!-- 4. Call to action Section -->
-		<section class="cta-section">
-			<div class="container">
-				<div class="cta-content">
-					<h2 class="cta-title">Junte-se à nossa comunidade gamer</h2>
-					<p class="cta-description">
-						Seja um dos pioneiros a construir a comunidade que vai preservar o
-						passado, viver o presente e criar o futuro dos videogames.
-					</p>
-					<div class="cta-buttons">
-						<a href="pages/forms.html" class="cta-primary">Inscreva-se</a>
-						<a href="pages/platform.html" class="cta-primary">Saiba mais</a>
-					</div>
+	<!-- 4. Call to action Section -->
+	<section class="cta-section">
+		<div class="container">
+			<div class="cta-content">
+				<h2 class="cta-title">Junte-se à nossa comunidade gamer</h2>
+				<p class="cta-description">
+					Seja um dos pioneiros a construir a comunidade que vai preservar o
+					passado, viver o presente e criar o futuro dos videogames.
+				</p>
+				<div class="cta-buttons">
+					<a href="pages/forms.html" class="cta-primary">Inscreva-se</a>
+					<a href="pages/platform.html" class="cta-primary">Saiba mais</a>
 				</div>
 			</div>
-		</section>
+		</div>
+	</section>
 
-		<!-- Footer -->
-		<footer class="footer">
-			<div class="footer-container">
-				<div class="footer-content">
-					<div class="footer-logo">
-						<img
-							src="assets/img/logo/logo-all-black.svg"
-							alt="Logo Happy Game"
-						/>
-					</div>
+	<!-- Footer -->
+	<footer class="footer">
+		<div class="footer-container">
+			<div class="footer-content">
+				<div class="footer-logo">
+					<img src="assets/img/logo/logo-all-black.svg" alt="Logo Happy Game" />
+				</div>
 
-					<!-- <nav class="footer-nav">
+				<!-- <nav class="footer-nav">
                     <ul class="footer-links">
                         <li><a href="/">Saiba mais</a></li>
                         <li><a href="/">Saiba mais </a></li>
                     </ul>
                 </nav> -->
 
-					<div class="footer-social">
-						<a href="#" aria-label="Instagram">
-							<i class="fab fa-instagram"></i>
-						</a>
-						<a href="#" aria-label="YouTube">
-							<i class="fab fa-youtube"></i>
-						</a>
-					</div>
-				</div>
-
-				<div class="footer-divider"></div>
-
-				<div class="footer-bottom">
-					<div class="footer-legal">
-						<a href="#">Termos de privacidade</a>
-						<a href="#">Cookies</a>
-					</div>
-					<div class="footer-copyright">
-						<p>© 2025 Happy Game. Todos os direitos reservados.</p>
-					</div>
+				<div class="footer-social">
+					<a href="#" aria-label="Instagram">
+						<i class="fab fa-instagram"></i>
+					</a>
+					<a href="#" aria-label="YouTube">
+						<i class="fab fa-youtube"></i>
+					</a>
 				</div>
 			</div>
-		</footer>
-		<script
-			src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
-			integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
-			crossorigin="anonymous"
-		></script>
-	</body>
+
+			<div class="footer-divider"></div>
+
+			<div class="footer-bottom">
+				<div class="footer-legal">
+					<a href="#">Termos de privacidade</a>
+					<a href="#">Cookies</a>
+				</div>
+				<div class="footer-copyright">
+					<p>© 2025 Happy Game. Todos os direitos reservados.</p>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+		crossorigin="anonymous"></script>
+</body>
+
 </html>
