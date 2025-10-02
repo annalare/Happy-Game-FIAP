@@ -1,36 +1,39 @@
 /* ========= NAVEGAÇÃO ========= */
+.btn-primary{
+  color: var(--white);
+  background-color: var(--black);
+  padding: 10px 20px;
+  border-radius: 8px;
+}
+
+.btn-primary:hover{
+  color: var(--white);
+  background-color: var(--bg-pink);
+}
+
+.nav-link{
+  color: var(--black);
+}
+
+.nav-link:hover{
+  color: var(--bg-pink);
+}
+
 nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  height: 72px;
-  padding: 0 64px;
   background-color: var(--green-base);
 }
 
-nav ul {
-  list-style: none;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 32px;
-}
 
-nav ul li a {
-  text-decoration: none;
-  color: var(--text-secondary);
-  font-size: 16px;
-}
 
 .logo {
   width: 120px;
   height: 28px;
-  justify-content: center;
-  align-items: center;
   flex-shrink: 0;
 }
 
 .logo img {
+  justify-content: left;
+  align-items: start;
   width: 100%;
   height: auto;
   max-height: 28px;

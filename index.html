@@ -4,6 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <link rel="icon" type="image/png" href="assets/img/favicon.png">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/home.css">
@@ -17,19 +19,24 @@
 
 <body>
     <!-- Navbar -->
-    <nav>
-        <div class="logo">
-            <a href="index.html"><img src="assets/img/logo/logo-all-black.svg" alt="logo do site" /></a>
-        </div>
-        <ul>
-            <li><a href="index.html">Inicio</a></li>
-            <li><a href="pages/story-games.html">História dos Jogos</a></li>
-            <li><a href="pages/platform.html">Plataforma</a></li>
-            <div class="actions">
-                <a href="pages/forms.html" class="learn-more-cta">Inscreva-se</a>
-            </div>
+
+    <nav class="py-2">
+        <ul class="nav justify-content-end">
+            <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="../pages/story-games.html">História dos Jogos</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="../pages/platform.html">Plataforma</a>
+            </li>
+            <li class="nav-item">
+                <a class="btn btn-primary me-5" href="pages/forms.html" role="button">Inscreva-se</a>
+            </li>
         </ul>
     </nav>
+
     <!-- 1. Hero Section -->
     <div class="container">
         <section class="home-hero">
@@ -186,6 +193,9 @@
             </div>
         </div>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
