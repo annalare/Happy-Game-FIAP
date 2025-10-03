@@ -1,13 +1,34 @@
-<nav>
-  <div class="logo">
-      <a href="../index.html"><img src="../assets/img/logo/logo-all-black.svg" alt="logo do site" /></a>
-  </div>
-  <ul>
-      <li><a href="../index.html">Inicio</a></li>
-      <li><a href="../pages/story-games.html">História dos Jogos</a></li>
-      <li><a href="../pages/platform.html">Plataforma</a></li>
-      <div class="actions">
-          <a href="../pages/forms.html" class="learn-more-cta">Inscreva-se</a>
-      </div>
-  </ul>
+<!-- Navbar -->
+<nav class="navbar navbar-expand-md navbar-bg">
+    <div class="container">
+        <div class="logo">
+            <a href="index.html">
+                <img src="./assets/img/logo/logo-all-black.svg" alt="logo do site" />
+            </a>
+        </div>
+
+        <!-- Btn Burguer -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Menu -->
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto align-items-center gap-3">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Inicio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="pages/story-games.html">História dos Jogos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="pages/platform.html">Plataforma</a>
+                </li>
+                <li class="nav-item">
+                    <a class="btn btn-navbar-cta" href="pages/forms.html">Inscreva-se</a>
+                </li>
+            </ul>
+        </div>
+    </div>
 </nav>

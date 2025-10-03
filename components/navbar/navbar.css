@@ -1,32 +1,12 @@
 /* ========= NAVEGAÇÃO ========= */
-nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  height: 72px;
-  padding: 0 64px;
+.navbar-bg {
   background-color: var(--green-base);
-}
-
-nav ul {
-  list-style: none;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 32px;
-}
-
-nav ul li a {
-  text-decoration: none;
-  color: var(--text-secondary);
-  font-size: 16px;
+  padding: 0;
 }
 
 .logo {
   width: 120px;
   height: 28px;
-  justify-content: center;
-  align-items: center;
   flex-shrink: 0;
 }
 
@@ -36,70 +16,96 @@ nav ul li a {
   max-height: 28px;
 }
 
-.actions {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 16px;
-}
-
-.actions button,
-.actions a {
+.nav-link {
+  color: var(--text-secondary);
   font-size: 16px;
+  transition: color 0.2s ease;
+  padding: 8px 16px !important;
+}
+
+.nav-link:hover {
+  color: var(--bg-pink);
+}
+
+.btn-navbar-cta {
+  color: var(--text-primary);
+  background-color: var(--black);
   padding: 8px 20px;
+  font-size: 16px;
   border: 1px solid var(--black);
+  border-radius: 8px;
   text-decoration: none;
-  display: inline-block;
+  transition: all 0.2s ease;
 }
 
-.learn-more-cta {
+.btn-navbar-cta:hover {
   color: var(--text-primary);
-  background: var(--black);
+  background-color: var(--bg-pink);
+  border-color: var(--bg-pink);
 }
 
-.learn-more-cta:hover {
-  color: var(--text-primary);
-  background: var(--bg-pink);
-  border: 1px solid var(--bg-pink);
-  cursor: pointer;
+/* ========= MENU HAMBURGUER ========= */
+
+.navbar-toggler {
+  border: 2px solid var(--text-secondary);
+  border-radius: 6px;
+  padding: 6px 10px;
+  background: transparent;
+}
+
+.navbar-toggler:focus {
+  box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.1);
+  border-color: var(--text-secondary);
+}
+
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%280, 0, 0, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+  width: 24px;
+  height: 18px;
 }
 
 /* ========= RESPONSIVIDADE ========= */
 
-/* Mobile */
-@media (max-width: 768px) {
-  nav {
-    flex-direction: column;
-    height: auto;
-    padding: 16px 20px;
-    gap: 16px;
+/* Tablets e Mobile */
+@media (max-width: 767.98px) {
+
+  .navbar-bg {
+    padding: 1rem;
   }
-  
-  .logo {
-    order: 1;
-    margin-bottom: 8px;
+
+  .navbar-collapse {
+    background: var(--green-base);
+    border-radius: 8px;
+    margin-top: 10px;
+    padding: 15px;
   }
-  
-  nav ul {
-    order: 2;
-    flex-wrap: wrap;
-    gap: 16px;
-    justify-content: center;
+
+  .navbar-nav {
+    gap: 0 !important;
   }
-  
-  nav ul li a {
-    font-size: 13px;
-    padding: 4px 8px;
+
+  .nav-item {
+    width: 100%;
+    text-align: center;
   }
-  
-  .actions {
-    order: 3;
-    gap: 8px;
-    margin-top: 8px;
+
+  .nav-link {
+    font-size: 14px;
+    padding: 12px 16px !important;
+    border-radius: 6px;
+    margin-bottom: 5px;
   }
-  
-  .actions button {
-    font-size: 12px;
-    padding: 6px 12px;
+
+  .nav-link:hover {
+    background: rgba(0, 0, 0, 0.1);
+  }
+
+  .btn-navbar-cta {
+    width: 100%;
+    margin-top: 10px;
+    text-align: center;
+    display: block;
+    font-size: 14px;
+    padding: 8px 16px;
   }
 }

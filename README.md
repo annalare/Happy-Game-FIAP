@@ -55,8 +55,10 @@ O site foi criado para:
 ### Frontend
 - **HTML5**: Estrutura semântica e acessível
 - **CSS3**: Estilização moderna com variáveis CSS e animações
+- **Bootstrap 5.3.8**: Framework CSS para responsividade e componentes
 
 ### Bibliotecas e Recursos Externos
+- **Bootstrap 5.3.8**: Sistema de grid responsivo e componentes UI
 - **Font Awesome 6.4.0**: Ícones para interface
 - **Google Fonts**: 
   - Press Start 2P (títulos)
@@ -65,7 +67,7 @@ O site foi criado para:
 ### Design System
 - **CSS Custom Properties**: Sistema de tokens de design
 - **Componentes Reutilizáveis**: Arquitetura modular
-- **Responsive Design**: Mobile-first approach
+- **Responsive Design**: Mobile-first approach com menu hamburguer
 
 ## 🎨 Sistema de Design
 

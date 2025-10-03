@@ -4,7 +4,12 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" type="image/png" href="../assets/img/favicon.png">
+
+    <!-- Bootstrap Style -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+    <link rel="icon" type="image/png" href="../assets/img/favicon.png" />
     <link rel="stylesheet" href="../css/style.css" />
     <link rel="stylesheet" href="../css/feedback.css" />
     <link rel="stylesheet" href="../components/button/button.css" />
@@ -16,18 +21,38 @@
 
 <body>
     <!-- Navbar -->
-    <nav>
-        <div class="logo">
-            <a href="../index.html"><img src="../assets/img/logo/logo-all-black.svg" alt="logo do site" /></a>
-        </div>
-        <ul>
-            <li><a href="../index.html">Inicio</a></li>
-            <li><a href="story-games.html">História dos Jogos</a></li>
-            <li><a href="platform.html">Plataforma</a></li>
-            <div class="actions">
-                <a href="forms.html" class="learn-more-cta">Inscreva-se</a>
+    <nav class="navbar navbar-expand-md navbar-bg">
+        <div class="container">
+            <div class="logo">
+                <a href="../index.html">
+                    <img src="../assets/img/logo/logo-all-black.svg" alt="logo do site" />
+                </a>
             </div>
-        </ul>
+
+            <!-- Burguer Btn -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Menu -->
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto align-items-center gap-3">
+                    <li class="nav-item">
+                        <a class="nav-link" href="../index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="story-games.html">História dos Jogos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="platform.html">Plataforma</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="btn btn-navbar-cta" href="forms.html">Inscreva-se</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
     </nav>
 
     <!-- Hero Section -->
@@ -99,7 +124,9 @@
                     Fique por dentro de todas as novidades, lançamentos e eventos
                     exclusivos da nossa comunidade gamer
                 </p>
-                <button class="btn btn-green-solid btn-lg">Seguir no Instagram</button>
+                <button class="btn btn-green-solid btn-lg">
+                    Seguir no Instagram
+                </button>
             </div>
         </div>
     </section>
@@ -132,11 +159,12 @@
                 <div class="footer-copyright">
                     <p>© 2025 Happy Game. Todos os direitos reservados.</p>
                 </div>
-
-
             </div>
         </div>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
