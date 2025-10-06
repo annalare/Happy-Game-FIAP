@@ -1,114 +1,79 @@
-
-
-.pagina-formulario {
-    width: 100%;
-    max-width: 768px;
-    margin: 0 auto;
-    margin-top: 32px;
-    padding: 16px;
-}
-
-.cabecalho-formulario {
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    gap: 16px;
-}
-
-.titulo-form {
-    font-size: 42px;
-    font-weight: 700;
-    line-height: 1.2;
-}
-
-.texto-intro {
-    font-size: 18px;
-    font-weight: 400;
-    line-height: 1.5;
-    color: var(--text-primary);
-}
-
-.cadastro-happy {
-    display: flex;
-    flex-direction: column;
-    gap: 24px;
-}
-
-.form-section {
-    max-width: 768px;
-    margin: 0 auto;
-    padding: 16px;
-}
-
-.form-section .form-control,
-.form-section .form-select {
-    width: 100%;
-}
-
-
-input,
-select,
-textarea {
-    padding: 12px;
-    border: 1px solid #000;
-    border-radius: 4px;
-    font-size: 16px;
-    font-family: inherit;
-    outline: none;
-}
-
-input:focus,
-select:focus,
-textarea:focus {
-    border-color: #555;
-}
-
-.form-control,
-.form-select,
-.form-check-input {
-    font-size: 16px;
-    font-family: inherit;
-}
-
-textarea {
-    height: 150px;
-    resize: vertical;
-}
-
-.opcoes-genero {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 16px;
-}
-
-.opcoes-genero label {
-    display: flex;
-    align-items: center;
-    gap: 6px;
-    font-size: 15px;
-}
-
-.aceite-termos {
-    display: flex;
-    align-items: center;
-    gap: 8px;
-    font-size: 14px;
-}
-
+/* / === BOTÃO CUSTOMIZADO === / */
 .botao-enviar {
     background: var(--green-base);
     color: var(--black);
-    padding: 12px 24px;
-    border: none;
-    cursor: pointer;
-    font-size: 16px;
-    border-radius: 4px;
-    transition: 0.3s;
-    align-self: flex-start;
-    margin-bottom: 40px;
-    text-decoration: none;
+    font-weight: 600;
+    transition: all 0.3s ease;
 }
 
 .botao-enviar:hover {
     background: var(--green-lighter-1);
+    color: var(--black);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 255, 136, 0.3);
+}
+
+/* / === TEMA DARK PARA INPUTS === / */
+.form-control,
+.form-select {
+    background-color: var(--bg-grey);
+    border-color: var(--border-primary);
+    color: var(--text-primary);
+}
+
+.form-control:focus,
+.form-select:focus {
+    background-color: var(--bg-grey);
+    border-color: var(--green-base);
+    color: var(--text-primary);
+    box-shadow: 0 0 0 0.25rem rgba(0, 255, 136, 0.25);
+}
+
+.form-control::placeholder {
+    color: var(--text-muted);
+}
+
+/* / === TEMA DARK PARA CHECKBOXES === / */
+.form-check-input {
+    background-color: var(--bg-grey);
+    border-color: var(--border-primary);
+}
+
+.form-check-input:checked {
+    background-color: var(--green-base);
+    border-color: var(--green-base);
+}
+
+.form-check-input:focus {
+    border-color: var(--green-base);
+    box-shadow: 0 0 0 0.25rem rgba(0, 255, 136, 0.25);
+}
+
+/* / === LABELS === / */
+.form-label,
+.form-check-label {
+    color: var(--text-primary);
+}
+
+/* / === HEADER === / */
+section header h1 {
+    font-family: 'Press Start 2P', cursive;
+    color: var(--text-primary);
+    font-size: clamp(1.5rem, 4vw, 2.5rem);
+}
+
+section header .text-intro-center {
+    color: var(--text-muted);
+}
+
+/* / === VALIDAÇÃO === / */
+.invalid-feedback {
+    color: var(--pink-base);
+}
+
+/* / === RESPONSIVIDADE ===  */
+@media (max-width: 768px) {
+    section header h1 {
+        font-size: 1.5rem;
+    }
 }
