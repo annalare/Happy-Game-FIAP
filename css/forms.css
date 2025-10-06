@@ -1,48 +1,55 @@
+:root {
+    /* Tokens core, são usados para as outras cores */
+
+    /* Cores neutras */
+    --black: #0D0D0D;
+    --grey-1: #252525;
+    --grey-2: #6E6E6E;
+    --grey-3: #9E9E9E;
+    --white: #FDFDFD;
+
+    /* Cores primárias - Verde */
+    --green-darker-2: #009952;
+    --green-darker-1: #00CC6D;
+    --green-base: #00FF88;
+    --green-lighter-1: #33FFA0;
+    --green-lighter-2: #66FFB8;
 
 
-.pagina-formulario {
-    width: 100%;
-    max-width: 768px;
-    margin: 0 auto;
-    margin-top: 32px;
-    padding: 16px;
-}
+    /* Cores secundárias - Rosa */
+    --pink-darker-2: #991C3B;
+    --pink-darker-1: #CC254F;
+    --pink-base: #FF2E63;
+    --pink-lighter-1: #FF5882;
+    --pink-lighter-2: #FF82A1;
 
-.cabecalho-formulario {
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    gap: 16px;
-}
+    /* Use essas cores para definir as cores gerais do site */
 
-.titulo-form {
-    font-size: 42px;
-    font-weight: 700;
-    line-height: 1.2;
-}
+    /* Background colors */
+    --bg-dark: var(--black);
+    --bg-light: var(--white);
+    --bg-grey: var(--grey-1);
+    --bg-grey-light: var(--grey-2);
+    --bg-green: var(--green-base);
+    --bg-pink: var(--pink-base);
 
-.texto-intro {
-    font-size: 18px;
-    font-weight: 400;
-    line-height: 1.5;
-    color: var(--text-primary);
-}
+    /* Text colors */
+    --text-primary: var(--white);
+    --text-secondary: var(--black);
+    --text-muted: var(--grey-3);
+    --text-subtle: var(--grey-2);
+    --text-disabled: var(--grey-1);
+    --text-highlight-green: var(--green-base);
+    --text-highlight-pink: var(--pink-base);
 
-.cadastro-happy {
-    display: flex;
-    flex-direction: column;
-    gap: 24px;
-}
+    /* Border colors */
+    --border-primary: var(--grey-2);
+    --border-subtle: var(--grey-1);
+    --border-focus: var(--green-base);
 
-.form-section {
-    max-width: 768px;
-    margin: 0 auto;
-    padding: 16px;
-}
-
-.form-section .form-control,
-.form-section .form-select {
-    width: 100%;
+    /* Background colors específicos */
+    --bg-input: var(--white);
+    --bg-disabled: var(--grey-1);
 }
 
 
@@ -73,26 +80,6 @@ textarea:focus {
 textarea {
     height: 150px;
     resize: vertical;
-}
-
-.opcoes-genero {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 16px;
-}
-
-.opcoes-genero label {
-    display: flex;
-    align-items: center;
-    gap: 6px;
-    font-size: 15px;
-}
-
-.aceite-termos {
-    display: flex;
-    align-items: center;
-    gap: 8px;
-    font-size: 14px;
 }
 
 .botao-enviar {

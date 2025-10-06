@@ -2,204 +2,214 @@
 <html lang="pt-BR">
 
 <head>
-	<meta charset="UTF-8" />
-	<title>Forms - Happy Game</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8" />
+    <title>Forms - Happy Game</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-	<!-- Bootstrap Style -->
-	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
-		integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <!-- Bootstrap Style -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
 
-	<link rel="icon" type="image/png" href="../assets/img/favicon.png" />
-	<link rel="stylesheet" href="../css/forms.css" />
-	<link rel="stylesheet" href="../css/style.css" />
-	<link rel="stylesheet" href="../components/input/input.css" />
-	<link rel="stylesheet" href="../components/navbar/navbar.css" />
-	<link rel="stylesheet" href="../components/footer/footer.css" />
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <link rel="icon" type="image/png" href="../assets/img/favicon.png" />
+    <link rel="stylesheet" href="../css/forms.css" />
+    <!-- <link rel="stylesheet" href="../css/style.css" /> -->
+    <link rel="stylesheet" href="../components/input/input.css" />
+    <link rel="stylesheet" href="../components/navbar/navbar.css" />
+    <link rel="stylesheet" href="../components/footer/footer.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
 </head>
 
 <body>
-	<!-- Navbar -->
-	<nav class="navbar navbar-expand-md navbar-bg">
-		<div class="container">
-			<div class="logo">
-				<a href="../index.html">
-					<img src="../assets/img/logo/logo-all-black.svg" alt="logo do site" />
-				</a>
-			</div>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-md navbar-bg">
+        <div class="container">
+            <div class="logo">
+                <a href="../index.html">
+                    <img src="../assets/img/logo/logo-all-black.svg" alt="logo do site" />
+                </a>
+            </div>
 
-			<!-- Burguer Btn -->
-			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-				aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-				<span class="navbar-toggler-icon"></span>
-			</button>
+            <!-- Burguer Btn -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
 
-			<!-- Menu -->
-			<div class="collapse navbar-collapse" id="navbarNav">
-				<ul class="navbar-nav ms-auto align-items-center gap-3">
-					<li class="nav-item">
-						<a class="nav-link" href="../index.html">Inicio</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="story-games.html">História dos Jogos</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="platform.html">Plataforma</a>
-					</li>
-					<li class="nav-item">
-						<a class="btn btn-navbar-cta" href="forms.html">Inscreva-se</a>
-					</li>
-				</ul>
-			</div>
-		</div>
-	</nav>
+            <!-- Menu -->
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto align-items-center gap-3">
+                    <li class="nav-item">
+                        <a class="nav-link" href="../index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="story-games.html">História dos Jogos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="platform.html">Plataforma</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="btn btn-navbar-cta" href="forms.html">Inscreva-se</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
 
     <!-- Formulário -->
-    <section class="form-section">
-        <header class="text-center mb-4">
-            <h1 class="fw-bold">Garanta seu lugar no Happy Game</h1>
-            <p>Junte-se à lista de espera e seja um dos primeiros a explorar a nova comunidade gamer.</p>
-        </header>
-
-        <form action="#" method="POST" class="needs-validation" novalidate>
-            <!-- Nome e Nickname -->
-            <div class="row g-3 mb-3">
-                <div class="col-md-6">
-                    <label for="nome" class="form-label">Nome Completo</label>
-                    <input type="text" id="nome" name="nome" class="form-control" required>
-                    <div class="invalid-feedback">Informe seu nome completo.</div>
+    <section class="py-5 bg-dark">
+        <div class="container-fluid">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-12 col-md-10 col-lg-8 col-xl-6">
+                        <header class="text-center mb-4">
+                            <h1 class="fw-bold display-4 mb-4 text-light">Garanta seu lugar no Happy Game</h1>
+                            <p class="lead text-light">Junte-se à lista de espera e seja um dos primeiros a explorar a
+                                nova comunidade gamer.</p>
+                        </header>
+                        <form action="#" method="POST" class="needs-validation text-light" novalidate>
+                            <!-- Nome e Nickname -->
+                            <div class="row g-3 mb-4">
+                                <div class="col-md-6">
+                                    <label for="nome" class="form-label fw-semibold">Nome Completo</label>
+                                    <input type="text" id="nome" name="nome" class="form-control" required
+                                        placeholder="Seu nome completo...">
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="nickname" class="form-label fw-semibold">Nickname</label>
+                                    <input type="text" id="nickname" name="nickname"
+                                        placeholder="Como você será chamado..." class="form-control" required>
+                                </div>
+                            </div>
+                            <!-- Email e Telefone -->
+                            <div class="row g-3 mb-3">
+                                <div class="col-md-6">
+                                    <label for="email" class="form-label fw-semibold">Email</label>
+                                    <input type="email" id="email" name="email" class="form-control" required
+                                        placeholder="email@email.com">
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="telefone" class="form-label fw-semibold">Telefone (Opcional)</label>
+                                    <input type="tel" id="telefone" name="telefone" class="form-control"
+                                        placeholder="(00) 00000-0000">
+                                </div>
+                            </div>
+                            <!-- Plataforma -->
+                            <div class="mb-3">
+                                <label for="plataforma" class="form-label fw-semibold">Plataforma favorita</label>
+                                <select id="plataforma" name="plataforma" class="form-select" required>
+                                    <option disabled selected value="">Selecione...</option>
+                                    <option value="pc">PC</option>
+                                    <option value="console">Console</option>
+                                    <option value="mobile">Mobile</option>
+                                    <option value="retro">Retro</option>
+                                </select>
+                            </div>
+                            <!-- Gênero favorito -->
+                            <div class="mb-4">
+                                <fieldset>
+                                    <legend class="form-label d-block fw-semibold mb-3">Gênero favorito</legend>
+                                    <div class="row row-cols-2 row-cols-md-3 g-3">
+                                        <div class="col">
+                                            <div class="form-check d-flex align-items-center py-2">
+                                                <input class="form-check-input me-2" type="checkbox" value="rpg"
+                                                    id="rpg">
+                                                <label class="form-check-label me-0" for="rpg">RPG</label>
+                                            </div>
+                                        </div>
+                                        <div class="col">
+                                            <div class="form-check d-flex align-items-center py-2">
+                                                <input class="form-check-input me-2" type="checkbox" value="indie"
+                                                    id="indie">
+                                                <label class="form-check-label me-0" for="indie">Indie</label>
+                                            </div>
+                                        </div>
+                                        <div class="col">
+                                            <div class="form-check d-flex align-items-center py-2">
+                                                <input class="form-check-input me-2" type="checkbox" value="fps"
+                                                    id="fps">
+                                                <label class="form-check-label me-0" for="fps">FPS</label>
+                                            </div>
+                                        </div>
+                                        <div class="col">
+                                            <div class="form-check d-flex align-items-center py-2">
+                                                <input class="form-check-input me-2" type="checkbox" value="esportes"
+                                                    id="esportes">
+                                                <label class="form-check-label me-0" for="esportes">Esportes</label>
+                                            </div>
+                                        </div>
+                                        <div class="col">
+                                            <div class="form-check d-flex align-items-center py-2">
+                                                <input class="form-check-input me-2" type="checkbox" value="moba"
+                                                    id="moba">
+                                                <label class="form-check-label me-0" for="moba">MOBA</label>
+                                            </div>
+                                        </div>
+                                        <div class="col">
+                                            <div class="form-check d-flex align-items-center py-2">
+                                                <input class="form-check-input me-2" type="checkbox" value="outro"
+                                                    id="outro">
+                                                <label class="form-check-label me-0" for="outro">Outro</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </fieldset>
+                            </div>
+                            <!-- Mensagem -->
+                            <div class="mb-3">
+                                <label for="mensagem" class="form-label fw-semibold">Conte sua ideia, dúvida ou sugestão
+                                    aqui</label>
+                                <textarea id="mensagem" name="mensagem" class="form-control"
+                                    placeholder="Digite sua mensagem..." rows="4"></textarea>
+                            </div>
+                            <!-- Termos -->
+                            <div class="form-check mb-3 d-flex align-items-center py-2">
+                                <input class="form-check-input" type="checkbox" id="termos" required>
+                                <label class="form-check-label fw-semibold ms-2" for="termos ">Li e aceito os Termos de uso
+                                    do Happy Game</label>
+                            </div>
+                            <!-- Botão -->
+                            <button type="submit" class="btn botao-enviar w-100">Fazer parte da comunidade</button>
+                        </form>
+                    </div>
                 </div>
-                <div class="col-md-6">
-                    <label for="nickname" class="form-label">Nickname</label>
-                    <input type="text" id="nickname" name="nickname" placeholder="Como você será chamado..."
-                        class="form-control" required>
-                    <div class="invalid-feedback">Informe um nickname.</div>
-                </div>
             </div>
-
-            <!-- Email e Telefone -->
-            <div class="row g-3 mb-3">
-                <div class="col-md-6">
-                    <label for="email" class="form-label">Email</label>
-                    <input type="email" id="email" name="email" class="form-control" required>
-                    <div class="invalid-feedback">Digite um email válido.</div>
-                </div>
-                <div class="col-md-6">
-                    <label for="telefone" class="form-label">Telefone (Opcional)</label>
-                    <input type="tel" id="telefone" name="telefone" class="form-control">
-                </div>
-            </div>
-
-            <!-- Plataforma -->
-            <div class="mb-3">
-                <label for="plataforma" class="form-label">Plataforma favorita</label>
-                <select id="plataforma" name="plataforma" class="form-select" required>
-                    <option disabled selected value="">Selecione...</option>
-                    <option value="pc">PC</option>
-                    <option value="console">Console</option>
-                    <option value="mobile">Mobile</option>
-                    <option value="retro">Retro</option>
-                </select>
-                <div class="invalid-feedback">Selecione sua plataforma favorita.</div>
-            </div>
-
-            <!-- Gênero favorito -->
-            <div class="mb-3">
-                <label class="form-label d-block">Gênero favorito</label>
-                <div class="row row-cols-2 row-cols-md-3 g-2">
-                    <div class="col">
-                        <div class="form-check">
-                            <input class="form-check-input" type="checkbox" value="rpg" id="rpg">
-                            <label class="form-check-label" for="rpg">RPG</label>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="form-check">
-                            <input class="form-check-input" type="checkbox" value="indie" id="indie">
-                            <label class="form-check-label" for="indie">Indie</label>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="form-check">
-                            <input class="form-check-input" type="checkbox" value="fps" id="fps">
-                            <label class="form-check-label" for="fps">FPS</label>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="form-check">
-                            <input class="form-check-input" type="checkbox" value="esportes" id="esportes">
-                            <label class="form-check-label" for="esportes">Esportes</label>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="form-check">
-                            <input class="form-check-input" type="checkbox" value="moba" id="moba">
-                            <label class="form-check-label" for="moba">MOBA</label>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="form-check">
-                            <input class="form-check-input" type="checkbox" value="outro" id="outro">
-                            <label class="form-check-label" for="outro">Outro</label>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Mensagem -->
-            <div class="mb-3">
-                <label for="mensagem" class="form-label">Conte sua ideia, dúvida ou sugestão aqui</label>
-                <textarea id="mensagem" name="mensagem" class="form-control" placeholder="Digite sua mensagem..."
-                    rows="4"></textarea>
-            </div>
-
-            <!-- Termos -->
-            <div class="form-check mb-3">
-                <input class="form-check-input" type="checkbox" id="termos" required>
-                <label class="form-check-label" for="termos">Li e aceito os Termos de uso do Happy Game</label>
-                <div class="invalid-feedback">Você deve aceitar os termos para continuar.</div>
-            </div>
-
-            <!-- Botão -->
-            <button type="submit" class="btn botao-enviar w-100">Fazer parte da comunidade</button>
-        </form>
+        </div>
     </section>
 
-	<!-- Footer -->
-	<footer class="footer">
-		<div class="footer-container">
-			<div class="footer-content">
-				<div class="footer-logo">
-					<img src="../assets/img/logo/logo-all-black.svg" alt="Logo Happy Game" />
-				</div>
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <img src="../assets/img/logo/logo-all-black.svg" alt="Logo Happy Game" />
+                </div>
 
-				<div class="footer-social">
-					<a href="#" aria-label="Instagram">
-						<i class="fab fa-instagram"></i>
-					</a>
-					<a href="#" aria-label="YouTube">
-						<i class="fab fa-youtube"></i>
-					</a>
-				</div>
-			</div>
+                <div class="footer-social">
+                    <a href="#" aria-label="Instagram">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="#" aria-label="YouTube">
+                        <i class="fab fa-youtube"></i>
+                    </a>
+                </div>
+            </div>
 
-			<div class="footer-divider"></div>
+            <div class="footer-divider"></div>
 
-			<div class="footer-bottom">
-				<div class="footer-legal">
-					<a href="#">Termos de privacidade</a>
-					<a href="#">Cookies</a>
-				</div>
-				<div class="footer-copyright">
-					<p>© 2025 Happy Game. Todos os direitos reservados.</p>
-				</div>
-			</div>
-		</div>
-	</footer>
-	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
-		integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
-		crossorigin="anonymous"></script>
+            <div class="footer-bottom">
+                <div class="footer-legal">
+                    <a href="#">Termos de privacidade</a>
+                    <a href="#">Cookies</a>
+                </div>
+                <div class="footer-copyright">
+                    <p>© 2025 Happy Game. Todos os direitos reservados.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
