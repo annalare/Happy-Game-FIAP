@@ -12,7 +12,7 @@
 
     <link rel="icon" type="image/png" href="../assets/img/favicon.png" />
     <link rel="stylesheet" href="../css/forms.css" />
-    <!-- <link rel="stylesheet" href="../css/style.css" /> -->
+    <link rel="stylesheet" href="../css/style.css" />
     <link rel="stylesheet" href="../components/input/input.css" />
     <link rel="stylesheet" href="../components/navbar/navbar.css" />
     <link rel="stylesheet" href="../components/footer/footer.css" />
@@ -29,7 +29,7 @@
                 </a>
             </div>
 
-            <!-- Burguer Btn -->
+            <!-- Btn Burguer -->
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -56,125 +56,137 @@
     </nav>
 
     <!-- Formulário -->
-    <section class="py-5 bg-dark">
-        <div class="container-fluid">
-            <div class="container">
+    <div class="container-fluid">
+        <div class="container">
+            <section class="py-5">
                 <div class="row justify-content-center">
-                    <div class="col-12 col-md-10 col-lg-8 col-xl-6">
-                        <header class="text-center mb-4">
-                            <h1 class="fw-bold display-4 mb-4 text-light">Garanta seu lugar no Happy Game</h1>
-                            <p class="lead text-light">Junte-se à lista de espera e seja um dos primeiros a explorar a
+                    <div class="col-12 col-lg-10 col-xl-8">
+                        <header class="text-center mb-5">
+                            <h1 class="mb-3">Garanta seu lugar no Happy Game</h1>
+                            <p class="text-intro-center">Junte-se à lista de espera e seja um dos primeiros a explorar a
                                 nova comunidade gamer.</p>
                         </header>
-                        <form action="#" method="POST" class="needs-validation text-light" novalidate>
+
+                        <form action="#" method="POST">
                             <!-- Nome e Nickname -->
                             <div class="row g-3 mb-4">
                                 <div class="col-md-6">
-                                    <label for="nome" class="form-label fw-semibold">Nome Completo</label>
-                                    <input type="text" id="nome" name="nome" class="form-control" required
-                                        placeholder="Seu nome completo...">
+                                    <label for="nome" class="form-label">Nome Completo</label>
+                                    <input type="text" id="nome" name="nome" class="form-control form-control-lg"
+                                        placeholder="Digite seu nome completo" required>
                                 </div>
                                 <div class="col-md-6">
-                                    <label for="nickname" class="form-label fw-semibold">Nickname</label>
+                                    <label for="nickname" class="form-label">Nickname</label>
                                     <input type="text" id="nickname" name="nickname"
-                                        placeholder="Como você será chamado..." class="form-control" required>
+                                        placeholder="Como você será chamado..." class="form-control form-control-lg"
+                                        required>
                                 </div>
                             </div>
+
                             <!-- Email e Telefone -->
-                            <div class="row g-3 mb-3">
+                            <div class="row g-3 mb-4">
                                 <div class="col-md-6">
-                                    <label for="email" class="form-label fw-semibold">Email</label>
-                                    <input type="email" id="email" name="email" class="form-control" required
-                                        placeholder="email@email.com">
+                                    <label for="email" class="form-label">Email</label>
+                                    <input type="email" id="email" name="email" class="form-control form-control-lg"
+                                        placeholder="seu@email.com" required>
                                 </div>
                                 <div class="col-md-6">
-                                    <label for="telefone" class="form-label fw-semibold">Telefone (Opcional)</label>
-                                    <input type="tel" id="telefone" name="telefone" class="form-control"
+                                    <label for="telefone" class="form-label">Telefone (Opcional)</label>
+                                    <input type="tel" id="telefone" name="telefone" class="form-control form-control-lg"
                                         placeholder="(00) 00000-0000">
                                 </div>
                             </div>
+
                             <!-- Plataforma -->
-                            <div class="mb-3">
-                                <label for="plataforma" class="form-label fw-semibold">Plataforma favorita</label>
-                                <select id="plataforma" name="plataforma" class="form-select" required>
-                                    <option disabled selected value="">Selecione...</option>
+                            <div class="mb-4">
+                                <label for="plataforma" class="form-label">Plataforma favorita</label>
+                                <select id="plataforma" name="plataforma" class="form-select form-select-lg" required>
+                                    <option disabled selected value="">Selecione sua plataforma...</option>
                                     <option value="pc">PC</option>
                                     <option value="console">Console</option>
                                     <option value="mobile">Mobile</option>
                                     <option value="retro">Retro</option>
                                 </select>
                             </div>
+
                             <!-- Gênero favorito -->
-                            <div class="mb-4">
-                                <fieldset>
-                                    <legend class="form-label d-block fw-semibold mb-3">Gênero favorito</legend>
-                                    <div class="row row-cols-2 row-cols-md-3 g-3">
-                                        <div class="col">
-                                            <div class="form-check d-flex align-items-center py-2">
-                                                <input class="form-check-input me-2" type="checkbox" value="rpg"
-                                                    id="rpg">
-                                                <label class="form-check-label me-0" for="rpg">RPG</label>
-                                            </div>
-                                        </div>
-                                        <div class="col">
-                                            <div class="form-check d-flex align-items-center py-2">
-                                                <input class="form-check-input me-2" type="checkbox" value="indie"
-                                                    id="indie">
-                                                <label class="form-check-label me-0" for="indie">Indie</label>
-                                            </div>
-                                        </div>
-                                        <div class="col">
-                                            <div class="form-check d-flex align-items-center py-2">
-                                                <input class="form-check-input me-2" type="checkbox" value="fps"
-                                                    id="fps">
-                                                <label class="form-check-label me-0" for="fps">FPS</label>
-                                            </div>
-                                        </div>
-                                        <div class="col">
-                                            <div class="form-check d-flex align-items-center py-2">
-                                                <input class="form-check-input me-2" type="checkbox" value="esportes"
-                                                    id="esportes">
-                                                <label class="form-check-label me-0" for="esportes">Esportes</label>
-                                            </div>
-                                        </div>
-                                        <div class="col">
-                                            <div class="form-check d-flex align-items-center py-2">
-                                                <input class="form-check-input me-2" type="checkbox" value="moba"
-                                                    id="moba">
-                                                <label class="form-check-label me-0" for="moba">MOBA</label>
-                                            </div>
-                                        </div>
-                                        <div class="col">
-                                            <div class="form-check d-flex align-items-center py-2">
-                                                <input class="form-check-input me-2" type="checkbox" value="outro"
-                                                    id="outro">
-                                                <label class="form-check-label me-0" for="outro">Outro</label>
-                                            </div>
+                            <div class="mb-5">
+                                <label class="form-label d-block mb-3">Gênero favorito</label>
+                                <div class="row row-cols-2 row-cols-md-3 g-3">
+                                    <div class="col">
+                                        <div class="form-check d-flex align-items-center">
+                                            <input class="form-check-input mt-0 me-2" type="checkbox" value="rpg"
+                                                id="rpg">
+                                            <label class="form-check-label" for="rpg">RPG</label>
                                         </div>
                                     </div>
-                                </fieldset>
+                                    <div class="col">
+                                        <div class="form-check d-flex align-items-center">
+                                            <input class="form-check-input mt-0 me-2" type="checkbox" value="indie"
+                                                id="indie">
+                                            <label class="form-check-label" for="indie">Indie</label>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="form-check d-flex align-items-center">
+                                            <input class="form-check-input mt-0 me-2" type="checkbox" value="fps"
+                                                id="fps">
+                                            <label class="form-check-label" for="fps">FPS</label>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="form-check d-flex align-items-center">
+                                            <input class="form-check-input mt-0 me-2" type="checkbox" value="esportes"
+                                                id="esportes">
+                                            <label class="form-check-label" for="esportes">Esportes</label>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="form-check d-flex align-items-center">
+                                            <input class="form-check-input mt-0 me-2" type="checkbox" value="moba"
+                                                id="moba">
+                                            <label class="form-check-label" for="moba">MOBA</label>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="form-check d-flex align-items-center">
+                                            <input class="form-check-input mt-0 me-2" type="checkbox" value="outro"
+                                                id="outro">
+                                            <label class="form-check-label" for="outro">Outro</label>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
+
                             <!-- Mensagem -->
-                            <div class="mb-3">
-                                <label for="mensagem" class="form-label fw-semibold">Conte sua ideia, dúvida ou sugestão
+                            <div class="mb-4">
+                                <label for="mensagem" class="form-label">Conte sua ideia, dúvida ou sugestão
                                     aqui</label>
-                                <textarea id="mensagem" name="mensagem" class="form-control"
-                                    placeholder="Digite sua mensagem..." rows="4"></textarea>
+                                <textarea id="mensagem" name="mensagem" class="form-control form-control-lg"
+                                    placeholder="Compartilhe seus pensamentos sobre jogos, sugestões ou dúvidas..."
+                                    rows="5"></textarea>
                             </div>
+
                             <!-- Termos -->
-                            <div class="form-check mb-3 d-flex align-items-center py-2">
-                                <input class="form-check-input" type="checkbox" id="termos" required>
-                                <label class="form-check-label fw-semibold ms-2" for="termos ">Li e aceito os Termos de uso
-                                    do Happy Game</label>
+                            <div class="mb-5">
+                                <div class="form-check d-flex align-items-center">
+                                    <input class="form-check-input mt-0 me-2" type="checkbox" id="termos" required>
+                                    <label class="form-check-label" for="termos">Li e aceito os Termos de uso do Happy
+                                        Game</label>
+                                </div>
                             </div>
+
                             <!-- Botão -->
-                            <button type="submit" class="btn botao-enviar w-100">Fazer parte da comunidade</button>
+                            <div class="d-grid">
+                                <button type="submit" class="btn btn-lg botao-enviar py-3">Fazer parte da
+                                    comunidade</button>
+                            </div>
                         </form>
                     </div>
                 </div>
-            </div>
+            </section>
         </div>
-    </section>
+    </div>
 
     <!-- Footer -->
     <footer class="footer">

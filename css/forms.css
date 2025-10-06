@@ -1,101 +1,79 @@
-:root {
-    /* Tokens core, são usados para as outras cores */
-
-    /* Cores neutras */
-    --black: #0D0D0D;
-    --grey-1: #252525;
-    --grey-2: #6E6E6E;
-    --grey-3: #9E9E9E;
-    --white: #FDFDFD;
-
-    /* Cores primárias - Verde */
-    --green-darker-2: #009952;
-    --green-darker-1: #00CC6D;
-    --green-base: #00FF88;
-    --green-lighter-1: #33FFA0;
-    --green-lighter-2: #66FFB8;
-
-
-    /* Cores secundárias - Rosa */
-    --pink-darker-2: #991C3B;
-    --pink-darker-1: #CC254F;
-    --pink-base: #FF2E63;
-    --pink-lighter-1: #FF5882;
-    --pink-lighter-2: #FF82A1;
-
-    /* Use essas cores para definir as cores gerais do site */
-
-    /* Background colors */
-    --bg-dark: var(--black);
-    --bg-light: var(--white);
-    --bg-grey: var(--grey-1);
-    --bg-grey-light: var(--grey-2);
-    --bg-green: var(--green-base);
-    --bg-pink: var(--pink-base);
-
-    /* Text colors */
-    --text-primary: var(--white);
-    --text-secondary: var(--black);
-    --text-muted: var(--grey-3);
-    --text-subtle: var(--grey-2);
-    --text-disabled: var(--grey-1);
-    --text-highlight-green: var(--green-base);
-    --text-highlight-pink: var(--pink-base);
-
-    /* Border colors */
-    --border-primary: var(--grey-2);
-    --border-subtle: var(--grey-1);
-    --border-focus: var(--green-base);
-
-    /* Background colors específicos */
-    --bg-input: var(--white);
-    --bg-disabled: var(--grey-1);
-}
-
-
-input,
-select,
-textarea {
-    padding: 12px;
-    border: 1px solid #000;
-    border-radius: 4px;
-    font-size: 16px;
-    font-family: inherit;
-    outline: none;
-}
-
-input:focus,
-select:focus,
-textarea:focus {
-    border-color: #555;
-}
-
-.form-control,
-.form-select,
-.form-check-input {
-    font-size: 16px;
-    font-family: inherit;
-}
-
-textarea {
-    height: 150px;
-    resize: vertical;
-}
-
+/* / === BOTÃO CUSTOMIZADO === / */
 .botao-enviar {
     background: var(--green-base);
     color: var(--black);
-    padding: 12px 24px;
-    border: none;
-    cursor: pointer;
-    font-size: 16px;
-    border-radius: 4px;
-    transition: 0.3s;
-    align-self: flex-start;
-    margin-bottom: 40px;
-    text-decoration: none;
+    font-weight: 600;
+    transition: all 0.3s ease;
 }
 
 .botao-enviar:hover {
     background: var(--green-lighter-1);
+    color: var(--black);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 255, 136, 0.3);
+}
+
+/* / === TEMA DARK PARA INPUTS === / */
+.form-control,
+.form-select {
+    background-color: var(--bg-grey);
+    border-color: var(--border-primary);
+    color: var(--text-primary);
+}
+
+.form-control:focus,
+.form-select:focus {
+    background-color: var(--bg-grey);
+    border-color: var(--green-base);
+    color: var(--text-primary);
+    box-shadow: 0 0 0 0.25rem rgba(0, 255, 136, 0.25);
+}
+
+.form-control::placeholder {
+    color: var(--text-muted);
+}
+
+/* / === TEMA DARK PARA CHECKBOXES === / */
+.form-check-input {
+    background-color: var(--bg-grey);
+    border-color: var(--border-primary);
+}
+
+.form-check-input:checked {
+    background-color: var(--green-base);
+    border-color: var(--green-base);
+}
+
+.form-check-input:focus {
+    border-color: var(--green-base);
+    box-shadow: 0 0 0 0.25rem rgba(0, 255, 136, 0.25);
+}
+
+/* / === LABELS === / */
+.form-label,
+.form-check-label {
+    color: var(--text-primary);
+}
+
+/* / === HEADER === / */
+section header h1 {
+    font-family: 'Press Start 2P', cursive;
+    color: var(--text-primary);
+    font-size: clamp(1.5rem, 4vw, 2.5rem);
+}
+
+section header .text-intro-center {
+    color: var(--text-muted);
+}
+
+/* / === VALIDAÇÃO === / */
+.invalid-feedback {
+    color: var(--pink-base);
+}
+
+/* / === RESPONSIVIDADE ===  */
+@media (max-width: 768px) {
+    section header h1 {
+        font-size: 1.5rem;
+    }
 }
