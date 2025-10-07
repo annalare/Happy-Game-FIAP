@@ -89,7 +89,7 @@
 }
 
 .fomo-section h2 {
-    font-family: 'Press Start 2P', cursive;
+    font-family: 'Orbitron', cursive;
     font-size: 2.5rem;
     font-weight: 400;
     margin-bottom: 1.5rem;
@@ -137,7 +137,7 @@
 }
 
 .fomo-text h3 {
-    font-family: 'Press Start 2P', cursive;
+    font-family: 'Orbitron', cursive;
     font-size: 1rem;
     font-weight: 400;
     margin-bottom: 1rem;
@@ -166,7 +166,7 @@
 }
 
 .cta-section h3 {
-    font-family: 'Press Start 2P', cursive;
+    font-family: 'Orbitron', cursive;
     font-size: 2rem;
     font-weight: 400;
     color: var(--white);
@@ -188,70 +188,70 @@
         height: 70vh;
         min-height: 500px;
     }
-    
+
     .hero-content h1 {
         font-size: 2.5rem;
     }
-    
+
     .hero-content .hero-description {
         font-size: 1.2rem;
     }
-    
+
     .feedback-content {
         padding: 0 1rem;
     }
-    
+
     .fomo-section {
         padding: 3rem 0;
     }
-    
+
     .fomo-section h2 {
         font-size: 2rem;
     }
-    
+
     .fomo-description {
         font-size: 1.1rem;
     }
-    
+
     .fomo-cards {
         grid-template-columns: 1fr;
         gap: 1rem;
     }
-    
+
     .fomo-item {
         padding: 1.5rem;
     }
-    
+
     .fomo-icon {
         font-size: 2.5rem;
         margin-bottom: 1rem;
     }
-    
+
     .fomo-text h3 {
         font-size: 0.9rem;
     }
-    
+
     .fomo-text p {
         font-size: 0.9rem;
     }
-    
+
     .cta-section {
         padding: 3rem 0;
     }
-    
+
     .cta-section h3 {
         font-size: 1.6rem;
     }
-    
+
     .cta-section p {
         font-size: 1.1rem;
     }
-    
+
     .cta-buttons {
         flex-direction: column;
         align-items: center;
     }
-    
+
     .cta-buttons .btn {
         width: 100%;
         max-width: 300px;
@@ -263,48 +263,48 @@
         height: 60vh;
         min-height: 450px;
     }
-    
+
     .hero-content h1 {
         font-size: 2rem;
     }
-    
+
     .hero-content .hero-description {
         font-size: 1.1rem;
     }
-    
+
     .fomo-section {
         padding: 2rem 0;
     }
-    
+
     .fomo-section h2 {
         font-size: 1.4rem;
     }
-    
+
     .fomo-item {
         padding: 1.2rem;
     }
-    
+
     .fomo-icon {
         font-size: 2rem;
         margin-bottom: 0.8rem;
     }
-    
+
     .fomo-text h3 {
         font-size: 0.8rem;
     }
-    
+
     .fomo-text p {
         font-size: 0.85rem;
     }
-    
+
     .cta-section {
         padding: 2rem 0;
     }
-    
+
     .cta-section h3 {
         font-size: 1.4rem;
     }
-    
+
     .cta-section p {
         font-size: 1rem;
     }

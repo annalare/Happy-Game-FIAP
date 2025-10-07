@@ -1,10 +1,8 @@
 /* ===== GOOGLE FONTS ===== */
-@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap');
 
 /* ===== TOKENS DE COR ===== */
 :root {
-    /* Tokens core, são usados para as outras cores */
-
     /* Cores neutras */
     --black: #0D0D0D;
     --grey-1: #252525;
@@ -18,7 +16,6 @@
     --green-base: #00FF88;
     --green-lighter-1: #33FFA0;
     --green-lighter-2: #66FFB8;
-  
 
     /* Cores secundárias - Rosa */
     --pink-darker-2: #991C3B;
@@ -26,8 +23,6 @@
     --pink-base: #FF2E63;
     --pink-lighter-1: #FF5882;
     --pink-lighter-2: #FF82A1;
-
-    /* Use essas cores para definir as cores gerais do site */
 
     /* Background colors */
     --bg-dark: var(--black);
@@ -73,62 +68,38 @@ body {
     font-weight: 400;
 }
 
-/* Container principal */
-.container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 15px;
-    text-align: center;
-}
-
-/* Títulos */
-h1 {
-    font-family: 'Press Start 2P', cursive;
+/* Títulos personalizados (sem conflito com Bootstrap) */
+.custom-title-primary {
+    font-family: 'Orbitron', cursive;
     font-size: 2.5em;
     color: var(--text-primary);
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
     margin-bottom: 20px;
     line-height: 1.2;
-    
 }
 
-h2 {
-    font-family: 'Press Start 2P', cursive;
+.custom-title-secondary {
+    font-family: 'Orbitron', cursive;
     font-size: 2em;
     color: var(--text-primary);
     margin-bottom: 15px;
     line-height: 1.4;
 }
 
-h3 {
-    font-family: 'Press Start 2P', cursive;
+.custom-title-tertiary {
+    font-family: 'Orbitron', cursive;
     font-size: 1.5em;
     color: var(--text-primary);
     margin-bottom: 10px;
     line-height: 1.2;
 }
 
-/* Parágrafos */
-p {
+/* Parágrafo customizado */
+.custom-paragraph {
     font-size: 1.1em;
-    color: black;
+    color: var(--text-primary);
     margin-bottom: 15px;
-    line-height: 1.2;
-    font-size: 1.2em;
-   
-}
-
-
-
-/* Cards/Caixas */
-.card {
-    background: rgba(255, 255, 255, 0.1);
-    backdrop-filter: blur(10px);
-    border-radius: 15px;
-    padding: 30px;
-    margin: 20px 0;
-    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
-    border: 1px solid rgba(255, 255, 255, 0.2);
+    line-height: 1.6;
 }
 
 /* Animações úteis */
@@ -137,6 +108,7 @@ p {
         opacity: 0;
         transform: translateY(30px);
     }
+
     to {
         opacity: 1;
         transform: translateY(0);
@@ -148,10 +120,14 @@ p {
 }
 
 /* ===== CLASSES DE FONTE ===== */
+.orbitron-font {
+    font-family: 'Orbitron', cursive;
+    font-weight: 400;
+    font-style: normal;
+}
 
-/* Press Start 2P - Para títulos */
-.press-start-2p {
-    font-family: 'Press Start 2P', cursive;
+.press-start-font {
+    font-family: 'Orbitron', cursive;
     font-weight: 400;
     font-style: normal;
 }
@@ -172,18 +148,55 @@ p {
     font-weight: 700;
 }
 
-/* Responsividade base para seguirmos padrão*/
+/* Enhanced button classes for consistency */
+.btn-green-solid {
+    background: var(--green-base);
+    border: none;
+    color: var(--black);
+    font-weight: 600;
+    padding: 0.75rem 2rem;
+    border-radius: 6px;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    transition: all 0.2s ease;
+    box-shadow: 0 4px 12px rgba(0, 255, 136, 0.25);
+}
+
+.btn-green-solid:hover {
+    background: var(--green-darker-1);
+    transform: translateY(-1px);
+    box-shadow: 0 6px 16px rgba(0, 255, 136, 0.35);
+    color: var(--black);
+}
+
+.btn-green-outline {
+    background: transparent;
+    border: 1px solid rgba(0, 255, 136, 0.5);
+    color: var(--white);
+    font-weight: 500;
+    padding: 0.75rem 2rem;
+    border-radius: 6px;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    transition: all 0.2s ease;
+    backdrop-filter: blur(10px);
+}
+
+.btn-green-outline:hover {
+    border-color: var(--green-base);
+    background: rgba(0, 255, 136, 0.1);
+    color: var(--white);
+    transform: translateY(-1px);
+    box-shadow: 0 4px 12px rgba(0, 255, 136, 0.2);
+}
+
+/* Responsividade base */
 @media (max-width: 768px) {
-    .container {
-        padding: 10px;
-    }
-    
-    h1 {
+    .custom-title-primary {
         font-size: 2em;
-    }
-    
-    .card {
-        padding: 20px;
-        margin: 10px 0;
     }
 }

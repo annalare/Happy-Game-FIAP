@@ -61,7 +61,7 @@ O site foi criado para:
 - **Bootstrap 5.3.8**: Sistema de grid responsivo e componentes UI
 - **Font Awesome 6.4.0**: Ícones para interface
 - **Google Fonts**: 
-  - Press Start 2P (títulos)
+  - Orbitron (títulos)
   - Roboto (texto geral)
 
 ### Design System
@@ -96,7 +96,7 @@ O projeto utiliza um sistema de tokens de cor bem estruturado:
 - `--pink-lighter-2`: #FF82A1
 
 ### Tipografia
-- **Títulos**: Press Start 2P 
+- **Títulos**: Orbitron 
 - **Texto**: Roboto
 
 

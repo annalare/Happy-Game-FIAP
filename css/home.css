@@ -47,7 +47,7 @@
 }
 
 .communities-title {
-  font-family: "Press Start 2P", cursive;
+  font-family: "Orbitron", cursive;
   font-size: 2rem;
   color: var(--text-secondary);
   margin-bottom: 20px;
@@ -206,7 +206,7 @@
 }
 
 .stat-number {
-  font-family: "Press Start 2P", cursive;
+  font-family: "Orbitron", cursive;
   font-size: 2.6rem;
   color: var(--text-highlight-green);
   margin-bottom: 15px;
@@ -307,6 +307,7 @@
   .community-image {
     height: 160px;
   }
+
   .stats-content {
     grid-template-columns: 1fr;
     gap: 40px;
@@ -372,6 +373,7 @@
     width: 100%;
     max-width: 300px;
   }
+
   .stats-content {
     grid-template-columns: 1fr;
     gap: 40px;
@@ -382,6 +384,7 @@
     order: 2;
     padding: 20px;
   }
+
   .stats-content {
     grid-template-columns: 1fr;
     gap: 40px;
