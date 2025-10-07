@@ -18,13 +18,14 @@
   height: 40px;
   display: flex;
   align-items: center;
+  margin-bottom: 2px !important;
 }
 
 .navbar-brand img {
   height: 40px;
   width: auto;
   max-width: 180px;
-  filter: invert(1) brightness(100%);
+  /* filter: invert(1) brightness(100%); */
   transition: opacity 0.2s ease;
 }
 
