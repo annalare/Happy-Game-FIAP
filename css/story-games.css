@@ -1,6 +1,6 @@
 /* =============================================
-   Minimalist CSS for Story Games (Bootstrap 5)
-   by John Vitor Silverio Pereira
+   Story Games - Dark Minimalist
+   Uses component buttons for consistency
    ============================================= */
 
 /* ========= HERO SECTION ========= */
@@ -10,7 +10,6 @@
   overflow: hidden;
   min-height: 100vh;
   padding-top: 80px;
-  /* Account for fixed navbar */
 }
 
 .carousel-overlay {
@@ -50,7 +49,7 @@
   transform: translateX(-50%);
   width: 80px;
   height: 2px;
-  background: #00FF88;
+  background: var(--green-base);
   border-radius: 1px;
 }
 
@@ -82,10 +81,11 @@
   }
 }
 
+/* ===== HERO CTA BUTTONS ===== */
 .hero-cta-primary {
-  background: #00FF88;
+  background: var(--green-base);
   border: none;
-  color: #0D0D0D;
+  color: var(--black);
   font-weight: 600;
   padding: 1rem 2.5rem;
   border-radius: 6px;
@@ -98,8 +98,8 @@
 }
 
 .hero-cta-primary:hover {
-  background: #00CC6D;
-  color: #0D0D0D;
+  background: var(--green-darker);
+  color: var(--black);
 }
 
 .hero-cta-secondary {
@@ -119,12 +119,12 @@
 }
 
 .hero-cta-secondary:hover {
-  border-color: #00FF88;
+  border-color: var(--green-base);
   background: rgba(0, 255, 136, 0.1);
   color: #ffffff;
 }
 
-/* ========= CAROUSEL STYLES ========= */
+/* ========= CAROUSEL ========= */
 .carousel-item img {
   filter: brightness(0.7) contrast(1.1);
   transition: filter 0.5s ease;
@@ -168,21 +168,21 @@
   z-index: 1;
 }
 
-/* ========= TIMELINE HOVER EFFECTS ========= */
+/* ========= TIMELINE HOVER EFFECT ========= */
 .timeline-icon {
   transition: all 0.2s ease;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
 }
 
 .d-flex:hover .timeline-icon {
-  background: linear-gradient(135deg, #00FF88 0%, #00CC6D 100%) !important;
-  border-color: #00FF88 !important;
-  color: #0D0D0D !important;
+  background: linear-gradient(135deg, var(--green-base) 0%, var(--green-darker) 100%) !important;
+  border-color: var(--green-base) !important;
+  color: var(--black) !important;
   transform: scale(1.05);
 }
 
 .d-flex:hover .timeline-connector {
-  background: linear-gradient(180deg, #00FF88 0%, #00CC6D 50%, #00FF88 100%) !important;
+  background: linear-gradient(180deg, var(--green-base) 0%, var(--green-darker) 50%, var(--green-base) 100%) !important;
   width: 6px !important;
 }
 
@@ -190,7 +190,7 @@
   transition: all 0.2s ease;
 }
 
-/* ========= SIMPLIFIED ANIMATIONS ========= */
+/* ========= ANIMATIONS ========= */
 @keyframes fadeInUp {
   from {
     opacity: 0;
@@ -244,19 +244,7 @@
   animation: fadeInUp 0.8s ease-out;
 }
 
-/* ========= BUTTON STYLES ========= */
-.btn-green-solid,
-.btn-green-outline {
-  transition: all 0.2s ease;
-  border-radius: 6px;
-}
-
-.btn-green-solid:hover,
-.btn-green-outline:hover {
-  opacity: 0.9;
-}
-
-/* ========= RESPONSIVE DESIGN ========= */
+/* ========= RESPONSIVE ========= */
 @media (max-width: 991px) {
   .timeline-header-slide {
     animation: fadeInUp 0.6s ease-out;
@@ -327,7 +315,6 @@
   }
 }
 
-/* ========= Z-INDEX MANAGEMENT ========= */
 .carousel {
   z-index: 1;
 }

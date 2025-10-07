@@ -40,7 +40,6 @@
 
 .nav-link {
   color: #B0B0B0 !important;
-  font-family: 'Roboto', sans-serif;
   font-weight: 500;
   font-size: 0.95rem;
   padding: 0.75rem 1rem !important;
@@ -63,7 +62,6 @@
 .btn-navbar-cta {
   background: #00FF88 !important;
   color: #0D0D0D !important;
-  font-family: 'Roboto', sans-serif;
   font-weight: 600;
   font-size: 0.9rem;
   padding: 0.75rem 1.5rem;

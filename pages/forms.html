@@ -56,8 +56,9 @@
         <div class="row justify-content-center">
             <div class="col-12 col-lg-10 col-xl-8">
                 <header class="text-center mb-5">
-                    <h1 class="mb-3">Garanta seu lugar no Happy Game</h1>
-                    <p class="text-intro-center">Junte-se à lista de espera e seja um dos primeiros a explorar a
+                    <h1 class="mb-3 page-title">Garanta seu lugar no Happy Game</h1>
+                    <p class="text-intro-center subtitle">Junte-se à lista de espera e seja um dos primeiros a explorar
+                        a
                         nova comunidade gamer.</p>
                 </header>
 
@@ -65,12 +66,12 @@
                     <!-- Nome e Nickname -->
                     <div class="row g-3 mb-4">
                         <div class="col-md-6">
-                            <label for="nome" class="form-label">Nome Completo</label>
+                            <label for="nome" class="form-label roboto-medium">Nome Completo</label>
                             <input type="text" id="nome" name="nome" class="form-control form-control-lg"
                                 placeholder="Digite seu nome completo" required>
                         </div>
                         <div class="col-md-6">
-                            <label for="nickname" class="form-label">Nickname</label>
+                            <label for="nickname" class="form-label roboto-medium">Nickname</label>
                             <input type="text" id="nickname" name="nickname" placeholder="Como você será chamado..."
                                 class="form-control form-control-lg" required>
                         </div>
@@ -79,12 +80,12 @@
                     <!-- Email e Telefone -->
                     <div class="row g-3 mb-4">
                         <div class="col-md-6">
-                            <label for="email" class="form-label">Email</label>
+                            <label for="email" class="form-label roboto-medium">Email</label>
                             <input type="email" id="email" name="email" class="form-control form-control-lg"
                                 placeholder="seu@email.com" required>
                         </div>
                         <div class="col-md-6">
-                            <label for="telefone" class="form-label">Telefone (Opcional)</label>
+                            <label for="telefone" class="form-label roboto-medium">Telefone (Opcional)</label>
                             <input type="tel" id="telefone" name="telefone" class="form-control form-control-lg"
                                 placeholder="(00) 00000-0000">
                         </div>
@@ -92,7 +93,7 @@
 
                     <!-- Plataforma -->
                     <div class="mb-4">
-                        <label for="plataforma" class="form-label">Plataforma favorita</label>
+                        <label for="plataforma" class="form-label roboto-medium">Plataforma favorita</label>
                         <select id="plataforma" name="plataforma" class="form-select form-select-lg" required>
                             <option disabled selected value="">Selecione sua plataforma...</option>
                             <option value="pc">PC</option>
@@ -104,43 +105,43 @@
 
                     <!-- Gênero favorito -->
                     <div class="mb-5">
-                        <label class="form-label d-block mb-3">Gênero favorito</label>
+                        <label class="form-label d-block mb-3 roboto-medium">Gênero favorito</label>
                         <div class="row row-cols-2 row-cols-md-3 g-3">
                             <div class="col">
                                 <div class="form-check d-flex align-items-center">
                                     <input class="form-check-input mt-0 me-2" type="checkbox" value="rpg" id="rpg">
-                                    <label class="form-check-label" for="rpg">RPG</label>
+                                    <label class="form-check-label roboto-light" for="rpg">RPG</label>
                                 </div>
                             </div>
                             <div class="col">
                                 <div class="form-check d-flex align-items-center">
                                     <input class="form-check-input mt-0 me-2" type="checkbox" value="indie" id="indie">
-                                    <label class="form-check-label" for="indie">Indie</label>
+                                    <label class="form-check-label roboto-light" for="indie">Indie</label>
                                 </div>
                             </div>
                             <div class="col">
                                 <div class="form-check d-flex align-items-center">
                                     <input class="form-check-input mt-0 me-2" type="checkbox" value="fps" id="fps">
-                                    <label class="form-check-label" for="fps">FPS</label>
+                                    <label class="form-check-label roboto-light" for="fps">FPS</label>
                                 </div>
                             </div>
                             <div class="col">
                                 <div class="form-check d-flex align-items-center">
                                     <input class="form-check-input mt-0 me-2" type="checkbox" value="esportes"
                                         id="esportes">
-                                    <label class="form-check-label" for="esportes">Esportes</label>
+                                    <label class="form-check-label roboto-light" for="esportes">Esportes</label>
                                 </div>
                             </div>
                             <div class="col">
                                 <div class="form-check d-flex align-items-center">
                                     <input class="form-check-input mt-0 me-2" type="checkbox" value="moba" id="moba">
-                                    <label class="form-check-label" for="moba">MOBA</label>
+                                    <label class="form-check-label roboto-light" for="moba">MOBA</label>
                                 </div>
                             </div>
                             <div class="col">
                                 <div class="form-check d-flex align-items-center">
                                     <input class="form-check-input mt-0 me-2" type="checkbox" value="outro" id="outro">
-                                    <label class="form-check-label" for="outro">Outro</label>
+                                    <label class="form-check-label roboto-light" for="outro">Outro</label>
                                 </div>
                             </div>
                         </div>
@@ -148,7 +149,7 @@
 
                     <!-- Mensagem -->
                     <div class="mb-4">
-                        <label for="mensagem" class="form-label">Conte sua ideia, dúvida ou sugestão
+                        <label for="mensagem" class="form-label roboto-medium">Conte sua ideia, dúvida ou sugestão
                             aqui</label>
                         <textarea id="mensagem" name="mensagem" class="form-control form-control-lg"
                             placeholder="Compartilhe seus pensamentos sobre jogos, sugestões ou dúvidas..."
@@ -159,14 +160,15 @@
                     <div class="mb-5">
                         <div class="form-check d-flex align-items-center">
                             <input class="form-check-input mt-0 me-2" type="checkbox" id="termos" required>
-                            <label class="form-check-label" for="termos">Li e aceito os Termos de uso do Happy
+                            <label class="form-check-label roboto-light" for="termos">Li e aceito os Termos de uso do
+                                Happy
                                 Game</label>
                         </div>
                     </div>
 
                     <!-- Botão -->
                     <div class="d-grid">
-                        <button type="submit" class="btn btn-lg botao-enviar py-3">Fazer parte da
+                        <button type="submit" class="btn btn-lg botao-enviar py-3 roboto-bold">Fazer parte da
                             comunidade</button>
                     </div>
                 </form>

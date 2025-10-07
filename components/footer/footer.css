@@ -1,6 +1,5 @@
 /* ========= DARK MINIMALIST FOOTER ========= */
 .footer {
-    background: linear-gradient(135deg, #0D0D0D 0%, #1A1A1A 100%);
     border-top: 1px solid #2D2D2D;
     margin-top: auto;
 }
@@ -44,7 +43,6 @@
 .footer-links a {
     color: #B0B0B0;
     text-decoration: none;
-    font-family: 'Roboto', sans-serif;
     font-weight: 500;
     font-size: 0.95rem;
     transition: color 0.2s ease;
@@ -105,7 +103,6 @@
 .footer-legal a {
     color: #B0B0B0;
     text-decoration: none;
-    font-family: 'Roboto', sans-serif;
     font-size: 0.85rem;
     transition: color 0.2s ease;
     margin: 0 1rem;
@@ -117,7 +114,6 @@
 
 .footer-copyright {
     color: #B0B0B0;
-    font-family: 'Roboto', sans-serif;
     font-size: 0.85rem;
     margin: 0;
 }

@@ -1,9 +1,36 @@
-/* / === TEMA DARK PARA INPUTS === / */
+/* ===== FORMS - DARK THEME ===== */
+
+/* ===== LAYOUT ===== */
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.container {
+    flex: 1;
+}
+
+/* ===== HEADER ===== */
+section header h1 {
+    font-size: clamp(1.8rem, 4vw, 2.5rem);
+    margin-bottom: 1.5rem;
+}
+
+section header .text-intro-center {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* ===== FORM CONTROLS ===== */
 .form-control,
 .form-select {
     background-color: var(--bg-grey);
     border-color: var(--border-primary);
     color: var(--text-primary);
+    margin-bottom: 0.5rem;
 }
 
 .form-control:focus,
@@ -18,10 +45,19 @@
     color: var(--text-muted);
 }
 
-/* / === TEMA DARK PARA CHECKBOXES === / */
+/* ===== CHECKBOX STYLES ===== */
+.form-check {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-bottom: 0.75rem;
+}
+
 .form-check-input {
     background-color: var(--bg-grey);
     border-color: var(--border-primary);
+    margin: 0 !important;
+    flex-shrink: 0;
 }
 
 .form-check-input:checked {
@@ -34,34 +70,25 @@
     box-shadow: 0 0 0 0.25rem rgba(0, 255, 136, 0.25);
 }
 
-/* / === LABELS === / */
-.form-label,
 .form-check-label {
+    margin-bottom: 0 !important;
+    line-height: 1;
+    cursor: pointer;
+}
+
+/* ===== LABELS ===== */
+.form-label {
     color: var(--text-primary);
+    margin-bottom: 0.75rem;
+    font-weight: 500;
 }
 
-/* / === HEADER === / */
-section header h1 {
-    font-family: 'Orbitron', cursive;
-    color: var(--text-primary);
-    font-size: clamp(1.8rem, 4vw, 2.5rem);
-    margin-bottom: 1.5rem;
-}
-
-section header .text-intro-center {
-    color: var(--text-muted);
-    font-size: 1.1rem;
-    line-height: 1.6;
-    max-width: 600px;
-    margin: 0 auto;
-}
-
-/* / === VALIDAÇÃO === / */
+/* ===== VALIDAÇÃO ===== */
 .invalid-feedback {
     color: var(--pink-base);
 }
 
-/* / === BOTÃO CUSTOMIZADO === / */
+/* ===== BOTÃO CUSTOMIZADO ===== */
 .botao-enviar {
     background: var(--green-base);
     color: var(--black);
@@ -72,22 +99,11 @@ section header .text-intro-center {
 }
 
 .botao-enviar:hover {
-    background: var(--green-darker-1);
+    background: var(--green-darker);
     color: var(--black);
 }
 
-/* / === ESPAÇAMENTOS === / */
-.form-control,
-.form-select {
-    margin-bottom: 0.5rem;
-}
-
-.form-label {
-    margin-bottom: 0.75rem;
-    font-weight: 500;
-}
-
-/* / === RESPONSIVIDADE ===  */
+/* ===== RESPONSIVIDADE ===== */
 @media (max-width: 768px) {
     .container {
         padding-top: 100px !important;
