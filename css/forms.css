@@ -1,18 +1,3 @@
-/* / === BOTÃO CUSTOMIZADO === / */
-.botao-enviar {
-    background: var(--green-base);
-    color: var(--black);
-    font-weight: 600;
-    transition: all 0.3s ease;
-}
-
-.botao-enviar:hover {
-    background: var(--green-lighter-1);
-    color: var(--black);
-    transform: translateY(-2px);
-    box-shadow: 0 4px 12px rgba(0, 255, 136, 0.3);
-}
-
 /* / === TEMA DARK PARA INPUTS === / */
 .form-control,
 .form-select {
@@ -59,11 +44,16 @@
 section header h1 {
     font-family: 'Orbitron', cursive;
     color: var(--text-primary);
-    font-size: clamp(1.5rem, 4vw, 2.5rem);
+    font-size: clamp(1.8rem, 4vw, 2.5rem);
+    margin-bottom: 1.5rem;
 }
 
 section header .text-intro-center {
     color: var(--text-muted);
+    font-size: 1.1rem;
+    line-height: 1.6;
+    max-width: 600px;
+    margin: 0 auto;
 }
 
 /* / === VALIDAÇÃO === / */
@@ -71,8 +61,57 @@ section header .text-intro-center {
     color: var(--pink-base);
 }
 
+/* / === BOTÃO CUSTOMIZADO === / */
+.botao-enviar {
+    background: var(--green-base);
+    color: var(--black);
+    font-weight: 600;
+    transition: all 0.2s ease;
+    min-height: 50px;
+    font-size: 1.1rem;
+}
+
+.botao-enviar:hover {
+    background: var(--green-darker-1);
+    color: var(--black);
+}
+
+/* / === ESPAÇAMENTOS === / */
+.form-control,
+.form-select {
+    margin-bottom: 0.5rem;
+}
+
+.form-label {
+    margin-bottom: 0.75rem;
+    font-weight: 500;
+}
+
 /* / === RESPONSIVIDADE ===  */
 @media (max-width: 768px) {
+    .container {
+        padding-top: 100px !important;
+        padding-bottom: 60px !important;
+    }
+
+    section header h1 {
+        font-size: 1.8rem;
+        margin-bottom: 1rem;
+    }
+
+    section header .text-intro-center {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 575px) {
+    .container {
+        padding-top: 90px !important;
+        padding-bottom: 40px !important;
+        padding-left: 1rem !important;
+        padding-right: 1rem !important;
+    }
+
     section header h1 {
         font-size: 1.5rem;
     }

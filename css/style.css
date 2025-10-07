@@ -161,13 +161,10 @@ body {
     align-items: center;
     gap: 0.5rem;
     transition: all 0.2s ease;
-    box-shadow: 0 4px 12px rgba(0, 255, 136, 0.25);
 }
 
 .btn-green-solid:hover {
     background: var(--green-darker-1);
-    transform: translateY(-1px);
-    box-shadow: 0 6px 16px rgba(0, 255, 136, 0.35);
     color: var(--black);
 }
 
@@ -190,8 +187,6 @@ body {
     border-color: var(--green-base);
     background: rgba(0, 255, 136, 0.1);
     color: var(--white);
-    transform: translateY(-1px);
-    box-shadow: 0 4px 12px rgba(0, 255, 136, 0.2);
 }
 
 /* Responsividade base */
