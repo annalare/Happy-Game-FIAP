@@ -45,7 +45,7 @@
 }
 
 .communities-title {
-  font-family: "Press Start 2P", cursive;
+  font-family: "Orbitron", sans-serif;
   font-size: 2rem;
   color: var(--white);
   line-height: 1.3;
@@ -127,7 +127,7 @@
 }
 
 .stats-title {
-  font-family: "Press Start 2P", cursive;
+  font-family: "Orbitron", sans-serif;
   font-size: 2rem;
   color: var(--text-highlight-green);
   line-height: 1.4;
@@ -174,7 +174,7 @@
 }
 
 .stat-number {
-  font-family: "Press Start 2P", cursive;
+  font-family: "Orbitron", sans-serif;
   font-size: 2.6rem;
   color: var(--text-highlight-green);
   margin-bottom: 15px;
@@ -212,7 +212,7 @@
 }
 
 .cta-title {
-  font-family: "Press Start 2P", cursive;
+  font-family: "Orbitron", sans-serif;
   font-size: 2rem;
   color: var(--text-highlight-green);
   line-height: 1.4;

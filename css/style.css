@@ -1,5 +1,5 @@
 /* ===== GOOGLE FONTS ===== */
-@import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
 
 /* ===== TOKENS DE COR ===== */
 :root {
@@ -83,7 +83,7 @@ body {
 
 /* Títulos */
 h1 {
-  font-family: "Press Start 2P", cursive;
+  font-family: "Orbitron", sans-serif;
   font-size: 2.5em;
   color: var(--text-primary);
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
@@ -92,7 +92,7 @@ h1 {
 }
 
 h2 {
-  font-family: "Press Start 2P", cursive;
+  font-family: "Orbitron", sans-serif;
   font-size: 2em;
   color: var(--text-primary);
   margin-bottom: 15px;
@@ -100,7 +100,7 @@ h2 {
 }
 
 h3 {
-  font-family: "Press Start 2P", cursive;
+  font-family: "Orbitron", sans-serif;
   font-size: 1.5em;
   color: var(--text-primary);
   margin-bottom: 10px;
@@ -144,13 +144,6 @@ p {
 }
 
 /* ===== CLASSES DE FONTE ===== */
-
-/* Press Start 2P - Para títulos */
-.press-start-2p {
-  font-family: "Press Start 2P", cursive;
-  font-weight: 400;
-  font-style: normal;
-}
 
 /* ===== CLASSES DE FONTE ROBOTO ===== */
 .roboto-light {
