@@ -106,12 +106,8 @@
 /* ========= RESPONSIVE DESIGN ========= */
 @media (max-width: 991.98px) {
   .navbar-collapse {
-    background: #1A1A1A;
-    border-radius: 8px;
     margin-top: 1rem;
     padding: 1.5rem;
-    border: 1px solid #2D2D2D;
-    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
   }
 
   .navbar-nav {
