@@ -110,6 +110,13 @@ O projeto utiliza um sistema de tokens de cor bem estruturado:
 
 ### Tipografia
 
+# <<<<<<< HEAD
+
+- **Títulos**: Orbitron
+- **Texto**: Roboto
+
+  > > > > > > > c5fdbd0f020fbdb071fa436b8ac34445026370f8
+
 - **Títulos**: Press Start 2P
 - **Texto**: Roboto
 

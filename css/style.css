@@ -1,69 +1,39 @@
 /* ===== GOOGLE FONTS ===== */
 @import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
 
-/* ===== TOKENS DE COR ===== */
+/* ===== DESIGN TOKENS ===== */
 :root {
-  /* Tokens core, são usados para as outras cores */
+    /* CORES PRIMÁRIAS (Base Dark) */
+    --black: #0D0D0D;
+    --grey-dark: #1A1A1A;
+    --grey-medium: #2D2D2D;
+    --grey-light: #B0B0B0;
+    --white: #FFFFFF;
 
-  /* Cores neutras */
-  --black: #0d0d0d;
-  --grey-1: #252525;
-  --grey-2: #6e6e6e;
-  --grey-3: #9e9e9e;
-  --grey-4: #dedbdb;
-  --white: #fdfdfd;
+    /* CORES SECUNDÁRIAS (Acentos Neon) */
+    --green-base: #00FF88;
+    --green-darker: #00CC6D;
+    --pink-base: #FF2E63;
 
-  /* Cores primárias - Verde */
-  --green-darker-2: #009952;
-  --green-darker-1: #00cc6d;
-  --green-base: #00ff88;
-  --green-lighter-1: #33ffa0;
-  --green-lighter-2: #66ffb8;
-
-  /* Cores secundárias - Rosa */
-  --pink-darker-2: #991c3b;
-  --pink-darker-1: #cc254f;
-  --pink-base: #ff2e63;
-  --pink-lighter-1: #ff5882;
-  --pink-lighter-2: #ff82a1;
-
-  /* Use essas cores para definir as cores gerais do site */
-
-  /* Background colors */
-  --bg-dark: var(--black);
-  --bg-light: var(--white);
-  --bg-grey: var(--grey-1);
-  --bg-grey-light: var(--grey-2);
-  --bg-green: var(--green-base);
-  --bg-pink: var(--pink-base);
-
-  /* Text colors */
-  --text-primary: var(--white);
-  --text-secondary: var(--black);
-  --text-muted: var(--grey-3);
-  --text-subtle: var(--grey-2);
-  --text-disabled: var(--grey-1);
-  --text-highlight-green: var(--green-base);
-  --text-highlight-pink: var(--pink-base);
-
-  /* Border colors */
-  --border-primary: var(--grey-2);
-  --border-subtle: var(--grey-1);
-  --border-focus: var(--green-base);
-
-  /* Background colors específicos */
-  --bg-input: var(--white);
-  --bg-disabled: var(--grey-1);
+    --grey-1: var(--grey-dark);
+    --grey-2: #6E6E6E;
+    --grey-3: var(--grey-light);
+    --text-primary: var(--white);
+    --text-secondary: var(--black);
+    --text-muted: var(--grey-light);
+    --bg-dark: var(--black);
+    --bg-grey: var(--grey-dark);
+    --bg-input: var(--white);
+    --border-primary: var(--grey-medium);
 }
 
-/* Reset básico */
+/* ===== RESET E BASE ===== */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/* Configurações gerais do body */
 body {
   font-family: "Roboto", sans-serif;
   line-height: 1.6;
@@ -127,7 +97,7 @@ p {
   border: 1px solid rgba(255, 255, 255, 0.2);
 }
 
-/* Animações úteis */
+/* ===== ANIMAÇÕES GLOBAIS ===== */
 @keyframes fadeIn {
   from {
     opacity: 0;

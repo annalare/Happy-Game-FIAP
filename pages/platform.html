@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 
 <head>
 	<meta charset="UTF-8" />
@@ -9,7 +9,7 @@
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
 		integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
 
-	<link rel="icon" type="image/png" href="../assets/img/favicon.png" />
+	<link rel="icon" type="image/png" href="../assets/img/favicon.svg" />
 	<title>Plataforma</title>
 	<link rel="stylesheet" href="../css/style.css" />
 	<link rel="stylesheet" href="../components/navbar/navbar.css" />
@@ -20,46 +20,42 @@
 
 <body>
 	<!-- Navbar -->
-	<nav class="navbar navbar-expand-md navbar-bg">
+	<nav class="navbar navbar-expand-lg navbar-bg fixed-top">
 		<div class="container">
-			<div class="logo">
-				<a href="../index.html">
-					<img src="../assets/img/logo/logo-all-black.svg" alt="logo do site" />
-				</a>
-			</div>
+			<a href="../index.html" class="navbar-brand">
+				<img src="../assets/img/logo/logo-white.svg" alt="Happy Game" />
+			</a>
 
-			<!-- Burguer Btn -->
 			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
 				aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
 				<span class="navbar-toggler-icon"></span>
 			</button>
 
-			<!-- Menu -->
 			<div class="collapse navbar-collapse" id="navbarNav">
-				<ul class="navbar-nav ms-auto align-items-center gap-3">
+				<ul class="navbar-nav ms-auto">
 					<li class="nav-item">
-						<a class="nav-link" href="../index.html">Inicio</a>
+						<a class="nav-link" href="../index.html">Início</a>
 					</li>
 					<li class="nav-item">
 						<a class="nav-link" href="story-games.html">História dos Jogos</a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link" href="platform.html">Plataforma</a>
+						<a class="nav-link active" href="platform.html">Plataforma</a>
 					</li>
 					<li class="nav-item">
-						<a class="btn btn-navbar-cta" href="forms.html">Inscreva-se</a>
+						<a class="btn-navbar-cta" href="forms.html">Inscreva-se</a>
 					</li>
 				</ul>
 			</div>
 		</div>
 	</nav>
 
-	<div class="container">
+	<div class="container" style="padding-top: 120px; padding-bottom: 80px;">
 		<!-- Features Table Section -->
 		<section class="features-table-section">
 			<div class="table-title">
-				<h1>RECURSOS DA PLATAFORMA</h1>
-				<p>
+				<h1 class="page-title">RECURSOS DA PLATAFORMA</h1>
+				<p class="subtitle">
 					Descubra tudo que nossa plataforma oferece para gamers e
 					desenvolvedores
 				</p>
@@ -116,11 +112,11 @@
 			</div>
 		</section>
 
-		<!-- 1. Hero Section -->
+		<!-- Team Section -->
 		<section class="team-section">
 			<div class="title-section">
-				<h2>CONHEÇA NOSSA EQUIPE</h2>
-				<p>
+				<h2 class="section-title">CONHEÇA NOSSA EQUIPE</h2>
+				<p class="subtitle">
 					Conheça nossa equipe de desenvolvedores e designers que trabalham
 					para criar a melhor plataforma para gamers.
 				</p>
@@ -199,12 +195,24 @@
 
 	<!-- Footer -->
 	<footer class="footer">
-		<div class="footer-container">
+		<div class="container">
 			<div class="footer-content">
-				<div class="footer-logo">
-					<img src="../assets/img/logo/logo-all-black.svg" alt="Logo Happy Game" />
+				<!-- Logo -->
+				<div class="footer-logo text-center">
+					<img src="../assets/img/logo/logo-white.svg" alt="Happy Game" />
 				</div>
 
+				<!-- Navigation -->
+				<nav class="footer-nav">
+					<ul class="footer-links">
+						<li><a href="../index.html">Início</a></li>
+						<li><a href="story-games.html">História dos Jogos</a></li>
+						<li><a href="platform.html">Plataforma</a></li>
+						<li><a href="forms.html">Inscrever-se</a></li>
+					</ul>
+				</nav>
+
+				<!-- Social Media -->
 				<div class="footer-social">
 					<a href="#" aria-label="Instagram">
 						<i class="fab fa-instagram"></i>
@@ -212,22 +220,32 @@
 					<a href="#" aria-label="YouTube">
 						<i class="fab fa-youtube"></i>
 					</a>
+					<a href="#" aria-label="Discord">
+						<i class="fab fa-discord"></i>
+					</a>
+					<a href="#" aria-label="Twitter">
+						<i class="fab fa-twitter"></i>
+					</a>
 				</div>
-			</div>
 
-			<div class="footer-divider"></div>
+				<!-- Divider -->
+				<div class="footer-divider"></div>
 
-			<div class="footer-bottom">
-				<div class="footer-legal">
-					<a href="#">Termos de privacidade</a>
-					<a href="#">Cookies</a>
-				</div>
-				<div class="footer-copyright">
-					<p>© 2025 Happy Game. Todos os direitos reservados.</p>
+				<!-- Bottom Section -->
+				<div class="footer-bottom text-center">
+					<div class="footer-legal">
+						<a href="#">Termos de Uso</a>
+						<a href="#">Política de Privacidade</a>
+						<a href="#">Cookies</a>
+					</div>
+					<p class="footer-copyright">
+						© 2025 Happy Game. Todos os direitos reservados.
+					</p>
 				</div>
 			</div>
 		</div>
 	</footer>
+
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
 		integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
 		crossorigin="anonymous"></script>

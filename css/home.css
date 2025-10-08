@@ -300,6 +300,27 @@
     width: 100%;
     max-width: 300px;
   }
+
+  .stats-content {
+    grid-template-columns: 1fr;
+    gap: 40px;
+    text-align: center;
+  }
+
+  .stats-numbers {
+    order: 2;
+    padding: 20px;
+  }
+
+  .stats-content {
+    grid-template-columns: 1fr;
+    gap: 40px;
+    text-align: center;
+  }
+
+  .stats-numbers {
+    order: 2;
+  }
 }
 
 @media (max-width: 480px) {

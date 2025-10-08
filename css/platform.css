@@ -17,10 +17,12 @@
   color: var(--text-primary);
   margin-bottom: 10px;
 }
+
 .title-section p {
   color: var(--text-muted);
   font-size: 1.1rem;
 }
+
 .list-items {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -74,7 +76,7 @@
   display: inline-block;
   background: var(--green-base);
   color: var(--text-secondary);
-  font-family: "Press Start 2P", cursive;
+  font-family: "Orbitron", cursive;
   font-size: 0.8rem;
   padding: 8px 16px;
   border-radius: 10px;
@@ -95,8 +97,10 @@
   align-items: center;
   gap: 40px;
   width: 100%;
-  padding: 80px 0;
+  padding: 40px 0 80px 0;
   margin-bottom: 40px;
+  margin-top: 80px;
+  /* Account for fixed navbar */
 }
 
 .table-title {
@@ -105,7 +109,7 @@
 }
 
 .table-title h2 {
-  font-family: "Press Start 2P", cursive;
+  font-family: "Orbitron", cursive;
   font-size: 1.8rem;
   color: var(--text-primary);
   margin-bottom: 20px;
@@ -141,7 +145,7 @@
 .features-table th {
   padding: 20px 16px;
   text-align: left;
-  font-family: "Press Start 2P", cursive;
+  font-family: "Orbitron", cursive;
   font-size: 0.8rem;
   color: var(--text-secondary);
   border-bottom: 2px solid var(--green-darker-1);
@@ -192,30 +196,16 @@
   max-width: 400px;
 }
 
-/* ===== TABLET BREAKPOINT (769px - 1120px) ===== */
-@media (min-width: 769px) and (max-width: 1120px) {
-  .list-items {
-    grid-template-columns: (1fr);
-    gap: 60px;
-  }
-
-  .cover {
-    height: 200px;
-  }
-
-  .item-content h3 {
-    font-size: 0.7rem;
-  }
-
-  .item-content h4 {
-    font-size: 0.65rem;
-  }
-}
-
+/* ===== RESPONSIVE DESIGN ===== */
 @media (max-width: 768px) {
   .team-section {
-    padding: 60px 16px;
+    padding: 40px 16px;
     gap: 40px;
+  }
+
+  .features-table-section {
+    padding: 20px 16px 60px 16px;
+    gap: 30px;
   }
 
   .title-section h2 {
@@ -234,6 +224,7 @@
   .cover {
     height: 220px;
   }
+
   .cover img {
     height: 150%;
     object-fit: cover;
@@ -251,45 +242,15 @@
     font-size: 0.6rem;
     padding: 6px 12px;
   }
-
-  .features-table-section {
-    padding: 40px 16px;
-    gap: 30px;
-  }
-
-  .table-title h1 {
-    font-size: 1.4rem;
-  }
-
-  .table-title p {
-    font-size: 1rem;
-  }
-  .features-table th,
-  .features-table td {
-    padding: 12px 8px;
-    font-size: 0.9rem;
-  }
-
-  .features-table th {
-    font-size: 0.7rem;
-  }
-
-  .features-table .category {
-    min-width: 80px;
-  }
-
-  .features-table td:nth-child(2) {
-    min-width: 120px;
-  }
-
-  .features-table td:nth-child(3) {
-    max-width: 250px;
-  }
 }
 
 @media (max-width: 480px) {
   .team-section {
-    padding: 40px 12px;
+    padding: 30px 12px;
+  }
+
+  .features-table-section {
+    padding: 15px 12px 40px 12px;
   }
 
   .list-items {
@@ -310,9 +271,5 @@
 
   .item-content h4 {
     font-size: 0.5rem;
-  }
-
-  .features-table-section {
-    padding: 30px 12px;
   }
 }

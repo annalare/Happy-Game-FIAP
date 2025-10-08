@@ -1,91 +1,119 @@
 /* ===== BUTTON COMPONENT ===== */
 
 .btn {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  padding: 12px 24px;
-  font-size: 1rem;
-  font-weight: 500;
-  text-decoration: none;
-  border: none;
-  border-radius: 8px;
-  cursor: pointer;
-  transition: all 0.2s ease;
-  white-space: nowrap;
-  min-width: 120px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.75rem 2rem;
+    font-size: 1rem;
+    font-weight: 500;
+    text-decoration: none;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    white-space: nowrap;
+    gap: 0.5rem;
 }
 
-/* Botão Verde Sólido */
 .btn-green-solid {
-  background: var(--green-base);
-  color: var(--black);
-  border: 2px solid transparent;
-  font-weight: 600;
+    background: var(--green-base);
+    color: var(--black);
+    font-weight: 600;
 }
 
 .btn-green-solid:hover {
-  background: var(--green-lighter-1);
-  transform: translateY(-1px);
-  color: var(--grey-3);
+    background: var(--green-darker);
+    color: var(--black);
 }
 
-/* Botão Verde Outline */
 .btn-green-outline {
-  background: transparent;
-  color: var(--green-base);
-  border: 2px solid var(--green-base);
+    background: transparent;
+    color: var(--white);
+    border: 1px solid rgba(0, 255, 136, 0.5);
+    backdrop-filter: blur(10px);
 }
 
 .btn-green-outline:hover {
-  background: var(--green-base);
-  color: var(--black);
+    border-color: var(--green-base);
+    background: rgba(0, 255, 136, 0.1);
+    color: var(--white);
 }
 
-/* Botão Rosa Sólido */
 .btn-pink-solid {
-  background: var(--pink-base);
-  color: var(--black);
-  border: 2px solid transparent;
+    background: var(--pink-base);
+    color: var(--white);
 }
 
 .btn-pink-solid:hover {
-  background: var(--pink-lighter-1);
-  transform: translateY(-1px);
+    background: #CC254F;
+    color: var(--white);
 }
 
-/* Botão Rosa Outline */
 .btn-pink-outline {
-  background: transparent;
-  color: var(--pink-base);
-  border: 2px solid var(--pink-base);
+    background: transparent;
+    color: var(--pink-base);
+    border: 1px solid var(--pink-base);
 }
 
 .btn-pink-outline:hover {
-  background: var(--pink-base);
-  color: var(--black);
+    background: var(--pink-base);
+    color: var(--white);
 }
 
-/* Tamanhos */
 .btn-sm {
-  padding: 8px 16px;
-  font-size: 0.875rem;
-  min-width: 100px;
+    padding: 0.5rem 1.5rem;
+    font-size: 0.875rem;
 }
 
 .btn-lg {
-  padding: 16px 32px;
-  font-size: 1.125rem;
-  min-width: 140px;
+    padding: 1rem 2.5rem;
+    font-size: 1.125rem;
+    min-height: 50px;
 }
 
-/* Estados */
 .btn:disabled {
-  opacity: 0.5;
-  cursor: not-allowed;
-  transform: none;
+    opacity: 0.5;
+    cursor: not-allowed;
+    background: var(--grey-medium) !important;
+    color: var(--grey-light) !important;
+    border-color: var(--grey-medium) !important;
 }
 
 .btn:disabled:hover {
   transform: none;
+}
+
+.btn-navbar-cta {
+    background: var(--green-base) !important;
+    color: var(--black) !important;
+    font-weight: 600;
+    font-size: 0.9rem;
+    padding: 0.75rem 1.5rem;
+    border-radius: 6px;
+    text-decoration: none;
+    transition: all 0.2s ease;
+    margin-left: 0.5rem;
+}
+
+.btn-navbar-cta:hover {
+    background: var(--green-darker) !important;
+    color: var(--black) !important;
+}
+
+@media (max-width: 991.98px) {
+    .btn-navbar-cta {
+        width: 100%;
+        margin: 1rem 0 0 0;
+        text-align: center;
+        justify-content: center;
+        display: flex;
+    }
+}
+
+@media (max-width: 575.98px) {
+    .btn-navbar-cta {
+        font-size: 0.9rem;
+        padding: 0.875rem 1.25rem;
+    }
 }
