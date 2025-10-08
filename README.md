@@ -7,6 +7,7 @@ O **Happy Game** é uma plataforma web desenvolvida para conectar gamers e entus
 ## 🎯 Propósito
 
 O site foi criado para:
+
 - **Conectar gamers**: Criar uma comunidade vibrante de jogadores
 - **Educar sobre história**: Apresentar a evolução dos videogames ao longo das décadas
 - **Apresentar recursos**: Mostrar funcionalidades da plataforma para desenvolvedores e usuários
@@ -15,14 +16,16 @@ O site foi criado para:
 ## 🚀 Funcionalidades
 
 ### 🏠 Página Inicial (`index.html`)
+
 - **Hero Section**: Apresentação principal com call-to-action
 - **Seção de Comunidades**: Cards interativos mostrando benefícios da plataforma
 - **Estatísticas**: Dados impactantes sobre a indústria de jogos
 - **Call-to-Action**: Convite para inscrição na comunidade
 
 ### 📚 História dos Jogos (`pages/story-games.html`)
+
 - **Timeline Interativa**: Evolução dos videogames de 1970 até o presente
-- **Períodos Históricos**: 
+- **Períodos Históricos**:
   - 1970-1980: O Início de Tudo (Pong, Space Invaders, Pac-Man)
   - 1980-1990: A Batalha dos Gigantes (Nintendo vs Sega)
   - 1990-2000: Uma Nova Dimensão (Gráficos 3D, jogos online)
@@ -30,6 +33,7 @@ O site foi criado para:
   - 2010-Presente: Games como Serviço e Realidade Virtual
 
 ### 🛠️ Plataforma (`pages/platform.html`)
+
 - **Tabela de Recursos**: Funcionalidades organizadas por categoria
 - **Equipe**: Apresentação dos desenvolvedores do projeto
 - **Recursos Disponíveis**:
@@ -40,12 +44,14 @@ O site foi criado para:
   - Sistema de Conquistas
 
 ### 📝 Formulário de Inscrição (`pages/forms.html`)
+
 - **Cadastro Completo**: Nome, nickname, email, telefone
 - **Preferências**: Plataforma favorita e gêneros de jogos
 - **Feedback**: Campo para sugestões e ideias
 - **Validação**: Campos obrigatórios e aceite de termos
 
 ### ✅ Página de Feedback (`pages/feedback.html`)
+
 - **Confirmação de Cadastro**: Página de sucesso após inscrição
 - **FOMO Section**: Benefícios exclusivos para membros
 - **Call-to-Action**: Convite para seguir nas redes sociais
@@ -53,18 +59,21 @@ O site foi criado para:
 ## 🛠️ Tecnologias Utilizadas
 
 ### Frontend
+
 - **HTML5**: Estrutura semântica e acessível
 - **CSS3**: Estilização moderna com variáveis CSS e animações
 - **Bootstrap 5.3.8**: Framework CSS para responsividade e componentes
 
 ### Bibliotecas e Recursos Externos
+
 - **Bootstrap 5.3.8**: Sistema de grid responsivo e componentes UI
 - **Font Awesome 6.4.0**: Ícones para interface
-- **Google Fonts**: 
+- **Google Fonts**:
   - Orbitron (títulos)
   - Roboto (texto geral)
 
 ### Design System
+
 - **CSS Custom Properties**: Sistema de tokens de design
 - **Componentes Reutilizáveis**: Arquitetura modular
 - **Responsive Design**: Mobile-first approach com menu hamburguer
@@ -72,9 +81,11 @@ O site foi criado para:
 ## 🎨 Sistema de Design
 
 ### Paleta de Cores
+
 O projeto utiliza um sistema de tokens de cor bem estruturado:
 
 #### Cores Neutras
+
 - `--black`: #0D0D0D
 - `--grey-1`: #252525
 - `--grey-2`: #6E6E6E
@@ -82,6 +93,7 @@ O projeto utiliza um sistema de tokens de cor bem estruturado:
 - `--white`: #FDFDFD
 
 #### Cores Primárias (Verde)
+
 - `--green-darker-2`: #009952
 - `--green-darker-1`: #00CC6D
 - `--green-base`: #00FF88
@@ -89,6 +101,7 @@ O projeto utiliza um sistema de tokens de cor bem estruturado:
 - `--green-lighter-2`: #66FFB8
 
 #### Cores Secundárias (Rosa)
+
 - `--pink-darker-2`: #991C3B
 - `--pink-darker-1`: #CC254F
 - `--pink-base`: #FF2E63
@@ -96,9 +109,16 @@ O projeto utiliza um sistema de tokens de cor bem estruturado:
 - `--pink-lighter-2`: #FF82A1
 
 ### Tipografia
-- **Títulos**: Orbitron 
+
+# <<<<<<< HEAD
+
+- **Títulos**: Orbitron
 - **Texto**: Roboto
 
+  > > > > > > > c5fdbd0f020fbdb071fa436b8ac34445026370f8
+
+- **Títulos**: Press Start 2P
+- **Texto**: Roboto
 
 ## 📁 Estrutura do Projeto
 
@@ -132,12 +152,14 @@ Happy-Game-Website---FIAP/
 ## 🚀 Como Executar
 
 1. **Clone o repositório**
+
    ```bash
    git clone [URL_DO_REPOSITORIO]
    cd Happy-Game-Website---FIAP
    ```
 
 2. **Abra o projeto**
+
    - Abra o arquivo `index.html` em um navegador web
    - Ou use um servidor local (Live Server, Python HTTP server, etc.)
 
@@ -158,4 +180,4 @@ Happy-Game-Website---FIAP/
 
 ---
 
-*Projeto desenvolvido como parte da Graduação da FIAP em Sistemas de Informação*
+_Projeto desenvolvido como parte da Graduação da FIAP em Sistemas de Informação_

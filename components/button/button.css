@@ -81,7 +81,7 @@
 }
 
 .btn:disabled:hover {
-    transform: none;
+  transform: none;
 }
 
 .btn-navbar-cta {
