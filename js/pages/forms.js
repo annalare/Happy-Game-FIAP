@@ -1,5 +1,3 @@
-document.addEventListener('DOMContentLoaded', coletarDadosFormulario);
-
 const coletarDadosFormulario = function () {
   const formulario = document.querySelector('form');
 
@@ -40,6 +38,8 @@ const coletarDadosFormulario = function () {
     }
 
     salvarDadosUsuario(dadosUsuario);
+    window.location.href = 'feedback.html';
   });
 }
 
+document.addEventListener('DOMContentLoaded', coletarDadosFormulario);
