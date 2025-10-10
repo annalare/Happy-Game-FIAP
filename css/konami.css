@@ -1,0 +1,53 @@
+/* Balão flutuante */
+.floating-balloon {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+   color: #ffffff !important; 
+  background: var(--green-base);
+
+  border-radius: 20px;
+
+  z-index: 9999;
+  animation: float 3s ease-in-out infinite;
+  cursor: pointer;
+  max-width: 200px;
+}
+
+.floating-balloon:hover {
+  transform: scale(1.05);
+  box-shadow: 0 5px 10px var(--green-base);
+}
+
+
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-15px);
+  }
+}
+
+@keyframes konamiBounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+#konamiSuccessModal .fa-trophy {
+  animation: konamiBounce 1s ease-in-out infinite;
+}
+
+
+@media (max-width: 768px) {
+  .floating-balloon {
+    bottom: 20px;
+    right: 20px;
+    max-width: 160px;
+  }
+}
