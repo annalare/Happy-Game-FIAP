@@ -72,13 +72,12 @@
   font-weight: 700;
 }
 
-/* Estilização dos Cards */
 .community-card {
   background: var(--grey-dark);
   border: 2px solid var(--grey-medium) !important;
   border-radius: 16px;
   transition: all 0.3s ease;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 4px 20px var(--black, 0.1);
   cursor: pointer;
   overflow: hidden;
 }
@@ -86,7 +85,7 @@
 .community-card:hover {
   transform: translateY(-10px);
   border-color: var(--green-base) !important;
-  box-shadow: 0 12px 30px rgba(0, 255, 136, 0.2);
+  box-shadow: 0 12px 30px var(--green-darker-2, 0.3);
 }
 
 .community-card .card-img-top {
@@ -106,8 +105,6 @@
   background: var(--grey-dark);
   text-align: left;
 }
-
-
 
 .community-card .card-title {
   font-family: "Orbitron", sans-serif;
@@ -149,6 +146,8 @@
 .community-link:hover::after {
   transform: translateX(5px);
 }
+
+
 /* ===== STATS SECTION ===== */
 .stats-section {
   background: var(--bg-grey);
