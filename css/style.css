@@ -3,28 +3,28 @@
 
 /* ===== DESIGN TOKENS ===== */
 :root {
-    /* CORES PRIMÁRIAS (Base Dark) */
-    --black: #0D0D0D;
-    --grey-dark: #1A1A1A;
-    --grey-medium: #2D2D2D;
-    --grey-light: #B0B0B0;
-    --white: #FFFFFF;
+  /* CORES PRIMÁRIAS (Base Dark) */
+  --black: #0D0D0D;
+  --grey-dark: #1A1A1A;
+  --grey-medium: #2D2D2D;
+  --grey-light: #B0B0B0;
+  --white: #FFFFFF;
 
-    /* CORES SECUNDÁRIAS (Acentos Neon) */
-    --green-base: #00FF88;
-    --green-darker: #00CC6D;
-    --pink-base: #FF2E63;
+  /* CORES SECUNDÁRIAS (Acentos Neon) */
+  --green-base: #00FF88;
+  --green-darker: #00CC6D;
+  --pink-base: #FF2E63;
 
-    --grey-1: var(--grey-dark);
-    --grey-2: #6E6E6E;
-    --grey-3: var(--grey-light);
-    --text-primary: var(--white);
-    --text-secondary: var(--black);
-    --text-muted: var(--grey-light);
-    --bg-dark: var(--black);
-    --bg-grey: var(--grey-dark);
-    --bg-input: var(--white);
-    --border-primary: var(--grey-medium);
+  --grey-1: var(--grey-dark);
+  --grey-2: #6E6E6E;
+  --grey-3: var(--grey-light);
+  --text-primary: var(--white);
+  --text-secondary: var(--black);
+  --text-muted: var(--grey-light);
+  --bg-dark: var(--black);
+  --bg-grey: var(--grey-dark);
+  --bg-input: var(--white);
+  --border-primary: var(--grey-medium);
 }
 
 /* ===== RESET E BASE ===== */
@@ -88,6 +88,7 @@ p {
     opacity: 0;
     transform: translateY(30px);
   }
+
   to {
     opacity: 1;
     transform: translateY(0);
