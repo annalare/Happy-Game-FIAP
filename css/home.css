@@ -30,6 +30,25 @@
   display: block;
 }
 
+.hero-cta-primary {
+  background: var(--green-base);
+  border: none;
+  color: var(--black);
+  font-weight: 600;
+  padding: 1rem 2.5rem;
+  border-radius: 6px;
+  font-size: 1rem;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  transition: all 0.2s ease;
+}
+
+.hero-cta-primary:hover {
+  background: var(--green-darker);
+  color: var(--black);
+}
 /* ===== COMMUNITIES SECTION ===== */
 
 .communities-section {
