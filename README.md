@@ -63,6 +63,7 @@ O site foi criado para:
 - **HTML5**: Estrutura semântica e acessível
 - **CSS3**: Estilização moderna com variáveis CSS e animações
 - **Bootstrap 5.3.8**: Framework CSS para responsividade e componentes
+- **Javascript++**: Interatividade e funcionalidades dinâmicas
 
 ### Bibliotecas e Recursos Externos
 
@@ -86,27 +87,17 @@ O projeto utiliza um sistema de tokens de cor bem estruturado:
 
 #### Cores Neutras
 
-- `--black`: #0D0D0D
-- `--grey-1`: #252525
-- `--grey-2`: #6E6E6E
-- `--grey-3`: #9E9E9E
-- `--white`: #FDFDFD
+--black: #0D0D0D;
+--grey-dark: #1A1A1A;
+--grey-medium: #2D2D2D;
+--grey-light: #B0B0B0;
+--white: #FFFFFF;
 
-#### Cores Primárias (Verde)
+### CORES SECUNDÁRIAS (Acentos Neon)
 
-- `--green-darker-2`: #009952
-- `--green-darker-1`: #00CC6D
-- `--green-base`: #00FF88
-- `--green-lighter-1`: #33FFA0
-- `--green-lighter-2`: #66FFB8
-
-#### Cores Secundárias (Rosa)
-
-- `--pink-darker-2`: #991C3B
-- `--pink-darker-1`: #CC254F
-- `--pink-base`: #FF2E63
-- `--pink-lighter-1`: #FF5882
-- `--pink-lighter-2`: #FF82A1
+--green-base: #00FF88;
+--green-darker: #00CC6D;
+--pink-base: #FF2E63;
 
 ### Tipografia
 
@@ -115,39 +106,43 @@ O projeto utiliza um sistema de tokens de cor bem estruturado:
 - **Títulos**: Orbitron
 - **Texto**: Roboto
 
-  > > > > > > > c5fdbd0f020fbdb071fa436b8ac34445026370f8
-
-- **Títulos**: Press Start 2P
-- **Texto**: Roboto
-
 ## 📁 Estrutura do Projeto
 
-```
+````
 Happy-Game-Website---FIAP/
+├── .vscode/                   # Configurações do VS Code
 ├── assets/
-│   └── img/                    # Imagens e recursos visuais
-│       ├── profile/           # Fotos da equipe
-│       └── *.png, *.svg       # Imagens do site
-├── components/                # Componentes reutilizáveis
-│   ├── button/               # Componente de botão
-│   ├── footer/               # Componente de rodapé
-│   ├── input/                # Componente de input
-│   └── navbar/               # Componente de navegação
-├── css/                      # Estilos do projeto
-│   ├── style.css             # Estilos globais e design system
-│   ├── home.css              # Estilos da página inicial
-│   ├── platform.css          # Estilos da página da plataforma
-│   ├── story-games.css       # Estilos da página de história
-│   ├── forms.css             # Estilos do formulário
-│   └── feedback.css          # Estilos da página de feedback
-├── pages/                    # Páginas do site
-│   ├── platform.html         # Página da plataforma
-│   ├── story-games.html      # Página de história dos jogos
-│   ├── forms.html            # Formulário de inscrição
-│   └── feedback.html         # Página de confirmação
-├── index.html                # Página inicial
-└── README.md                 # Documentação do projeto
-```
+│   └── img/                   # Imagens e recursos visuais
+│       ├── profile/          # Fotos da equipe
+│       └── *.png, *.svg      # Imagens do site
+├── components/               # Componentes reutilizáveis
+│   ├── button/              # Componente de botão
+│   ├── footer/              # Componente de rodapé
+│   ├── input/               # Componente de input
+│   └── navbar/              # Componente de navegação
+├── css/                     # Estilos do projeto
+│   ├── feedback.css         # Estilos da página de feedback
+│   ├── forms.css            # Estilos do formulário
+│   ├── home.css             # Estilos da página inicial
+│   ├── konami.css           # Estilos do easter egg
+│   ├── platform.css         # Estilos da página da plataforma
+│   ├── story-games.css      # Estilos da página de história
+│   └── style.css            # Estilos globais e design system
+├── js/                      # JavaScript do projeto
+│   ├── pages/              # Scripts específicos de páginas
+│   │   ├── feedback.js     # Lógica da página de feedback
+│   │   ├── forms.js        # Lógica do formulário
+│   │   ├── home.js         # Lógica da página inicial
+│   │   └── platform.js     # Lógica da plataforma
+│   └── utils/              # Utilitários JavaScript
+│       └── storage.js      # Gerenciamento de armazenamento local
+├── pages/                   # Páginas do site
+│   ├── feedback.html       # Página de confirmação
+│   ├── forms.html          # Formulário de inscrição
+│   ├── platform.html       # Página da plataforma
+│   └── story-games.html    # Página de história dos jogos
+├── index.html              # Página inicial
+└── README.md               # Documentação do projeto
 
 ## 🚀 Como Executar
 
@@ -156,7 +151,7 @@ Happy-Game-Website---FIAP/
    ```bash
    git clone [URL_DO_REPOSITORIO]
    cd Happy-Game-Website---FIAP
-   ```
+````
 
 2. **Abra o projeto**
 
