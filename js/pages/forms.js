@@ -41,21 +41,21 @@ const coletarDadosFormulario = function () {
     return generosSelecionados;
   };
 
-  inputTelefone.addEventListener("input", function (e) {
-    let valor = e.target.value.replace(/\D/g, "");
+  const formatarTelefone = function (valor) {
+    const digitos = valor.replace(/\D/g, "");
+    const digitosLimitados = digitos.slice(0, 11);
 
-    if (valor.length > 11) valor = valor.slice(0, 11);
+    // Aplica a formatação
+    if (digitosLimitados.length === 0) return "";
+    if (digitosLimitados.length <= 2) return `(${digitosLimitados})`;
+    if (digitosLimitados.length <= 6) return `(${digitosLimitados.slice(0, 2)})${digitosLimitados.slice(2)}`;
+    if (digitosLimitados.length <= 10) return `(${digitosLimitados.slice(0, 2)})${digitosLimitados.slice(2, 6)}-${digitosLimitados.slice(6)}`;
 
-    if (valor.length > 6) {
-      e.target.value = `(${valor.slice(0, 2)}) ${valor.slice(
-        2,
-        7
-      )}-${valor.slice(7)}`;
-    } else if (valor.length > 2) {
-      e.target.value = `(${valor.slice(0, 2)}) ${valor.slice(2)}`;
-    } else if (valor.length > 0) {
-      e.target.value = `(${valor}`;
-    }
+    return `(${digitosLimitados.slice(0, 2)}) ${digitosLimitados.slice(2, 7)}-${digitosLimitados.slice(7)}`;
+  };
+
+  inputTelefone.addEventListener("input", (e) => {
+    e.target.value = formatarTelefone(e.target.value);
   });
 
   formulario.addEventListener("submit", async (evento) => {
