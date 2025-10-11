@@ -1,4 +1,3 @@
-// Konami Code Challenge
 (() => {
   const KONAMI_CODE = [
     "ArrowUp",
@@ -7,10 +6,6 @@
     "ArrowDown",
     "ArrowLeft",
     "ArrowRight",
-    "ArrowLeft",
-    "ArrowRight",
-    "b",
-    "a",
   ];
 
   let userSequence = [];
@@ -22,7 +17,7 @@
     balloon.innerHTML = `
       <div class="text-center p-3">
 
-        <p class="mb-0 small fw-bold balloon-content">Ative o easter egg <br> Você conhece o código Konami?</p>
+        <p class="mb-0 small fw-bold balloon-content">Pressione ↑ ↑ ↓ ↓ ← →  e descubra uma surpresa  🎮 </p> 
       </div>
     `;
     document.body.appendChild(balloon);
@@ -40,7 +35,7 @@
           <div class="modal-content bg-dark border border-success border-2">
             <div class="modal-header border-secondary">
               <h5 class="modal-title text-success fw-bold">
-                🎮 CÓDIGO KONAMI ATIVADO! 🎮
+                🎮 CÓDIGO SURPRESA ATIVADO! 🎮
               </h5>
               <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
             </div>
@@ -54,7 +49,6 @@
                 <span class="badge bg-success text-dark px-3 py-2">Conquista Desbloqueada</span>
               </div>
             </div>
-            
           </div>
         </div>
       </div>
@@ -88,7 +82,6 @@
 
   document.addEventListener("DOMContentLoaded", () => {
     floatingBalloon = createFloatingBalloon();
-
     document.addEventListener("keydown", (e) => {
       checkKonamiCode(e.key);
     });

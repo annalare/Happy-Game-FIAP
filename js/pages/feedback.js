@@ -17,7 +17,7 @@ const inicializarFeedback = function () {
 
 const personalizarTitulo = function (elemento, nome) {
   if (elemento && nome) {
-    elemento.textContent = `Bem-vindo(a), ${nome}! Cadastro Realizado com Sucesso!`;
+    elemento.textContent = `Bem-vindo(a), ${nome}! Cadastro realizado com sucesso!`;
   }
 };
 
@@ -69,19 +69,22 @@ const renderizarCards = function (container, generos) {
     rpg: {
       icone: "fas fa-dragon",
       titulo: "Aventuras Épicas",
-      descricao: "Explore mundos fantásticos e narrativas profundas criadas pela comunidade",
+      descricao:
+        "Explore mundos fantásticos e narrativas profundas criadas pela comunidade",
     },
 
     fps: {
       icone: "fas fa-crosshairs",
       titulo: "Competições Táticas",
-      descricao: "Participe de torneios e aperfeiçoe suas habilidades em combate",
+      descricao:
+        "Participe de torneios e aperfeiçoe suas habilidades em combate",
     },
 
     indie: {
       icone: "fas fa-palette",
       titulo: "Descobertas Criativas",
-      descricao: "Encontre joias indie únicas recomendadas pela nossa comunidade",
+      descricao:
+        "Encontre joias indie únicas recomendadas pela nossa comunidade",
     },
 
     esportes: {

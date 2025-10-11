@@ -52,7 +52,8 @@
 /* ===== COMMUNITIES SECTION ===== */
 
 .communities-section {
-  background: var(--grey-1);
+
+  background: linear-gradient(135deg, #1A1A1A 0%, #252525 50%, #1A1A1A 100%);
   padding: 80px 0;
   position: relative;
   overflow: hidden;
