@@ -99,12 +99,6 @@ O projeto utiliza um sistema de tokens de cor bem estruturado:
 --green-darker: #00CC6D;
 --pink-base: #FF2E63;
 
-### Tipografia
-
-# <<<<<<< HEAD
-
-- **Títulos**: Orbitron
-- **Texto**: Roboto
 
 ## 📁 Estrutura do Projeto
 
