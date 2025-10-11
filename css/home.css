@@ -30,11 +30,31 @@
   display: block;
 }
 
+.hero-cta-primary {
+  background: var(--green-base);
+  border: none;
+  color: var(--black);
+  font-weight: 600;
+  padding: 1rem 2.5rem;
+  border-radius: 6px;
+  font-size: 1rem;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  transition: all 0.2s ease;
+}
+
+.hero-cta-primary:hover {
+  background: var(--green-darker);
+  color: var(--black);
+}
 /* ===== COMMUNITIES SECTION ===== */
 
 .communities-section {
-  background: var(--grey-1);
-  padding: 60px 0;
+
+  background: linear-gradient(135deg, #1A1A1A 0%, #252525 50%, #1A1A1A 100%);
+  padding: 80px 0;
   position: relative;
   overflow: hidden;
 }
@@ -47,66 +67,71 @@
 
 .communities-title {
   font-family: "Orbitron", sans-serif;
-  font-size: 2rem;
+  font-size: 2.5rem;
   color: var(--white);
   line-height: 1.3;
+  font-weight: 700;
 }
 
-/* Estilização dos Cards Bootstrap */
 .community-card {
-  border-radius: 8px;
+  background: var(--grey-dark);
+  border: 2px solid var(--grey-medium) !important;
+  border-radius: 16px;
   transition: all 0.3s ease;
-  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 20px var(--black, 0.1);
   cursor: pointer;
   overflow: hidden;
 }
 
 .community-card:hover {
-  transform: translateY(-8px);
-  box-shadow: 0 10px 10px var(--pink-lighter-1);
+  transform: translateY(-10px);
+  border-color: var(--green-base) !important;
+  box-shadow: 0 12px 30px var(--green-darker-2, 0.3);
 }
 
 .community-card .card-img-top {
   width: 100%;
-  border-radius: 8px;
-  min-height: 80px;
+  height: 250px;
   object-fit: cover;
   object-position: center;
+  transition: transform 0.4s ease;
+}
+
+.community-card:hover .card-img-top {
+  transform: scale(1.05);
 }
 
 .community-card .card-body {
-  padding: 25px;
+  padding: 30px;
+  background: var(--grey-dark);
   text-align: left;
 }
 
-.community-badge {
-  color: var(--text-secondary);
-  font-weight: 600;
-  font-size: 0.9rem;
-}
-
 .community-card .card-title {
-  font-family: "Roboto", sans-serif;
-  font-size: 1.3rem;
+  font-family: "Orbitron", sans-serif;
+  font-size: 1.4rem;
   font-weight: 700;
-  color: var(--text-secondary);
+  color: var(--white);
   line-height: 1.3;
+  margin-bottom: 15px;
 }
 
 .community-card .card-text {
-  color: var(--black);
-  line-height: 1.5;
-  font-size: 0.95rem;
+  color: var(--grey-light);
+  line-height: 1.6;
+  font-size: 1rem;
+  margin-bottom: 20px;
 }
 
 .community-link {
-  color: var(--text-secondary);
+  color: var(--green-base);
   text-decoration: none;
   font-weight: 600;
-  font-size: 0.9rem;
+  font-size: 0.95rem;
   display: inline-flex;
   align-items: center;
-  gap: 5px;
+  gap: 8px;
+  transition: all 0.3s ease;
 }
 
 .community-link::after {
@@ -114,9 +139,15 @@
   transition: transform 0.3s ease;
 }
 
+.community-link:hover {
+  color: var(--green-darker);
+  gap: 12px;
+}
+
 .community-link:hover::after {
   transform: translateX(5px);
 }
+
 
 /* ===== STATS SECTION ===== */
 .stats-section {
@@ -248,7 +279,7 @@
   transform: translateY(-3px);
 }
 
-/* ===== MEDIA QUERIES SIMPLIFICADOS ===== */
+
 @media (max-width: 1024px) {
   .home-hero {
     gap: 40px;
