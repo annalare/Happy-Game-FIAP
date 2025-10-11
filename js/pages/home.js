@@ -1,3 +1,7 @@
+// NOTA DOS DEVS:
+// A ideia a partir de easter eggs criados é O Konami Code que é um dos "cheat codes" mais famosos da história dos videogames! :))
+//  adicionamos um modal de conquista usando ele de referencia :)
+
 (() => {
   const KONAMI_CODE = [
     "ArrowUp",
