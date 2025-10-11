@@ -23,6 +23,20 @@ const coletarDadosFormulario = function () {
     return generosSelecionados;
   }
 
+  inputTelefone.addEventListener('input', function (e) {
+    let valor = e.target.value.replace(/\D/g, '');
+
+    if (valor.length > 11) valor = valor.slice(0, 11);
+
+    if (valor.length > 6) {
+      e.target.value = `(${valor.slice(0, 2)}) ${valor.slice(2, 7)}-${valor.slice(7)}`;
+    } else if (valor.length > 2) {
+      e.target.value = `(${valor.slice(0, 2)}) ${valor.slice(2)}`;
+    } else if (valor.length > 0) {
+      e.target.value = `(${valor}`;
+    }
+  });
+
   formulario.addEventListener('submit', (evento) => {
     evento.preventDefault();
 
