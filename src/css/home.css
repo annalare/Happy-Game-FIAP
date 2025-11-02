@@ -221,7 +221,7 @@
 .stats-image-container {
   width: 100%;
   height: 380px;
-  background-image: url("/assets/img/game-god.png");
+  background-image: url("../assets/img/game-god.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
