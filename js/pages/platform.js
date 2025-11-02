@@ -33,9 +33,9 @@ const featuresData = [
   {
     categoria: "Comunidade",
     icone: "fas fa-people-group",
-    recurso: "Grupo Diversidade",
+    recurso: "Diversidade & Inclusão",
     descricao:
-      "Espaço dedicado à representatividade negra e indígena no gaming",
+      "Espaço acolhedor para gamers de todas as origens, etnias, identidades e culturas.",
   },
 ];
 
