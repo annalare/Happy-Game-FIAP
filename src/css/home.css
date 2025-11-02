@@ -49,6 +49,7 @@
   background: var(--green-darker);
   color: var(--black);
 }
+
 /* ===== COMMUNITIES SECTION ===== */
 
 .communities-section {
@@ -91,7 +92,7 @@
 
 .community-card .card-img-top {
   width: 100%;
-  height: 250px;
+  height: 180px;
   object-fit: cover;
   object-position: center;
   transition: transform 0.4s ease;
@@ -102,25 +103,25 @@
 }
 
 .community-card .card-body {
-  padding: 30px;
+  padding: 20px;
   background: var(--grey-dark);
   text-align: left;
 }
 
 .community-card .card-title {
   font-family: "Orbitron", sans-serif;
-  font-size: 1.4rem;
+  font-size: 1.1rem;
   font-weight: 700;
   color: var(--white);
   line-height: 1.3;
-  margin-bottom: 15px;
+  margin-bottom: 12px;
 }
 
 .community-card .card-text {
   color: var(--grey-light);
-  line-height: 1.6;
-  font-size: 1rem;
-  margin-bottom: 20px;
+  line-height: 1.5;
+  font-size: 0.9rem;
+  margin-bottom: 15px;
 }
 
 .community-link {
