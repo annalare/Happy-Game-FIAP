@@ -47,7 +47,7 @@ O site foi criado para:
   - Sistema de Conquistas
   - Diversidade & Inclusão
 
-### 📝 Formulário de Inscrição (`pages/forms.html`)
+### 📝 Formulário de Inscrição (`pages/forms-cadastro.html`)
 
 - **Cadastro Completo**: Nome, nickname, email, telefone
 - **Preferências**: Plataforma favorita e gêneros de jogos
@@ -167,7 +167,7 @@ Happy-Game-Website---FIAP/
    - Página inicial: `index.html`
    - História dos jogos: `pages/story-games.html`
    - Plataforma: `pages/platform.html`
-   - Formulário: `pages/forms.html`
+   - Formulário: `pages/forms-cadastro.html`
    - Feedback: `pages/feedback.html`
 
 ## 👥 Equipe de Desenvolvimento

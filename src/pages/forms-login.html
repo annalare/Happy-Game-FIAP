@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Login - Happy Game</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Bootstrap Style -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+    <link rel="icon" type="image/png" href="../assets/img/favicon.svg" />
+    <link rel="stylesheet" href="../css/forms.css" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../components/input/input.css" />
+    <link rel="stylesheet" href="../components/navbar/navbar.css" />
+    <link rel="stylesheet" href="../components/footer/footer.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-bg fixed-top">
+        <div class="container">
+            <a href="../../index.html" class="navbar-brand">
+                <img src="../assets/img/logo/logo-white.svg" alt="Happy Game" />
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="../../index.html">Início</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="story-games.html">História</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="platform.html">Plataforma</a>
+                    </li>
+                    <li class="nav-item">
+                        <button class="btn-navbar-cta" data-bs-toggle="modal"
+                            data-bs-target="#authModal">Inscreva-se</button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Formulário -->
+    <div class="container" style="padding-top: 120px; padding-bottom: 80px;">
+        <div class="row justify-content-center">
+            <div class="col-12 col-lg-10 col-xl-8">
+                <header class="text-center mb-5">
+                    <h1 class="mb-3 page-title">Bem-vindo de volta!</h1>
+                    <p class="text-intro-center subtitle text-light">Entre na sua conta e continue explorando a
+                        comunidade gamer.</p>
+                </header>
+
+                <form id="loginForm">
+                    <!-- Email -->
+                    <div class="mb-4">
+                        <label for="loginEmail" class="form-label roboto-medium">Email</label>
+                        <input type="email" id="loginEmail" name="email" class="form-control form-control-lg"
+                            placeholder="seu@email.com" required>
+                    </div>
+
+                    <!-- Senha -->
+                    <div class="mb-4">
+                        <label for="loginSenha" class="form-label roboto-medium">Senha</label>
+                        <input type="password" id="loginSenha" name="senha" class="form-control form-control-lg"
+                            placeholder="Digite sua senha" required>
+                    </div>
+
+                    <!-- Lembrar-me e Esqueci a senha -->
+                    <div class="row align-items-center mb-4">
+                        <div class="col-md-6">
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="lembrarMe">
+                                <label class="form-check-label roboto-light" for="lembrarMe">Lembrar-me</label>
+                            </div>
+                        </div>
+                        <div class="col-md-6 text-md-end">
+                            <a href="#" class="text-decoration-none" style="color: var(--green-base);">Esqueci minha
+                                senha</a>
+                        </div>
+                    </div>
+
+                    <!-- Botão Login -->
+                    <div class="d-grid mb-4">
+                        <button type="submit" class="btn btn-lg botao-enviar py-3 roboto-bold">Entrar</button>
+                    </div>
+
+                    <!-- Link para cadastro -->
+                    <div class="text-center">
+                        <p class="text-light mb-0">
+                            Ainda não tem conta?
+                            <a href="forms-cadastro.html" class="text-decoration-none fw-semibold"
+                                style="color: var(--green-base);">Cadastre-se aqui</a>
+                        </p>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal de Autenticação -->
+    <div class="modal fade" id="authModal" tabindex="-1" aria-labelledby="authModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content bg-dark border border-secondary">
+                <div class="modal-header border-secondary">
+                    <h5 class="modal-title text-white" id="authModalLabel">
+                        <i class="fas fa-gamepad me-2" style="color: var(--green-base);"></i>
+                        Junte-se à Comunidade
+                    </h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
+                        aria-label="Close"></button>
+                </div>
+                <div class="modal-body text-center py-4">
+                    <p class="text-light mb-4">Escolha uma opção para continuar:</p>
+
+                    <div class="d-grid gap-3">
+                        <a href="forms-cadastro.html" class="btn btn-lg py-3"
+                            style="background: var(--green-base); color: var(--black); font-weight: 600;">
+                            <i class="fas fa-user-plus me-2"></i>
+                            Criar Nova Conta
+                        </a>
+
+                        <a href="forms-login.html"
+                            class="btn btn-outline-secondary btn-lg py-3 text-light border-secondary">
+                            <i class="fas fa-sign-in-alt me-2"></i>
+                            Já tenho conta
+                        </a>
+                    </div>
+
+                    <hr class="my-4 border-secondary">
+
+                    <p class="text-muted mb-0 small">
+                        Ao se cadastrar, você aceita nossos
+                        <a href="#" class="text-decoration-none" style="color: var(--green-base);">Termos de Uso</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <!-- Logo -->
+                <div class="footer-logo text-center">
+                    <img src="../assets/img/logo/logo-white.svg" alt="Happy Game" />
+                </div>
+
+                <!-- Navigation -->
+                <nav class="footer-nav">
+                    <ul class="footer-links">
+                        <li><a href="../../index.html">Início</a></li>
+                        <li><a href="story-games.html">História dos Jogos</a></li>
+                        <li><a href="platform.html">Plataforma</a></li>
+                        <li><a href="forms-cadastro.html">Inscrever-se</a></li>
+                    </ul>
+                </nav>
+
+                <!-- Social Media -->
+                <div class="footer-social">
+                    <a href="#" aria-label="Instagram">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="#" aria-label="YouTube">
+                        <i class="fab fa-youtube"></i>
+                    </a>
+                    <a href="#" aria-label="Discord">
+                        <i class="fab fa-discord"></i>
+                    </a>
+                    <a href="#" aria-label="Twitter">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                </div>
+
+                <!-- Divider -->
+                <div class="footer-divider"></div>
+
+                <!-- Bottom Section -->
+                <div class="footer-bottom text-center">
+                    <div class="footer-legal">
+                        <a href="#">Termos de Uso</a>
+                        <a href="#">Política de Privacidade</a>
+                        <a href="#">Cookies</a>
+                    </div>
+                    <p class="footer-copyright">
+                        © 2025 Happy Game. Todos os direitos reservados.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+    <script type="module" src="../js/main.js"></script>
+
+</body>
+
+</html>
