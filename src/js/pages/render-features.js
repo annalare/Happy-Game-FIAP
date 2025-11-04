@@ -5,14 +5,14 @@ export default function initRenderFeatures() {
 
 	const renderTable = async () => {
 		try {
-			const featuresData = await fetch("/src/js/data/featuresData.json");
+			const featuresData = await fetch("../js/data/featuresData.json");
 
 			if (!featuresData.ok) {
 				throw new Error(`HTTP error! status: ${featuresData.status}`);
 			}
 
 			const htmlRow = await featuresData.json();
-			htmlRow.map((features) => {
+			htmlRow.forEach((features) => {
 				const featureHtml = `
       <tr>
         <td class="category-cell">
