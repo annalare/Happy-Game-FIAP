@@ -88,7 +88,7 @@
 
 .esg-card {
   background: var(--grey-dark);
-  border: 2px solid #2D2D2D;  
+  border: 2px solid #2D2D2D;
   border-radius: 16px;
   padding: 35px;
   transition: all 0.3s ease;

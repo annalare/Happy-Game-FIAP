@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Bootstrap Style -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous" />
+
+  <link rel="icon" type="image/png" href="../assets/img/favicon.svg" />
+  <title>História dos Games</title>
+
+  <!-- Global Style -->
+  <link rel="stylesheet" href="../css/style.css" />
+  <link rel="stylesheet" href="../css/story-games.css" />
+
+  <!-- Component Styles -->
+  <link rel="stylesheet" href="../components/button/button.css" />
+  <link rel="stylesheet" href="../components/navbar/navbar.css" />
+  <link rel="stylesheet" href="../components/footer/footer.css" />
+
+  <!-- Font and Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet" />
+</head>
+
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-bg fixed-top">
+    <div class="container">
+      <a href="../../index.html" class="navbar-brand">
+        <img src="../assets/img/logo/logo-white.svg" alt="Happy Game" />
+      </a>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link roboto-medium" href="../../index.html">Início</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active roboto-medium" href="story-games.html">História</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link roboto-medium" href="platform.html">Plataforma</a>
+          </li>
+          <li class="nav-item">
+            <a class="btn-navbar-cta roboto-bold" href="forms.html">Inscreva-se</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- 1. Hero Section with Carousel -->
+  <section class="hero-section position-relative d-flex align-items-center overflow-hidden">
+    <!-- Hero Carousel -->
+    <div id="heroCarousel" class="carousel slide position-absolute w-100 h-100" data-bs-ride="carousel"
+      data-bs-interval="4000">
+      <div class="carousel-inner h-100">
+        <div class="carousel-item active h-100">
+          <img
+            src="https://images.unsplash.com/photo-1542751371-adc38448a05e?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            class="d-block w-100 h-100 object-fit-cover" alt="Retro arcade games" />
+          <div class="carousel-overlay"></div>
+        </div>
+        <div class="carousel-item active h-100">
+          <img
+            src="https://images.unsplash.com/photo-1525323559199-ee5b69062cce?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            class="d-block w-100 h-100 object-fit-cover" alt="Retro arcade games" />
+          <div class="carousel-overlay"></div>
+        </div>
+        <div class="carousel-item h-100">
+          <img
+            src="https://images.unsplash.com/photo-1544652478-6653e09f18a2?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            class="d-block w-100 h-100 object-fit-cover" alt="Modern gaming setup" />
+          <div class="carousel-overlay"></div>
+        </div>
+        <div class="carousel-item h-100">
+          <img
+            src="https://images.unsplash.com/photo-1640955011254-39734e60b16f?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            class="d-block w-100 h-100 object-fit-cover" alt="Gaming controller evolution" />
+          <div class="carousel-overlay"></div>
+        </div>
+        <div class="carousel-item h-100">
+          <img
+            src="https://images.unsplash.com/photo-1571716846319-21f2bf095516?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            class="d-block w-100 h-100 object-fit-cover" alt="Gaming controller evolution" />
+          <div class="carousel-overlay"></div>
+        </div>
+        <div class="carousel-item h-100">
+          <img
+            src="https://images.unsplash.com/photo-1498736297812-3a08021f206f?q=80&w=1179&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            class="d-block w-100 h-100 object-fit-cover" alt="Gaming controller evolution" />
+          <div class="carousel-overlay"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Hero Content Overlay -->
+    <div class="container position-relative z-3">
+      <div class="row justify-content-center">
+        <div class="col-12 col-lg-10 col-xl-9">
+          <div class="text-center hero-content hero-fade-in">
+            <h1 class="hero-title orbitron-font">
+              A evolução dos games ao longo das décadas
+            </h1>
+            <p class="hero-subtitle">
+              Dos primeiros fliperamas até os mundos imersivos da atualidade,
+              descubra como os jogos moldaram gerações e continuam
+              transformando a forma de jogar e se conectar.
+            </p>
+            <div class="hero-cta-container">
+              <a href="#timeline" class="hero-cta-primary smooth-scroll">
+                <i class="fas fa-rocket me-2"></i>
+                Explore a História
+              </a>
+              <a href="platform.html" class="hero-cta-secondary">
+                <i class="fas fa-gamepad me-2"></i>
+                Nossa Plataforma
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 2. Timeline Section -->
+  <section id="timeline" class="timeline-section py-5">
+    <div class="container py-md-5">
+      <div class="row g-5">
+        <!-- Timeline Header -->
+        <div class="col-12 col-lg-4">
+          <div class="timeline-header-slide position-sticky" style="top: 120px">
+            <p class="text-uppercase fw-semibold mb-4 small text-success"
+              style="letter-spacing: 0.15em; font-size: 0.8rem">
+              Uma viagem pela história
+            </p>
+            <h2 class="display-6 fw-bold text-white lh-sm mb-4 orbitron-font">
+              O presente está repleto de jogos incríveis, mas nem sempre foi
+              assim.
+            </h2>
+            <p class="text-white-50 fs-6 lh-base">
+              Cada década trouxe inovações que revolucionaram a indústria e
+              definiram como jogamos hoje.
+            </p>
+          </div>
+        </div>
+
+        <!-- Timeline Content -->
+        <div class="col-12 col-lg-8">
+          <div class="position-relative">
+            <!-- Timeline Item 1 -->
+            <div class="d-flex timeline-item-slide" style="animation-delay: 0.1s">
+              <div class="d-flex flex-column align-items-center me-4">
+                <div
+                  class="timeline-icon d-flex align-items-center justify-content-center rounded-circle text-white flex-shrink-0 position-relative"
+                  style="
+                      width: 64px;
+                      height: 64px;
+                      background: linear-gradient(
+                        135deg,
+                        #2d2d2d 0%,
+                        #1a1a1a 100%
+                      );
+                      border: 3px solid #333;
+                      z-index: 2;
+                      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+                    ">
+                  <i class="fas fa-rocket" style="font-size: 1.5rem"></i>
+                </div>
+                <div class="flex-grow-1 timeline-connector rounded-pill" style="
+                      width: 5px;
+                      height: 130px;
+                      background: linear-gradient(
+                        180deg,
+                        #333 0%,
+                        #2d2d2d 50%,
+                        #333 100%
+                      );
+                      box-shadow: inset 0 0 3px rgba(0, 0, 0, 0.5);
+                    "></div>
+              </div>
+
+              <div class="pb-5">
+                <p class="text-uppercase fw-bold mb-3 small text-success"
+                  style="letter-spacing: 0.15em; font-size: 0.75rem">
+                  1970 • 1980
+                </p>
+                <h3 class="h4 fw-bold text-white mb-3 orbitron-font">
+                  O Início de Tudo
+                </h3>
+                <p class="text-white-50 mb-0 lh-base">
+                  Quando os jogos saíram dos laboratórios e invadiram os
+                  fliperamas, dando início a uma revolução cultural que
+                  mudaria o entretenimento para sempre.
+                  <strong class="text-white">Pong, Space Invaders e Pac-Man</strong>
+                  se tornaram os primeiros ícones de uma nova era.
+                </p>
+              </div>
+            </div>
+
+            <!-- Timeline Item 2 -->
+            <div class="d-flex timeline-item-slide" style="animation-delay: 0.2s">
+              <div class="d-flex flex-column align-items-center me-4">
+                <div
+                  class="timeline-icon d-flex align-items-center justify-content-center rounded-circle text-white flex-shrink-0 position-relative"
+                  style="
+                      width: 64px;
+                      height: 64px;
+                      background: linear-gradient(
+                        135deg,
+                        #2d2d2d 0%,
+                        #1a1a1a 100%
+                      );
+                      border: 3px solid #333;
+                      z-index: 2;
+                      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+                    ">
+                  <i class="fas fa-gamepad" style="font-size: 1.5rem"></i>
+                </div>
+                <div class="flex-grow-1 timeline-connector rounded-pill" style="
+                      width: 5px;
+                      height: 130px;
+                      background: linear-gradient(
+                        180deg,
+                        #333 0%,
+                        #2d2d2d 50%,
+                        #333 100%
+                      );
+                      box-shadow: inset 0 0 3px rgba(0, 0, 0, 0.5);
+                    "></div>
+              </div>
+
+              <div class="pb-5">
+                <p class="text-uppercase fw-bold mb-3 small text-success"
+                  style="letter-spacing: 0.15em; font-size: 0.75rem">
+                  1980 • 1990
+                </p>
+                <h3 class="h4 fw-bold text-white mb-3 orbitron-font">
+                  A Batalha dos Gigantes
+                </h3>
+                <p class="text-white-50 mb-0 lh-base">
+                  A rivalidade épica entre Nintendo e Sega que definiu uma
+                  geração inteira e levou os consoles para as casas de milhões
+                  de jogadores.
+                  <strong class="text-white">Super Mario Bros. e Sonic the Hedgehog</strong>
+                  se tornaram mais que personagens - viraram símbolos
+                  culturais.
+                </p>
+              </div>
+            </div>
+
+            <!-- Timeline Item 3 -->
+            <div class="d-flex timeline-item-slide" style="animation-delay: 0.3s">
+              <div class="d-flex flex-column align-items-center me-4">
+                <div
+                  class="timeline-icon d-flex align-items-center justify-content-center rounded-circle text-white flex-shrink-0 position-relative"
+                  style="
+                      width: 64px;
+                      height: 64px;
+                      background: linear-gradient(
+                        135deg,
+                        #2d2d2d 0%,
+                        #1a1a1a 100%
+                      );
+                      border: 3px solid #333;
+                      z-index: 2;
+                      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+                    ">
+                  <i class="fas fa-cube" style="font-size: 1.5rem"></i>
+                </div>
+                <div class="flex-grow-1 timeline-connector rounded-pill" style="
+                      width: 5px;
+                      height: 130px;
+                      background: linear-gradient(
+                        180deg,
+                        #333 0%,
+                        #2d2d2d 50%,
+                        #333 100%
+                      );
+                      box-shadow: inset 0 0 3px rgba(0, 0, 0, 0.5);
+                    "></div>
+              </div>
+
+              <div class="pb-5">
+                <p class="text-uppercase fw-bold mb-3 small text-success"
+                  style="letter-spacing: 0.15em; font-size: 0.75rem">
+                  1990 • 2000
+                </p>
+                <h3 class="h4 fw-bold text-white mb-3 orbitron-font">
+                  Uma Nova Dimensão
+                </h3>
+                <p class="text-white-50 mb-0 lh-base">
+                  A transição revolucionária para os gráficos 3D e o
+                  nascimento dos jogos online, conectando jogadores de todo o
+                  mundo pela primeira vez.
+                  <strong class="text-white">Super Mario 64, Quake e EverQuest</strong>
+                  abriram portais para mundos antes inimagináveis.
+                </p>
+              </div>
+            </div>
+
+            <!-- Timeline Item 4 -->
+            <div class="d-flex timeline-item-slide" style="animation-delay: 0.4s">
+              <div class="d-flex flex-column align-items-center me-4">
+                <div
+                  class="timeline-icon d-flex align-items-center justify-content-center rounded-circle text-white flex-shrink-0 position-relative"
+                  style="
+                      width: 64px;
+                      height: 64px;
+                      background: linear-gradient(
+                        135deg,
+                        #2d2d2d 0%,
+                        #1a1a1a 100%
+                      );
+                      border: 3px solid #333;
+                      z-index: 2;
+                      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+                    ">
+                  <i class="fas fa-users" style="font-size: 1.5rem"></i>
+                </div>
+                <div class="flex-grow-1 timeline-connector rounded-pill" style="
+                      width: 5px;
+                      height: 130px;
+                      background: linear-gradient(
+                        180deg,
+                        #333 0%,
+                        #2d2d2d 50%,
+                        #333 100%
+                      );
+                      box-shadow: inset 0 0 3px rgba(0, 0, 0, 0.5);
+                    "></div>
+              </div>
+
+              <div class="pb-5">
+                <p class="text-uppercase fw-bold mb-3 small text-success"
+                  style="letter-spacing: 0.15em; font-size: 0.75rem">
+                  2000 • 2010
+                </p>
+                <h3 class="h4 fw-bold text-white mb-3 orbitron-font">
+                  A Democratização dos Games
+                </h3>
+                <p class="text-white-50 mb-0 lh-base">
+                  A ascensão das redes sociais, dos jogos independentes e a
+                  consolidação do e-sports como um fenômeno global e cultural.
+                  <strong class="text-white">World of Warcraft, Minecraft e League of Legends</strong>
+                  provaram que jogos são mais que entretenimento - são
+                  comunidades.
+                </p>
+              </div>
+            </div>
+
+            <!-- Timeline Item 5 (Last) -->
+            <div class="d-flex timeline-item-slide" style="animation-delay: 0.5s">
+              <div class="d-flex flex-column align-items-center me-4">
+                <div
+                  class="timeline-icon d-flex align-items-center justify-content-center rounded-circle text-white flex-shrink-0 position-relative"
+                  style="
+                      width: 64px;
+                      height: 64px;
+                      background: linear-gradient(
+                        135deg,
+                        #2d2d2d 0%,
+                        #1a1a1a 100%
+                      );
+                      border: 3px solid #333;
+                      z-index: 2;
+                      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+                    ">
+                  <i class="fas fa-vr-cardboard" style="font-size: 1.5rem"></i>
+                </div>
+              </div>
+
+              <div>
+                <p class="text-uppercase fw-bold mb-3 small text-success"
+                  style="letter-spacing: 0.15em; font-size: 0.75rem">
+                  2010 • Presente
+                </p>
+                <h3 class="h4 fw-bold text-white mb-3 orbitron-font">
+                  O Futuro é Agora
+                </h3>
+                <p class="text-white-50 mb-0 lh-base">
+                  A era dos jogos como serviço, da realidade virtual, dos
+                  dispositivos móveis e do metaverso, onde as fronteiras entre
+                  o real e o virtual se dissolvem.
+                  <strong class="text-white">Fortnite, Among Us e Pokémon GO</strong>
+                  redefinindo como jogamos, trabalhamos e nos conectamos.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 3. CTA Section -->
+  <section class="cta-section py-5">
+    <div class="container py-md-5">
+      <div class="row justify-content-center">
+        <div class="col-12 col-lg-10 col-xl-8">
+          <div class="text-center cta-fade-in">
+            <h2 class="display-5 fw-bold text-white mb-4 orbitron-font">
+              Pronto para fazer parte desta história?
+            </h2>
+            <p class="lead text-white-50 fs-5 mb-5 lh-base px-md-4">
+              A história dos games continua sendo escrita a cada dia.<br />
+              E aqui, você é protagonista dela! Junte-se à nossa comunidade e
+              descubra o que o futuro dos jogos reserva.
+            </p>
+            <div class="d-flex flex-column flex-sm-row gap-4 justify-content-center">
+              <a href="forms.html" class="btn btn-green-solid btn-lg px-5 py-3">Inscreva-se Agora</a>
+              <a href="platform.html" class="btn btn-green-outline btn-lg px-5 py-3">Explorar Plataforma</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <!-- Logo -->
+        <div class="footer-logo text-center">
+          <img src="../assets/img/logo/logo-white.svg" alt="Happy Game" />
+        </div>
+
+        <!-- Navigation -->
+        <nav class="footer-nav">
+          <ul class="footer-links">
+            <li><a href="../../index.html" class="roboto-medium">Início</a></li>
+            <li>
+              <a href="story-games.html" class="roboto-medium">História dos Jogos</a>
+            </li>
+            <li>
+              <a href="platform.html" class="roboto-medium">Plataforma</a>
+            </li>
+            <li>
+              <a href="forms.html" class="roboto-medium">Inscrever-se</a>
+            </li>
+          </ul>
+        </nav>
+
+        <!-- Social Media -->
+        <div class="footer-social">
+          <a href="#" aria-label="Instagram">
+            <i class="fab fa-instagram"></i>
+          </a>
+          <a href="#" aria-label="YouTube">
+            <i class="fab fa-youtube"></i>
+          </a>
+          <a href="#" aria-label="Discord">
+            <i class="fab fa-discord"></i>
+          </a>
+          <a href="#" aria-label="Twitter">
+            <i class="fab fa-twitter"></i>
+          </a>
+        </div>
+
+        <!-- Divider -->
+        <div class="footer-divider"></div>
+
+        <!-- Bottom Section -->
+        <div class="footer-bottom text-center">
+          <div class="footer-legal">
+            <a href="#" class="roboto-light">Termos de Uso</a>
+            <a href="#" class="roboto-light">Política de Privacidade</a>
+            <a href="#" class="roboto-light">Cookies</a>
+          </div>
+          <p class="footer-copyright roboto-light">
+            © 2025 Happy Game. Todos os direitos reservados.
+          </p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
