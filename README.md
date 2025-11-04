@@ -34,14 +34,18 @@ O site foi criado para:
 
 ### 🛠️ Plataforma (`pages/platform.html`)
 
-- **Tabela de Recursos**: Funcionalidades organizadas por categoria
-- **Equipe**: Apresentação dos desenvolvedores do projeto
+- **Tabela de Recursos**: Funcionalidades organizadas por categoria.
+- **Compromisso com a Comunidade** : Codigo de conduta, transparência, ambiente inclusivo.
+- **Sustentabilidade Digital** : Comprometidos com práticas de desenvolvimento sustentável.
+- **Equipe**: Apresentação dos desenvolvedores do projeto.
 - **Recursos Disponíveis**:
   - Catálogo de Jogos
   - Análise de Vendas
   - Sistema de Posts
   - Interação entre Usuários
+  - Compromisso com a comunidade
   - Sistema de Conquistas
+  - Diversidade & Inclusão
 
 ### 📝 Formulário de Inscrição (`pages/forms.html`)
 
@@ -99,44 +103,51 @@ O projeto utiliza um sistema de tokens de cor bem estruturado:
 --green-darker: #00CC6D;
 --pink-base: #FF2E63;
 
-
 ## 📁 Estrutura do Projeto
 
 ````
 Happy-Game-Website---FIAP/
-├── .vscode/                   # Configurações do VS Code
-├── assets/
-│   └── img/                   # Imagens e recursos visuais
-│       ├── profile/          # Fotos da equipe
-│       └── *.png, *.svg      # Imagens do site
-├── components/               # Componentes reutilizáveis
-│   ├── button/              # Componente de botão
-│   ├── footer/              # Componente de rodapé
-│   ├── input/               # Componente de input
-│   └── navbar/              # Componente de navegação
-├── css/                     # Estilos do projeto
-│   ├── feedback.css         # Estilos da página de feedback
-│   ├── forms.css            # Estilos do formulário
-│   ├── home.css             # Estilos da página inicial
-│   ├── konami.css           # Estilos do easter egg
-│   ├── platform.css         # Estilos da página da plataforma
-│   ├── story-games.css      # Estilos da página de história
-│   └── style.css            # Estilos globais e design system
-├── js/                      # JavaScript do projeto
-│   ├── pages/              # Scripts específicos de páginas
-│   │   ├── feedback.js     # Lógica da página de feedback
-│   │   ├── forms.js        # Lógica do formulário
-│   │   ├── home.js         # Lógica da página inicial
-│   │   └── platform.js     # Lógica da plataforma
-│   └── utils/              # Utilitários JavaScript
-│       └── storage.js      # Gerenciamento de armazenamento local
-├── pages/                   # Páginas do site
-│   ├── feedback.html       # Página de confirmação
-│   ├── forms.html          # Formulário de inscrição
-│   ├── platform.html       # Página da plataforma
-│   └── story-games.html    # Página de história dos jogos
-├── index.html              # Página inicial
-└── README.md               # Documentação do projeto
+
+├── src/                          # Código-fonte do projeto
+│   ├── assets/
+│   │   └── img/                  # Imagens e recursos visuais
+│   │       ├── logo/            # Variações do logo
+│   │       ├── profile/         # Fotos da equipe
+│   │       └── *.png, *.svg     # Imagens do site
+│   ├── components/              # Componentes reutilizáveis
+│   │   ├── button/             # Componente de botão
+│   │   ├── footer/             # Componente de rodapé
+│   │   ├── input/              # Componente de input
+│   │   └── navbar/             # Componente de navegação
+│   ├── css/                    # Estilos do projeto
+│   │   ├── feedback.css        # Estilos da página de feedback
+│   │   ├── forms.css           # Estilos do formulário
+│   │   ├── home.css            # Estilos da página inicial
+│   │   ├── konami.css          # Estilos do easter egg
+│   │   ├── platform.css        # Estilos da página da plataforma
+│   │   ├── story-games.css     # Estilos da página de história
+│   │   └── style.css           # Estilos globais e design system
+│   ├── js/                     # JavaScript do projeto
+│   │   ├── data/              # Dados e configurações
+│   │   │   ├── featuresData.json    # Dados das funcionalidades
+│   │   │   └── feedbackCards.js     # Cards de feedback
+│   │   ├── pages/             # Scripts específicos de páginas
+│   │   │   ├── feedback.js        # Lógica da página de feedback
+│   │   │   ├── get-form-data.js   # Captura dados do formulário
+│   │   │   ├── home.js            # Lógica da página inicial
+│   │   │   ├── render-features.js # Renderiza features da plataforma
+│   │   │   └── telephone-format.js # Formatação de telefone
+│   │   ├── utils/             # Utilitários JavaScript
+│   │   │   └── storage.js         # Gerenciamento de armazenamento local
+│   │   └── main.js            # Script principal
+│   └── pages/                  # Páginas do site
+│       ├── feedback.html      # Página de confirmação
+│       ├── forms.html         # Formulário de inscrição
+│       ├── platform.html      # Página da plataforma
+│       └── story-games.html   # Página de história dos jogos
+├── index.html                 # Página inicial
+├── sitemap.xml               # Mapa do site para SEO
+└── README.md                 # Documentação do projeto
 
 ## 🚀 Como Executar
 
