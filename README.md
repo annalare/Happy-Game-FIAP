@@ -43,7 +43,7 @@ O site foi criado para:
   - Interação entre Usuários
   - Sistema de Conquistas
 
-### 📝 Formulário de Inscrição (`pages/forms.html`)
+### 📝 Formulário de Inscrição (`pages/forms-cadastro.html`)
 
 - **Cadastro Completo**: Nome, nickname, email, telefone
 - **Preferências**: Plataforma favorita e gêneros de jogos
@@ -99,7 +99,6 @@ O projeto utiliza um sistema de tokens de cor bem estruturado:
 --green-darker: #00CC6D;
 --pink-base: #FF2E63;
 
-
 ## 📁 Estrutura do Projeto
 
 ````
@@ -132,7 +131,7 @@ Happy-Game-Website---FIAP/
 │       └── storage.js      # Gerenciamento de armazenamento local
 ├── pages/                   # Páginas do site
 │   ├── feedback.html       # Página de confirmação
-│   ├── forms.html          # Formulário de inscrição
+│   ├── forms-cadastro.html          # Formulário de inscrição
 │   ├── platform.html       # Página da plataforma
 │   └── story-games.html    # Página de história dos jogos
 ├── index.html              # Página inicial
@@ -156,7 +155,7 @@ Happy-Game-Website---FIAP/
    - Página inicial: `index.html`
    - História dos jogos: `pages/story-games.html`
    - Plataforma: `pages/platform.html`
-   - Formulário: `pages/forms.html`
+   - Formulário: `pages/forms-cadastro.html`
    - Feedback: `pages/feedback.html`
 
 ## 👥 Equipe de Desenvolvimento

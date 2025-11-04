@@ -44,12 +44,51 @@
             <a class="nav-link active roboto-medium" href="platform.html">Plataforma</a>
           </li>
           <li class="nav-item">
-            <a class="btn-navbar-cta roboto-bold" href="forms.html">Inscreva-se</a>
+            <button class="btn-navbar-cta roboto-bold" data-bs-toggle="modal"
+              data-bs-target="#authModal">Inscreva-se</button>
           </li>
         </ul>
       </div>
     </div>
   </nav>
+
+  <!-- Modal de Autenticação -->
+  <div class="modal fade" id="authModal" tabindex="-1" aria-labelledby="authModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content bg-dark border border-secondary">
+        <div class="modal-header border-secondary">
+          <h5 class="modal-title text-white" id="authModalLabel">
+            <i class="fas fa-gamepad me-2" style="color: var(--green-base);"></i>
+            Junte-se à Comunidade
+          </h5>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body text-center py-4">
+          <p class="text-light mb-4">Escolha uma opção para continuar:</p>
+
+          <div class="d-grid gap-3">
+            <a href="forms-cadastro.html" class="btn btn-lg py-3"
+              style="background: var(--green-base); color: var(--black); font-weight: 600;">
+              <i class="fas fa-user-plus me-2"></i>
+              Criar Nova Conta
+            </a>
+
+            <a href="forms-login.html" class="btn btn-outline-secondary btn-lg py-3 text-light border-secondary">
+              <i class="fas fa-sign-in-alt me-2"></i>
+              Já tenho conta
+            </a>
+          </div>
+
+          <hr class="my-4 border-secondary">
+
+          <p class="text-muted mb-0 small">
+            Ao se cadastrar, você aceita nossos
+            <a href="#" class="text-decoration-none" style="color: var(--green-base);">Termos de Uso</a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
 
   <!-- Features Table Section -->
   <section class="features-section py-5">
@@ -322,7 +361,7 @@
               <a href="platform.html" class="roboto-medium">Plataforma</a>
             </li>
             <li>
-              <a href="forms.html" class="roboto-medium">Inscrever-se</a>
+              <a href="forms-cadastro.html" class="roboto-medium">Inscrever-se</a>
             </li>
           </ul>
         </nav>

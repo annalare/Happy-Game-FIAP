@@ -5,7 +5,7 @@ export default function initFeedback() {
 	const dadosUsuario = buscarDadosUsuario();
 
 	if (!dadosUsuario) {
-		window.location.href = "forms.html";
+		window.location.href = "forms-cadastro.html";
 		return;
 	}
 

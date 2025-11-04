@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8" />
-    <title>Forms - Happy Game</title>
+    <title>Cadastro - Happy Game</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <!-- Bootstrap Style -->
@@ -44,7 +44,8 @@
                         <a class="nav-link" href="platform.html">Plataforma</a>
                     </li>
                     <li class="nav-item">
-                        <a class="btn-navbar-cta active" href="forms.html">Inscreva-se</a>
+                        <button class="btn-navbar-cta" data-bs-toggle="modal"
+                            data-bs-target="#authModal">Inscreva-se</button>
                     </li>
                 </ul>
             </div>
@@ -90,6 +91,21 @@
                             <input type="tel" id="telefone" name="telefone" class="form-control form-control-lg"
                                 placeholder="(00) 00000-0000" pattern="^\(\d{2}\)\s\d{5}-\d{4}$"
                                 title="Digite o número no formato (00) 00000-0000">
+                        </div>
+                    </div>
+
+                    <!-- Senha e Confirmação -->
+                    <div class="row g-3 mb-4">
+                        <div class="col-md-6">
+                            <label for="senha" class="form-label roboto-medium">Senha</label>
+                            <input type="password" id="senha" name="senha" class="form-control form-control-lg"
+                                placeholder="Digite sua senha" required minlength="6">
+                        </div>
+                        <div class="col-md-6">
+                            <label for="confirmarSenha" class="form-label roboto-medium">Confirmar Senha</label>
+                            <input type="password" id="confirmarSenha" name="confirmarSenha"
+                                class="form-control form-control-lg" placeholder="Confirme sua senha" required
+                                minlength="6">
                         </div>
                     </div>
 
@@ -169,11 +185,69 @@
                     </div>
 
                     <!-- Botão -->
-                    <div class="d-grid">
+                    <div class="d-grid mb-4">
                         <button type="submit" class="btn btn-lg botao-enviar py-3 roboto-bold">Fazer parte da
                             comunidade</button>
                     </div>
+
+                    <!-- Botão já tenho cadastro -->
+                    <div class="d-grid mb-4">
+                        <a href="forms-login.html"
+                            class="btn btn-outline-secondary btn-lg py-3 text-light border-secondary">
+                            <i class="fas fa-sign-in-alt me-2"></i>
+                            Já tenho cadastro
+                        </a>
+                    </div>
+
+                    <!-- Link para login alternativo -->
+                    <div class="text-center">
+                        <p class="text-light mb-0">
+                            Já tem uma conta?
+                            <a href="forms-login.html" class="text-decoration-none fw-semibold"
+                                style="color: var(--green-base);">Entre aqui</a>
+                        </p>
+                    </div>
                 </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal de Autenticação -->
+    <div class="modal fade" id="authModal" tabindex="-1" aria-labelledby="authModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content bg-dark border border-secondary">
+                <div class="modal-header border-secondary">
+                    <h5 class="modal-title text-white" id="authModalLabel">
+                        <i class="fas fa-gamepad me-2" style="color: var(--green-base);"></i>
+                        Junte-se à Comunidade
+                    </h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"
+                        aria-label="Close"></button>
+                </div>
+                <div class="modal-body text-center py-4">
+                    <p class="text-light mb-4">Escolha uma opção para continuar:</p>
+
+                    <div class="d-grid gap-3">
+                        <a href="forms-cadastro.html" class="btn btn-lg py-3"
+                            style="background: var(--green-base); color: var(--black); font-weight: 600;">
+                            <i class="fas fa-user-plus me-2"></i>
+                            Criar Nova Conta
+                        </a>
+
+                        <a href="forms-login.html"
+                            class="btn btn-outline-secondary btn-lg py-3 text-light border-secondary">
+                            <i class="fas fa-sign-in-alt me-2"></i>
+                            Já tenho conta
+                        </a>
+                    </div>
+
+                    <hr class="my-4 border-secondary">
+
+                    <p class="text-muted mb-0 small">
+                        Ao se cadastrar, você aceita nossos
+                        <a href="#" class="text-decoration-none" style="color: var(--green-base);">Termos de Uso</a>
+                    </p>
+                </div>
             </div>
         </div>
     </div>
@@ -193,7 +267,7 @@
                         <li><a href="../../index.html">Início</a></li>
                         <li><a href="story-games.html">História dos Jogos</a></li>
                         <li><a href="platform.html">Plataforma</a></li>
-                        <li><a href="forms.html">Inscrever-se</a></li>
+                        <li><a href="forms-cadastro.html">Inscrever-se</a></li>
                     </ul>
                 </nav>
 
