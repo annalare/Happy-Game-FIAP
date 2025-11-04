@@ -107,21 +107,28 @@ O projeto utiliza um sistema de tokens de cor bem estruturado:
 
 ````
 Happy-Game-Website---FIAP/
-
 ├── src/                          # Código-fonte do projeto
 │   ├── assets/
 │   │   └── img/                  # Imagens e recursos visuais
-│   │       ├── logo/            # Variações do logo
-│   │       ├── profile/         # Fotos da equipe
+│   │       ├── logo/            # Variações do logo (6 arquivos SVG)
+│   │       ├── profile/         # Fotos da equipe (5 arquivos)
 │   │       └── *.png, *.svg     # Imagens do site
 │   ├── components/              # Componentes reutilizáveis
 │   │   ├── button/             # Componente de botão
+│   │   │   ├── button.css
+│   │   │   └── button.html
 │   │   ├── footer/             # Componente de rodapé
+│   │   │   ├── footer.css
+│   │   │   └── footer.html
 │   │   ├── input/              # Componente de input
+│   │   │   ├── input.css
+│   │   │   └── input.html
 │   │   └── navbar/             # Componente de navegação
+│   │       ├── navbar.css
+│   │       └── navbar.html
 │   ├── css/                    # Estilos do projeto
 │   │   ├── feedback.css        # Estilos da página de feedback
-│   │   ├── forms.css           # Estilos do formulário
+│   │   ├── forms.css           # Estilos dos formulários
 │   │   ├── home.css            # Estilos da página inicial
 │   │   ├── konami.css          # Estilos do easter egg
 │   │   ├── platform.css        # Estilos da página da plataforma
@@ -135,16 +142,18 @@ Happy-Game-Website---FIAP/
 │   │   │   ├── feedback.js        # Lógica da página de feedback
 │   │   │   ├── get-form-data.js   # Captura dados do formulário
 │   │   │   ├── home.js            # Lógica da página inicial
+│   │   │   ├── login.js           # Lógica da página de login
 │   │   │   ├── render-features.js # Renderiza features da plataforma
 │   │   │   └── telephone-format.js # Formatação de telefone
 │   │   ├── utils/             # Utilitários JavaScript
 │   │   │   └── storage.js         # Gerenciamento de armazenamento local
 │   │   └── main.js            # Script principal
 │   └── pages/                  # Páginas do site
-│       ├── feedback.html      # Página de confirmação
-│       ├── forms.html         # Formulário de inscrição
-│       ├── platform.html      # Página da plataforma
-│       └── story-games.html   # Página de história dos jogos
+│       ├── feedback.html          # Página de confirmação
+│       ├── forms-cadastro.html    # Formulário de cadastro
+│       ├── forms-login.html       # Formulário de login
+│       ├── platform.html          # Página da plataforma
+│       └── story-games.html       # Página de história dos jogos
 ├── index.html                 # Página inicial
 ├── sitemap.xml               # Mapa do site para SEO
 └── README.md                 # Documentação do projeto
@@ -168,6 +177,7 @@ Happy-Game-Website---FIAP/
    - História dos jogos: `pages/story-games.html`
    - Plataforma: `pages/platform.html`
    - Formulário: `pages/forms-cadastro.html`
+   - Login:`pages/forms-login.html`
    - Feedback: `pages/feedback.html`
 
 ## 👥 Equipe de Desenvolvimento
